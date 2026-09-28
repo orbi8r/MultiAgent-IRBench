@@ -1,0 +1,50 @@
+{"qid": "a01", "question": "Did the partner ever send me a list of mistakes to fix in my Apple annual report extraction, and where does that note sit now?", "qtype": "location", "asker": "extractor_1"}
+{"qid": "a02", "question": "Is there a note from the lead correcting my exhibit extraction and my purchase obligation reasoning, and where was it filed?", "qtype": "location", "asker": "extractor_2"}
+{"qid": "a03", "question": "Where is the message from the deal team confirming the scope of the Apple review, and which topics does it say the summary must cover?", "qtype": "location", "asker": "partner"}
+{"qid": "a04", "question": "Where is the deal team's message about the Apple deadline, and what does it want finished?", "qtype": "location", "asker": "partner"}
+{"qid": "a05", "question": "Where is the feed message telling me the Apple material contract exhibit had arrived?", "qtype": "location", "asker": "extractor_2"}
+{"qid": "a06", "question": "Once the Apple memorandum was done, where did it and its completion marker end up?", "qtype": "location", "asker": "partner"}
+{"qid": "a07", "question": "Where are the auditor's completion note and the contracts extractor's correction note that I worked from for the Apple briefs?", "qtype": "location", "asker": "summariser"}
+{"qid": "a08", "question": "Where is the contracts extractor's note to the auditor that lists which contract fields must not be recorded as verified?", "qtype": "location", "asker": "extractor_1"}
+{"qid": "a09", "question": "Where is my own working notebook, and when did I start it?", "qtype": "location", "asker": "extractor_1"}
+{"qid": "a10", "question": "Who actually put down the Apple completion marker that was archived, given the lead had held back from signing?", "qtype": "who", "asker": "partner"}
+{"qid": "a11", "question": "Did the auditor's big audit pass actually look at my 10-K and 10-Q extraction files?", "qtype": "who", "asker": "extractor_1"}
+{"qid": "a12", "question": "What is the state of the Apple review now: is it closed, and what happened to the working files from each stage?", "qtype": "state", "asker": "partner"}
+{"qid": "a13", "question": "Is my quarterly report financial metrics extraction for Apple reliable, or did I leave problems in it?", "qtype": "state", "asker": "extractor_1"}
+{"qid": "a14", "question": "How concentrated are Apple's vendor non trade receivables in its two biggest vendors, at the latest quarter end and at the fiscal year end?", "qtype": "finding", "asker": "checker"}
+{"qid": "a15", "question": "What are the money and timing terms of the accelerated buyback agreements Apple entered in May 2026?", "qtype": "finding", "asker": "summariser"}
+{"qid": "a16", "question": "In the equity plan exhibit covering outside board members, what is the cap on shares issuable, the yearly grant value and the yearly pay ceiling per board member?", "qtype": "finding", "asker": "partner"}
+{"qid": "a17", "question": "What do Apple's lease liabilities actually total, and how should the $14.73B and $12.49B lease figures be read?", "qtype": "finding", "asker": "partner"}
+{"qid": "a18", "question": "What did the lead assign me to pull out of the Apple annual and quarterly reports, how should I name the files and by when?", "qtype": "decision", "asker": "extractor_1"}
+{"qid": "a19", "question": "What did the lead ask me to produce from the July 2026 current report, and could it actually be done?", "qtype": "decision", "asker": "extractor_2"}
+{"qid": "a20", "question": "If the debt indentures never arrive, how did the contracts extractor say the memo should treat covenants and change of control, and what did the memo end up recommending?", "qtype": "decision", "asker": "partner"}
+{"qid": "a21", "question": "Did the team conclude that an acquirer would be forced into any buyback from Apple's repurchase programmes?", "qtype": "decision", "asker": "checker"}
+{"qid": "a22", "question": "Should the memo accept the explanation that part of the jump in Apple's other purchase obligations is just a change in how they are defined?", "qtype": "decision", "asker": "partner"}
+{"qid": "a23", "question": "What was the Apple exhibit 10 document first taken to be, and what is it really?", "qtype": "history", "asker": "partner"}
+{"qid": "a24", "question": "What was wrong with how my contracts brief described the nine month buyback amount, and how was it fixed?", "qtype": "history", "asker": "summariser"}
+{"qid": "a25", "question": "Which of the fiscal 2025 headline figures in the briefs were wrong, and what does the annual report actually say?", "qtype": "history", "asker": "partner"}
+{"qid": "b01", "question": "Where can I find the partner's already checked reading of the terms in the new stock plan exhibit, and where did I save my own numbered breakdown of that exhibit?", "qtype": "location", "asker": "extractor_2"}
+{"qid": "b02", "question": "Where is the partner's note about the bad numbers in my draft brief on the company's finances, and which of my files does it concern?", "qtype": "location", "asker": "summariser"}
+{"qid": "b03", "question": "Where are the partner's audit assignment for the new target and the later follow up asking me for a one line status?", "qtype": "location", "asker": "checker"}
+{"qid": "b04", "question": "Which extraction file holds the write up of the dispute with the US tax authority that the partner told me to read first?", "qtype": "location", "asker": "summariser"}
+{"qid": "b05", "question": "Where is the extraction of the September 2026 current report that announced the change in how Microsoft will report its business?", "qtype": "location", "asker": "extractor_2"}
+{"qid": "b06", "question": "Where did extractor_1's old Apple notes saying extractions were ready end up after I cleared my inbox, and where does the Apple audit log sit now?", "qtype": "location", "asker": "checker"}
+{"qid": "b07", "question": "Where did the deal team's reminder to wrap up the Microsoft review and the notice about the replacement contract exhibit come in?", "qtype": "location", "asker": "partner"}
+{"qid": "b08", "question": "After I deleted my first botched write, where did my contract exhibit extraction finally land in the extraction folder and under what name?", "qtype": "location", "asker": "extractor_2"}
+{"qid": "b09", "question": "Where did I write down the partner's go ahead to draft placeholder briefs, and where is the draft describing the business that I produced from it?", "qtype": "location", "asker": "summariser"}
+{"qid": "b10", "question": "Who actually placed the sign off marker that closed the Apple review, and what had the partner done with its own marker before that?", "qtype": "who", "asker": "checker"}
+{"qid": "b11", "question": "How many of the four Microsoft briefs I assigned are actually in the summarised folder, and does that match what the summariser reported?", "qtype": "state", "asker": "partner"}
+{"qid": "b12", "question": "Who wrote the Microsoft extraction files now sitting in the extraction folder, and has any of that work been through an audit?", "qtype": "who", "asker": "summariser"}
+{"qid": "b13", "question": "Did anyone answer the partner's shift 34 request to report status, and how did the summariser respond to it?", "qtype": "state", "asker": "extractor_2"}
+{"qid": "b14", "question": "How much additional tax is the US tax authority seeking from Microsoft over how it prices dealings between its own subsidiaries, which years does it cover, and how does it compare with FY2026 net income?", "qtype": "finding", "asker": "summariser"}
+{"qid": "b15", "question": "What did the gain on Microsoft's stake in its AI partner actually add to FY2026 results before and after tax, given the partner's brief called it about five billion?", "qtype": "finding", "asker": "checker"}
+{"qid": "b16", "question": "What did Microsoft actually spend on data centres and other capital assets in FY2026 per the cash flow statement, and what did that do to free cash flow against FY2025?", "qtype": "finding", "asker": "partner"}
+{"qid": "b17", "question": "What explained the few hundred million dollar gap between the nine month expense build and reported operating income in the interim extraction, and what are the right expense lines?", "qtype": "history", "asker": "summariser"}
+{"qid": "b18", "question": "What is the Windows, devices and gaming segment's nine month operating income in the interim filing, and do the three segments then add up to the consolidated total?", "qtype": "finding", "asker": "partner"}
+{"qid": "b19", "question": "What did the partner rule about the material contract exhibit sitting in the Microsoft filing set, and is that ruling still in force?", "qtype": "decision", "asker": "checker"}
+{"qid": "b20", "question": "Did the partner go along with the deal team's push to finalise the memo and place the sign off marker, and on what condition will that marker be created?", "qtype": "decision", "asker": "partner"}
+{"qid": "b21", "question": "Once the teammates stayed silent after two chases, what did the partner decide to do about the assigned extraction work, and how must those files be treated?", "qtype": "decision", "asker": "partner"}
+{"qid": "b22", "question": "What did the partner tell me to do while the checker had nothing audited, and what did the partner later rule about unsourced numbers in those drafts?", "qtype": "decision", "asker": "summariser"}
+{"qid": "b23", "question": "What topics did the deal team insist the summary cover before sign off, and did the partner carry that scope over to the Microsoft review?", "qtype": "decision", "asker": "partner"}
+{"qid": "b24", "question": "What was wrong with the fixed asset figure in my draft on the company's finances, and what are the correct numbers?", "qtype": "history", "asker": "summariser"}
+{"qid": "b25", "question": "Which figures in my first Apple memo draft had already been flagged as wrong, and what earnings per share does the archived memo now show?", "qtype": "history", "asker": "partner"}
