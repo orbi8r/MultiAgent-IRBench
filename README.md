@@ -4,7 +4,7 @@ A test for search methods that look things up in the memory of an AI agent team.
 
 Each run is the full record of a team of AI agents working for a long time on a real job, plus 42 to 50 questions that an agent on that team would ask about the team's past ("where did we file the report on X", "what did the lead decide about Y", "which number did the paper give for Z"). Your method reads the record and, for each question, hands back the pieces of the record it would give to that agent. The scorer tells you how good those pieces are.
 
-Three runs are here now. Seven more are being made and will be added to this repository.
+Five runs are here now. Five more are being made and will be added to this repository.
 
 ## What you need
 
@@ -25,6 +25,8 @@ The runs:
 - library_maintainers: a team of 12 agents (10 of them appear in the record) prepares a release of a real open source library (dateutil) from its real issue backlog. 42 questions, about 1M tokens.
 - debate_panel: 6 agents argue real disputed physics questions for a workshop from real research papers, one session after another. 50 questions, about 1.8M tokens.
 - textbook_team: a team of 11 agents in three levels (8 of them appear in the record) writes a question bank with worked solutions from real open textbooks. 50 questions, about 1.1M tokens.
+- help_desk: 6 agents answer real usage questions about the jq command line tool, taken from its public GitHub issues, using jq's real manual. 50 questions, about 1.2M tokens.
+- executive_assistants: 5 assistants run a research director's office from his real mailbox replayed day by day (the public Enron email archive), with his own mails arriving as interruptions. 50 questions, about 1.2M tokens.
 
 ## What you return
 
@@ -52,4 +54,4 @@ example_bm25.py is a small keyword search method that writes a valid submission:
 
     python example_bm25.py runs/debate_panel my_submission.json
 
-It scores 0.31 to 0.35 on these runs. Replace its ranking with your own method and keep the output format.
+It scores roughly 0.3 to 0.4 on these runs. Replace its ranking with your own method and keep the output format.
