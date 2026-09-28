@@ -1,0 +1,50 @@
+{"qid": "a01", "question": "The judge keeps mentioning format guidance from the workshop organisers. Did that mail ever arrive as a file, where is it now, and what does it require of our statement?", "qtype": "location", "asker": "skeptic_b"}
+{"qid": "a02", "question": "Where can I read the new gigaparsec void preprint the judge assigned me, and where did its arrival notice get filed?", "qtype": "location", "asker": "late_a"}
+{"qid": "a03", "question": "A second new preprint on spectral distortions came in. Where is its text, and where did the notification end up once the judge handled it?", "qtype": "location", "asker": "skeptic_b"}
+{"qid": "a04", "question": "Where is the note in which skeptic_b listed the constraints my void model fails, now that my inbox folder has been cleared?", "qtype": "location", "asker": "late_a"}
+{"qid": "a05", "question": "Where is early_a's reply stating the four numbers I asked every proponent for?", "qtype": "location", "asker": "skeptic_b"}
+{"qid": "a06", "question": "skeptic_a has never posted. Did he write down his own reading of the Cepheid and look back time papers anywhere I can check?", "qtype": "location", "asker": "judge"}
+{"qid": "a07", "question": "skeptic_b says he told late_a that the Gpc void preprint and her LTB void paper are really one proposal. Which note carries that argument?", "qtype": "location", "asker": "judge"}
+{"qid": "a08", "question": "Where did early_a keep his table by table numbers for the EDE after DESI paper, including the fit he says is free of the distance ladder?", "qtype": "location", "asker": "judge"}
+{"qid": "a09", "question": "early_a sent me proposed consensus rows in the organisers' format. Where is that note now, and did he keep the same wording for himself?", "qtype": "location", "asker": "judge"}
+{"qid": "a10", "question": "Who first put forward the DESI sound horizon number as a formal pass test for every resolution, and who objected that it only cuts one way?", "qtype": "who", "asker": "judge"}
+{"qid": "a11", "question": "One transcript heading uses a round number that does not exist. Who wrote it, and how did I decide to handle it?", "qtype": "who", "asker": "judge"}
+{"qid": "a12", "question": "Which panelists still owed a Round 1 statement at shift 22, and did either of them ever post?", "qtype": "who", "asker": "judge"}
+{"qid": "a13", "question": "The board status file says only two panelists have spoken. Who noticed it had gone stale, and when was it brought up to date?", "qtype": "who", "asker": "judge"}
+{"qid": "a14", "question": "What is early_a's best H0 from a fit that uses no distance ladder, and why does skeptic_b say it is the most exposed number?", "qtype": "finding", "asker": "judge"}
+{"qid": "a15", "question": "Before ruling on the spectral distortion paper I need its numbers: what does the forecast do to EDE's H0 and f_EDE, and did skeptic_b quote the n_s error correctly?", "qtype": "finding", "asker": "judge"}
+{"qid": "a16", "question": "How far does the Gpc void benchmark actually raise the local expansion rate, what share of the gap is that, and does the paper show a weaker case too?", "qtype": "finding", "asker": "judge"}
+{"qid": "a17", "question": "What H0 and sound horizon do the self interacting neutrino fits in 2109.03263 give compared with \u039bCDM, and what rules out the flavour universal version?", "qtype": "finding", "asker": "methods"}
+{"qid": "a18", "question": "What became of my proposal that DESI's r_s h of 101.8 Mpc be a pass or fail gate for every resolution?", "qtype": "decision", "asker": "skeptic_b"}
+{"qid": "a19", "question": "What was decided about the objection to my \u0394BIC = \u221273.28 void result?", "qtype": "decision", "asker": "late_a"}
+{"qid": "a20", "question": "Did the judge treat early_a and me as opposed camps, and what verb did we both accept for axion EDE?", "qtype": "decision", "asker": "skeptic_b"}
+{"qid": "a21", "question": "My notebook skips the early rulings. What did I correct in early_a's argument about self interacting neutrinos?", "qtype": "decision", "asker": "judge"}
+{"qid": "a22", "question": "How is the panel going to count the spectral distortion paper against EDE?", "qtype": "decision", "asker": "skeptic_b"}
+{"qid": "a23", "question": "Did my statistics questions from shift 6 ever actually reach methods, or were they lost?", "qtype": "history", "asker": "skeptic_b"}
+{"qid": "a24", "question": "I have been citing an 8.2\u03c3 Cepheid figure from the late universe review against our own side. What does it really measure?", "qtype": "history", "asker": "skeptic_b"}
+{"qid": "a25", "question": "Does the look back time paper really recover the SH0ES value at z = 0.15 from Planck's own cosmology, or is something off in its formula?", "qtype": "history", "asker": "judge"}
+{"qid": "b01", "question": "Now that the lithium session is running, where did the Hubble session's signed consensus statement and its submission marker end up?", "qtype": "location", "asker": "late_a"}
+{"qid": "b02", "question": "The old unsigned Hubble draft that was left in the consensus folder: where did I put it, and where is the note explaining why nobody should cite it?", "qtype": "location", "asker": "judge"}
+{"qid": "b03", "question": "Which note on my board asks me to restate my void model BIC numbers from the table in 2504.13380?", "qtype": "location", "asker": "late_a"}
+{"qid": "b04", "question": "Where did I save the scripts from my earlier shift that checked the look back time formula and the sound horizon times h numbers?", "qtype": "location", "asker": "skeptic_a"}
+{"qid": "b05", "question": "The workshop's final call mail is no longer in the inbox. Where is it now?", "qtype": "location", "asker": "early_a"}
+{"qid": "b06", "question": "Where did my previous shift write its record claiming round 1 was closed while skeptic_a and methods were still silent?", "qtype": "location", "asker": "judge"}
+{"qid": "b07", "question": "Two more lithium papers were announced after the judge's shift 40 assignments. Where are their notices and where is the text of the varying constants one?", "qtype": "location", "asker": "methods"}
+{"qid": "b08", "question": "Did early_a send me a written reply to my shift 40 note about the non ideal plasma paper, and where is it?", "qtype": "location", "asker": "judge"}
+{"qid": "b09", "question": "Where is early_a's note complaining that the certified Hubble statement misreported whether he had answered my rulings?", "qtype": "location", "asker": "judge"}
+{"qid": "b10", "question": "Who certified and submitted the Hubble session statement, in which shift, and how complete was the round when it went out?", "qtype": "who", "asker": "skeptic_b"}
+{"qid": "b11", "question": "In the lithium session, which paper is each panelist now supposed to argue after the two new preprints landed?", "qtype": "state", "asker": "late_a"}
+{"qid": "b12", "question": "Who worked out what the 8.2 sigma figure quoted from the 2606.12980 review actually refers to, and did the judge accept it?", "qtype": "who", "asker": "skeptic_b"}
+{"qid": "b13", "question": "Who discovered that the void model BIC values in the record came from the wrong column of the 2504.13380 table, and who had carried those numbers and then corrected themselves?", "qtype": "who", "asker": "judge"}
+{"qid": "b14", "question": "How large is the lithium 7 discrepancy in the varying alpha paper's own abundance table, and how do the other light elements compare?", "qtype": "finding", "asker": "methods"}
+{"qid": "b15", "question": "What baryon to photon ratio does the non ideal plasma BBN paper need compared with Planck, and does its own photon energy density formula behave as the text says?", "qtype": "finding", "asker": "late_a"}
+{"qid": "b16", "question": "What tension significances did methods compute when the SH0ES and CMB values are stated as explicit pairs, and what does the 7 sigma headline actually compare?", "qtype": "finding", "asker": "early_a"}
+{"qid": "b17", "question": "What did the judge find about the dark drag horizon paper's ladder free H0 and its spectral index shift, and does the same pattern hold for axion EDE?", "qtype": "finding", "asker": "early_a"}
+{"qid": "b18", "question": "How did the judge rule on the sign of the +7.3 AIC difference between EDE and ADE in 2310.16800, and who had challenged my reading of it?", "qtype": "decision", "asker": "methods"}
+{"qid": "b19", "question": "What did the judge rule about the depletion paper 2106.13989 sharing an author with the varying alpha paper I am defending?", "qtype": "decision", "asker": "early_a"}
+{"qid": "b20", "question": "In reply to my shift 40 note, what did early_a concede about lithium and how did he narrow his defence of 2012.10505?", "qtype": "decision", "asker": "judge"}
+{"qid": "b21", "question": "What was ruled about 2608.28260's claim that mid time physics is overwhelmingly preferred, and did methods find its table arithmetic sound?", "qtype": "decision", "asker": "late_a"}
+{"qid": "b22", "question": "What did methods rule on whether a model preference that flips sign when one dataset is added can be reported, and what did I do with my 2507.23355 argument?", "qtype": "decision", "asker": "early_a"}
+{"qid": "b23", "question": "What was wrong with skeptic_a's conversion of the Hubble gap into a first rung zero point, and what did the correction do to his argument?", "qtype": "history", "asker": "judge"}
+{"qid": "b24", "question": "Why is there a superseded Hubble draft in the session 1 archive: what went wrong with the consensus folder after submission and how was it fixed?", "qtype": "history", "asker": "methods"}
+{"qid": "b25", "question": "What did the certified Hubble statement get wrong about early_a's answers to Rulings 8, 11 and 12, and how was it handled?", "qtype": "history", "asker": "judge"}

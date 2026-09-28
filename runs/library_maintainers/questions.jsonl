@@ -1,0 +1,42 @@
+{"qid": "q01", "question": "The zoneinfo rebuild kept stalling on the old download location. What source did dev_tz switch the metadata to, and in which files is it recorded?", "qtype": "location"}
+{"qid": "q02", "question": "I need to regenerate the bundled timezone tarball for a newer tz database release. What exact steps did the team use last time?", "qtype": "finding"}
+{"qid": "q03", "question": "Where does the CI owner keep its test run writeups, and which file indexes them?", "qtype": "location"}
+{"qid": "q04", "question": "Before the collection fixes were merged, how did developers get the parser and tz tests to run at all under the strict warnings config?", "qtype": "failure_fix"}
+{"qid": "q05", "question": "Where is the writeup of how to make rrulebase and the icalendar vtimezone objects picklable without dropping their cache?", "qtype": "location"}
+{"qid": "q06", "question": "How can I check that the bundled tz data now reflects Mexico dropping daylight saving time?", "qtype": "finding"}
+{"qid": "q07", "question": "Where is the regression test for the change to the setup.py test command?", "qtype": "location"}
+{"qid": "q08", "question": "How did rm integrate approved branches into main, so I can repeat it for the next ones?", "qtype": "finding"}
+{"qid": "q09", "question": "Where did rm write up the relativedelta crash for the core developer, and what branch did it ask for?", "qtype": "location"}
+{"qid": "q10", "question": "Where is our answer to the downstream packager who wrote about their freeze, and what did it promise?", "qtype": "location"}
+{"qid": "q11", "question": "The packager who wrote in is waiting on the setuptools test command fix. Has it actually landed on main?", "qtype": "state"}
+{"qid": "q12", "question": "What does the full test suite on main look like right now?", "qtype": "state"}
+{"qid": "q14", "question": "What's the status of PR #1158, the fix for comparing a relativedelta against None?", "qtype": "state"}
+{"qid": "q16", "question": "Has 2.9.0 shipped, and has the steering group been told?", "qtype": "state"}
+{"qid": "q17", "question": "Was the new report about parsing Italian, French and Spanish dates ever answered on the tracker?", "qtype": "state"}
+{"qid": "q18", "question": "The CI report says zoneinfo tests fail on main because the data tarball is missing. Is that still the case?", "qtype": "state"}
+{"qid": "q19", "question": "Why were the zoneinfo tests failing on a clean checkout of main before the tz data update?", "qtype": "finding"}
+{"qid": "q20", "question": "What did we conclude about the recurring all day event that returned nothing from between() in New York last November?", "qtype": "finding"}
+{"qid": "q21", "question": "Why didn't we take the PR adding hashing and equality to rrule and rruleset?", "qtype": "finding"}
+{"qid": "q22", "question": "What exactly stopped pytest from even collecting on the Python 3.14 venv?", "qtype": "finding"}
+{"qid": "q23", "question": "Why did unpickling a datetime with tzutc give a fresh tz object instead of the shared one, and why didn't the existing tests catch it?", "qtype": "finding"}
+{"qid": "q24", "question": "What rule decides whether a year really has an ISO week 53, and how does the parser check it now?", "qtype": "finding"}
+{"qid": "q25", "question": "What actually happens when you compare a relativedelta to None, on older Pythons and on the ones we test with?", "qtype": "finding"}
+{"qid": "q26", "question": "How big was the tracker backlog triage went through, and how much did it close?", "qtype": "finding"}
+{"qid": "q27", "question": "A downstream distro packager wrote in after kickoff. What did they ask for, and by when?", "qtype": "decision"}
+{"qid": "q28", "question": "How did rm change the plan after the packager's freeze deadline mail?", "qtype": "decision"}
+{"qid": "q29", "question": "What did the steering group actually require for this release, as opposed to what we chose ourselves?", "qtype": "decision"}
+{"qid": "q30", "question": "Three tracker items carried the release-blocker label. What did we decide about them?", "qtype": "decision"}
+{"qid": "q31", "question": "A batch of new tracker threads came in mid run, including a PR to drop Python 2. What did rm decide to do with them?", "qtype": "decision"}
+{"qid": "q32", "question": "What's the team convention for how fixes get branched and who reviews which areas?", "qtype": "decision"}
+{"qid": "q33", "question": "Why does the workflow change for the new Python version trigger on both main and master?", "qtype": "decision"}
+{"qid": "q34", "question": "Who changed the isoparser test around line 123, and why?", "qtype": "history"}
+{"qid": "q35", "question": "Who touched the GitHub workflow files during the run, and what did they change?", "qtype": "history"}
+{"qid": "q36", "question": "Who changed the project's license metadata, and to what?", "qtype": "history"}
+{"qid": "q37", "question": "Who closed the old duplicate parser reports on the tracker, and how were they marked?", "qtype": "history"}
+{"qid": "q38", "question": "The first merges into main came out with the wrong author. What happened and how was it repaired?", "qtype": "failure_fix"}
+{"qid": "q39", "question": "One of the new rrule tests failed the first time dev_rrule ran it. What was wrong and how was it fixed?", "qtype": "failure_fix"}
+{"qid": "q40", "question": "Testing the setup.py change kept failing inside the repo venv. What was the obstacle and the workaround?", "qtype": "failure_fix"}
+{"qid": "q41", "question": "When reviewing the tzical branch, the diff against main showed rrule changes the branch never made. Why, and what did the reviewer do?", "qtype": "failure_fix"}
+{"qid": "q42", "question": "Which tz database release is bundled now? Older notes mention a different one.", "qtype": "superseded"}
+{"qid": "q43", "question": "Is the rrule dunder methods PR still being evaluated for this release?", "qtype": "superseded"}
+{"qid": "q44", "question": "What is still left before rm can write the release notes and tell the steering group?", "qtype": "open"}

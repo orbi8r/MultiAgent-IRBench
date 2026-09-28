@@ -1,0 +1,50 @@
+{"qid": "a01", "question": "Now that the texts are in, where did the editor write down which sections exist and what each section's bank folder is called?", "qtype": "location", "asker": "author_b1"}
+{"qid": "a02", "question": "Is there a file that lists the textbook's own end of section exercises word for word so I can diff new items against it?", "qtype": "location", "asker": "reviewer_b"}
+{"qid": "a03", "question": "Which file holds the text of the new third section, and where is the bank folder set up for it?", "qtype": "location", "asker": "author_b1"}
+{"qid": "a04", "question": "Where did I file the formal note to the Editorial Director about the chapter texts not arriving?", "qtype": "location", "asker": "editor"}
+{"qid": "a05", "question": "Which quantitative chapter brief from manager_b is the live one, and where did the withdrawn earlier version end up?", "qtype": "location", "asker": "author_b2"}
+{"qid": "a06", "question": "Where is author_b1's write up of the single step items it delivered for manager_b?", "qtype": "location", "asker": "author_b2"}
+{"qid": "a07", "question": "Has reviewer_b filed the review pass report the sign off gate needs, and where?", "qtype": "location", "asker": "editor"}
+{"qid": "a08", "question": "Where are reviewer_b's notes to me confirming the review standards and reporting its audit of section 1.3?", "qtype": "location", "asker": "editor"}
+{"qid": "a09", "question": "Where do the two managers keep their coverage trackers for this chapter?", "qtype": "location", "asker": "editor"}
+{"qid": "a10", "question": "Who wrote the computational items that are now in the 1.2 bank file?", "qtype": "who", "asker": "author_b2"}
+{"qid": "a11", "question": "How many section texts of chapter 1 have actually been delivered so far, and which?", "qtype": "state", "asker": "editor"}
+{"qid": "a12", "question": "Has anyone written a single conceptual question yet, and can reviewer_a file its pass report?", "qtype": "state", "asker": "editor"}
+{"qid": "a13", "question": "Which of the two reviewers have sent me their written confirmation of the review standards, and when?", "qtype": "who", "asker": "editor"}
+{"qid": "a14", "question": "What did my own spot check of author_b1's eleven computational items turn up?", "qtype": "finding", "asker": "editor"}
+{"qid": "a15", "question": "What is wrong with the speed of light and Sun to Earth figures printed in the teaching aside of section 1.2?", "qtype": "finding", "asker": "editor"}
+{"qid": "a16", "question": "For the 1.3 drawing scale items, what did I state the room lengths come to, and what are the right values?", "qtype": "finding", "asker": "editor"}
+{"qid": "a17", "question": "What did I publish for the distance to Andromeda in metres, and what is the correct value?", "qtype": "finding", "asker": "editor"}
+{"qid": "a18", "question": "What did the editor rule about my authors writing items before any section text exists?", "qtype": "decision", "asker": "manager_b"}
+{"qid": "a19", "question": "What question numbering did the editor fix for the whole bank, and can numbers change later?", "qtype": "decision", "asker": "manager_b"}
+{"qid": "a20", "question": "How many items per section did the editor ask for once the texts arrived, and does that differ for 1.3?", "qtype": "decision", "asker": "author_b2"}
+{"qid": "a21", "question": "What labels was I told to put on every item instead of guessed section numbers, and whose idea was it?", "qtype": "decision", "asker": "author_b2"}
+{"qid": "a22", "question": "What verdict did reviewer_b give on author_b1's four 1.3 items?", "qtype": "decision", "asker": "editor"}
+{"qid": "a23", "question": "I have seen both 24 and 28 as the per section total; which is right and where did the other come from?", "qtype": "history", "asker": "author_b2"}
+{"qid": "a24", "question": "What was wrong with the first version of Q1.2-CALC-04 and how was it rebuilt?", "qtype": "history", "asker": "editor"}
+{"qid": "a25", "question": "Why were the early section lists from the managers thrown out, and did the real chapter match any of them?", "qtype": "history", "asker": "author_b2"}
+{"qid": "b01", "question": "Which folder is the official home for section 1.4 questions and solutions, and has anyone from the advanced side written into it?", "qtype": "location", "asker": "author_b3"}
+{"qid": "b02", "question": "Which author summaries about the quantitative bucket reached my summaries folder after the section 1.4 dispatch, and under what file names?", "qtype": "location", "asker": "manager_b"}
+{"qid": "b03", "question": "Where is the list of sec04's own published exercises that no 1.4 item may reproduce?", "qtype": "location", "asker": "author_b2"}
+{"qid": "b04", "question": "Which note told me an author had set up the section 1.4 folder under a slug of their own choosing?", "qtype": "location", "asker": "editor"}
+{"qid": "b05", "question": "Where did the advanced calculations author raise the missing 1.4 slug and ask me to confirm its zero items for 1.1 and 1.3?", "qtype": "location", "asker": "editor"}
+{"qid": "b06", "question": "Where is the editor's note demanding that manager_a account for the conceptual side having produced nothing?", "qtype": "location", "asker": "reviewer_a"}
+{"qid": "b07", "question": "Where is the editor's section 1.4 dispatch, and did the quantitative authors get their own copies?", "qtype": "location", "asker": "manager_b"}
+{"qid": "b08", "question": "The 1.2 item count went up; where were the two new advanced items for section 1.2 written?", "qtype": "location", "asker": "editor"}
+{"qid": "b09", "question": "Where do I keep my own running record of which sections I decided to leave without advanced items?", "qtype": "location", "asker": "author_b3"}
+{"qid": "b10", "question": "Is there any multiple choice, short answer or qualitative item anywhere in the bank yet, or even a draft of one?", "qtype": "state", "asker": "reviewer_a"}
+{"qid": "b11", "question": "Who made the section 1.4 folder under a short name, and who renamed it to the published slug?", "qtype": "who", "asker": "editor"}
+{"qid": "b12", "question": "What does section 1.4 actually hold now, and who wrote it?", "qtype": "state", "asker": "editor"}
+{"qid": "b13", "question": "Has the conceptual reviewer finally given the editor the confirmation it kept asking for about memory sourced items, and does the status board reflect that?", "qtype": "state", "asker": "reviewer_a"}
+{"qid": "b14", "question": "What does the section's 1.080 million km/h speed of light really equal in m/s, and what should the km/h figure be?", "qtype": "finding", "asker": "editor"}
+{"qid": "b15", "question": "Using 3.00 \u00d7 10\u2078 m/s, how far does light travel in 8 minutes, and how long would it need for the printed 150 billion km?", "qtype": "finding", "asker": "author_b3"}
+{"qid": "b17", "question": "In author_b2's replacement item on five repeated readings, how big is the spread of the readings, and what is concluded about the second student's set?", "qtype": "finding", "asker": "reviewer_a"}
+{"qid": "b18", "question": "What two results does the section's own worked subtraction about rounding too early give, the one author_b3's first 1.4 advanced item is built on?", "qtype": "finding", "asker": "editor"}
+{"qid": "b19", "question": "How did the editor split section 1.4's computational items across the three quantitative authors, and what were the advanced ones meant to cover?", "qtype": "decision", "asker": "author_b3"}
+{"qid": "b20", "question": "What did the editor rule about approving chapter 1 while the conceptual side has nothing, and was the 18 per section target lowered?", "qtype": "decision", "asker": "reviewer_a"}
+{"qid": "b21", "question": "What did author_b3 decide for advanced items in sections 1.1 and 1.3, and whose rulings was that based on?", "qtype": "decision", "asker": "manager_b"}
+{"qid": "b22", "question": "Did the editor ask for conceptual items for section 1.4 as well, and which sections come first?", "qtype": "decision", "asker": "reviewer_a"}
+{"qid": "b23", "question": "How many conceptual items will the conceptual reviewer accept for the short introduction section, and will it write items for the idle authors?", "qtype": "decision", "asker": "reviewer_a"}
+{"qid": "b24", "question": "Why was the first version of Q1.4-CALC-03 thrown out, and what replaced it?", "qtype": "history", "asker": "reviewer_a"}
+{"qid": "b25", "question": "Is the 300,000,000 m/s versus 186,000 mi/s pair in section 1.3 a real inconsistency worth an advanced item?", "qtype": "history", "asker": "author_b3"}
+{"qid": "b26", "question": "Was the earlier claim that light covers the section's Sun to Earth distance in 500 s right, and who corrected it?", "qtype": "history", "asker": "manager_b"}
