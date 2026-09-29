@@ -1,0 +1,50 @@
+{"qid": "a01", "question": "Which log files and line numbers hold the midplane switch sparing entries and the management database restart that the team cited for the two incidents?", "qtype": "location", "asker": "oncall_network"}
+{"qid": "a02", "question": "Where did the finished first incident end up, its postmortem and its done marker?", "qtype": "location", "asker": "commander"}
+{"qid": "a03", "question": "Which runbook did we rely on for what the control stream read failure means and for the step that says when to isolate a node?", "qtype": "location", "asker": "oncall_compute"}
+{"qid": "a04", "question": "Where is the compute engineer's write up of the per node card core dump pattern for the second incident?", "qtype": "location", "asker": "commander"}
+{"qid": "a05", "question": "Where did the storage engineer first write down that the storage layer had nothing to do with the first incident?", "qtype": "location", "asker": "commander"}
+{"qid": "a06", "question": "Where are the network engineer's shift 6 scope results for the first incident written up?", "qtype": "location", "asker": "commander"}
+{"qid": "a07", "question": "Where did the previous commander shift leave its handover and working notes when the second incident was opened?", "qtype": "location", "asker": "commander"}
+{"qid": "a08", "question": "Which inbox file announced the second incident and which arrival log carries its raw events?", "qtype": "location", "asker": "oncall_compute"}
+{"qid": "a09", "question": "Where is the compute engineer's first analysis of the second incident, the one that tied it to the control server failure?", "qtype": "location", "asker": "commander"}
+{"qid": "a10", "question": "Who first counted how many distinct I/O nodes the first incident hit, and who pushed the scale correction to me?", "qtype": "who", "asker": "commander"}
+{"qid": "a11", "question": "Who changed the status board to show both incidents as one cascading incident, and who kept it that way?", "qtype": "who", "asker": "commander"}
+{"qid": "a12", "question": "Who kept asking us to check the daemon on the control server, how often, and what did our own notes say about it?", "qtype": "who", "asker": "oncall_compute"}
+{"qid": "a13", "question": "Who did I hand the recurring switch sparing on rack 27 to for the second incident, and did that rack turn out to be in the first burst?", "qtype": "who", "asker": "commander"}
+{"qid": "a14", "question": "How big was the first incident in its arrival log: events, distinct I/O nodes and node cards?", "qtype": "finding", "asker": "oncall_platform"}
+{"qid": "a15", "question": "What hardware errors showed up on the compute side in the hours before the first incident, with counts?", "qtype": "finding", "asker": "commander"}
+{"qid": "a16", "question": "When exactly was the management database restart and the switch sparing relative to the first incident, and why did storage flag the restart?", "qtype": "finding", "asker": "oncall_compute"}
+{"qid": "a17", "question": "How many core dumps did the second incident produce, how did they split between the two bursts, and across how many node cards?", "qtype": "finding", "asker": "oncall_triage"}
+{"qid": "a18", "question": "On what basis was the first incident closed, and what was left open when it was?", "qtype": "decision", "asker": "oncall_platform"}
+{"qid": "a19", "question": "When the second incident came in, did the commander treat it as the tail of the first one, and what severity did it get?", "qtype": "decision", "asker": "oncall_network"}
+{"qid": "a20", "question": "When platform turned up the database restart before the first incident, did we treat it as the cause, and did that view hold?", "qtype": "decision", "asker": "commander"}
+{"qid": "a21", "question": "Was the compute engineer's idea that the second incident cascaded from the control server failure accepted?", "qtype": "decision", "asker": "commander"}
+{"qid": "a22", "question": "What alerting change came back when I asked whether the monitoring threshold was wrong for mass events?", "qtype": "decision", "asker": "commander"}
+{"qid": "a23", "question": "Early on, what was the control server address mistaken for, and who set that straight?", "qtype": "history", "asker": "commander"}
+{"qid": "a24", "question": "How did the estimate of affected compute nodes change over time, and is it still considered valid?", "qtype": "history", "asker": "oncall_triage"}
+{"qid": "a25", "question": "Did the first incident really end after the first minute, as the early notes said?", "qtype": "history", "asker": "commander"}
+{"qid": "b01", "question": "Where did the network engineer put the write up showing the incident 001 control stream failures were a server side walk rather than a network problem, and where is the full derivation?", "qtype": "location", "asker": "commander"}
+{"qid": "b02", "question": "Where does the triage engineer's section 8 compute sweep analysis live now that incident 002 is archived, and was it folded into the main postmortem?", "qtype": "location", "asker": "reviewer"}
+{"qid": "b03", "question": "Where did triage tell me that an entry in the postmortem timeline was taken from a log file that does not cover the incident window?", "qtype": "location", "asker": "commander"}
+{"qid": "b04", "question": "Where is the triage note telling compute that the rack and node counts in the shift 14 and 15 workload notes were inflated?", "qtype": "location", "asker": "oncall_compute"}
+{"qid": "b05", "question": "Where is the storage engineer's impact assessment for the second incident, the one saying storage was off the critical path?", "qtype": "location", "asker": "commander"}
+{"qid": "b06", "question": "Where did the platform engineer report what platform events (power, firmware, scheduler) were found around the incident 002 window?", "qtype": "location", "asker": "commander"}
+{"qid": "b07", "question": "Where is the note network sent me flagging that postmortem section 4 contradicted section 7?", "qtype": "location", "asker": "reviewer"}
+{"qid": "b08", "question": "Where did my note to triage comparing bit sparing cards with the swept cards end up?", "qtype": "location", "asker": "oncall_network"}
+{"qid": "b09", "question": "Where is the fixed chip order that every affected node card was stepped through written down for compute?", "qtype": "location", "asker": "oncall_compute"}
+{"qid": "b10", "question": "Who wrote the shift 39 handover that is in handover/ now, and did anyone else write one under that name?", "qtype": "who", "asker": "reviewer"}
+{"qid": "b11", "question": "Whose handover is handover/shift55.md?", "qtype": "who", "asker": "oncall_compute"}
+{"qid": "b12", "question": "Did anyone fix the incident 002 RESOLVED marker's wording that called the core dumping chips compute nodes?", "qtype": "state", "asker": "oncall_triage"}
+{"qid": "b13", "question": "Who actually checked the control server host for the ciodb restart, and was anything beyond the MMCS log line confirmed?", "qtype": "who", "asker": "oncall_triage"}
+{"qid": "b14", "question": "How many deduplicated control stream failures and distinct I/O nodes were counted for incident 001, and what port offsets separated the sweeps?", "qtype": "finding", "asker": "reviewer"}
+{"qid": "b15", "question": "How long did each core dump burst of incident 002 last and how long was the quiet gap between them?", "qtype": "finding", "asker": "oncall_triage"}
+{"qid": "b16", "question": "What is the verified blast radius of incident 002 in racks and chips, out of how many possible chips?", "qtype": "finding", "asker": "oncall_compute"}
+{"qid": "b17", "question": "What did the storage check count by event type in the incident 002 log, and were there any storage faults?", "qtype": "finding", "asker": "commander"}
+{"qid": "b18", "question": "When the commander closed incident 002, what root cause did it record?", "qtype": "decision", "asker": "oncall_network"}
+{"qid": "b19", "question": "Did the team keep the R27 midplane switch bit sparing as the cause of the second incident?", "qtype": "decision", "asker": "oncall_platform"}
+{"qid": "b20", "question": "Network says its two corrections to my incident 002 analysis still stand. Which one did I accept and which did I reject, and why?", "qtype": "decision", "asker": "oncall_triage"}
+{"qid": "b21", "question": "What did the reviewer conclude about the corrected postmortem against the problems network raised?", "qtype": "decision", "asker": "commander"}
+{"qid": "b22", "question": "Should incident 002 be handled as its own P1 or as a knock on effect of incident 001?", "qtype": "decision", "asker": "commander"}
+{"qid": "b23", "question": "Why did the early workload notes say incident 002 hit 16 racks, and what is the corrected figure?", "qtype": "history", "asker": "oncall_compute"}
+{"qid": "b24", "question": "What was wrong with the postmortem's claim that HDFS, Hadoop and OpenStack logs showed nothing during the incident, and was it fixed?", "qtype": "history", "asker": "oncall_storage"}
+{"qid": "b25", "question": "Was the claim that burst 1 swept 29 cards in a quarter of a second ever corrected in the archived postmortem?", "qtype": "history", "asker": "oncall_compute"}

@@ -4,7 +4,7 @@ A test for search methods that look things up in the memory of an AI agent team.
 
 Each run is the full record of a team of AI agents working for a long time on a real job, plus 42 to 50 questions that an agent on that team would ask about the team's past ("where did we file the report on X", "what did the lead decide about Y", "which number did the paper give for Z"). Your method reads the record and, for each question, hands back the pieces of the record it would give to that agent. The scorer tells you how good those pieces are.
 
-Six runs are here now. Four more are being made and will be added to this repository.
+Seven runs are here now. Three more are being made and will be added to this repository.
 
 ## What you need
 
@@ -28,6 +28,7 @@ The runs:
 - help_desk: 6 agents answer real usage questions about the jq command line tool, taken from its public GitHub issues, using jq's real manual. 50 questions, about 1.2M tokens.
 - executive_assistants: 5 assistants run a research director's office from his real mailbox replayed day by day (the public Enron email archive), with his own mails arriving as interruptions. 50 questions, about 1.2M tokens.
 - due_diligence: 5 agents run a due diligence line over real SEC filings (Apple, then Microsoft): two extract figures and contract terms, one checks them against the filings, one summarises and a partner writes and signs the memo. 50 questions, about 1.1M tokens.
+- on_call: 7 engineers handle incidents from real system logs (the public LogHub logs of a BlueGene/L supercomputer, HDFS, Hadoop and OpenStack): a commander, a triage engineer, four specialists and a postmortem reviewer. 50 questions, about 1.4M tokens.
 
 ## What you return
 
@@ -55,4 +56,4 @@ example_bm25.py is a small keyword search method that writes a valid submission:
 
     python example_bm25.py runs/debate_panel my_submission.json
 
-It scores roughly 0.3 to 0.4 on these runs. Replace its ranking with your own method and keep the output format.
+It scores roughly 0.25 to 0.4 on these runs. Replace its ranking with your own method and keep the output format.
