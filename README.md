@@ -1,59 +1,94 @@
-# MultiAgentBench
+# MultiAgent-IRBench
 
-A test for search methods that look things up in the memory of an AI agent team.
+Test your search method on the memory of an AI agent team.
 
-Each run is the full record of a team of AI agents working for a long time on a real job, plus 42 to 50 questions that an agent on that team would ask about the team's past ("where did we file the report on X", "what did the lead decide about Y", "which number did the paper give for Z"). Your method reads the record and, for each question, hands back the pieces of the record it would give to that agent. The scorer tells you how good those pieces are.
+![How it works](docs/how_it_works.svg)
 
-Seven runs are here now. Three more are being made and will be added to this repository.
+A team of AI agents works on a real job for hours, and every step they take is saved. Later one of them asks "where did we put X?". Your method searches the saved record and hands back the pieces that answer it. `score.py` grades those pieces.
 
-## What you need
+## Try it (1 minute)
 
-Python 3.8 or newer, on any operating system. No packages to install.
+You need Python 3.8 or newer. Nothing to install. On Windows type `python`; on Mac or Linux type `python3`.
+
+```
+git clone https://github.com/orbi8r/MultiAgent-IRBench
+cd MultiAgent-IRBench
+python example_bm25.py runs/on_call my_submission.json
+python score.py runs/on_call my_submission.json > report.json
+```
+
+The last line printed is your result:
+
+```
+score 0.258 out of 1 | +0.160 against a method that ignores the question | every part found for 28% of 50 questions
+```
+
+## Plug in your own method
+
+1. Open `my_method.py`.
+2. Replace the inside of `rank(question, blocks)` with your search. Return ids, best first.
+3. Run and score it:
+   ```
+   python my_method.py runs/on_call my_submission.json
+   python score.py runs/on_call my_submission.json > report.json
+   ```
+4. Do the same for every folder in `runs/`.
+
+Any language or tool works, as long as it writes the same JSON file.
 
 ## What is in a run
 
-Each folder in runs/ is one run:
+Each folder in `runs/` is one team.
 
-- events.jsonl: the record, one event per line. Every event has an id, the agent that produced it, its kind (prompt, model, tool_call or tool_result), a time, a shift number, a conversation id, its text and its length in tokens (counted with the cl100k_base tokenizer). This is what your method searches.
-- blocks.jsonl: the same record cut into small pieces of up to 8 lines. Every block has an id like "n000123/9f3c2a1b7d4e6f80", the event it belongs to, its text and its length in tokens. You may return whole events or single blocks, whichever your method prefers. Some very short events have no block; return those as whole events.
-- questions.jsonl: the questions, one per line, with a qid, the question text, a type (location, state, finding, decision, history, who, failure_fix, superseded or open) and, where the question speaks as "I" or "my", the asker: the agent in the record who is asking.
-- answer_key.json: the answer key the scorer uses. Your method must not read it.
-- empty_submission.json: the shape of a submission, with every question and an empty list.
+| File | What it is | Use it |
+|---|---|---|
+| `questions.jsonl` | the questions | yes |
+| `blocks.jsonl` | the record cut into small pieces, up to 8 lines each (usually about 60 tokens) | yes, search these |
+| `events.jsonl` | the record as whole steps, in time order (a few tokens up to about 6,600) | for more context |
+| `answer_key.json` | the answers | never, only the scorer reads it |
+| `empty_submission.json` | every question with an empty list | to see the output shape |
 
-The runs:
+One line of each:
 
-- library_maintainers: a team of 12 agents (10 of them appear in the record) prepares a release of a real open source library (dateutil) from its real issue backlog. 42 questions, about 1M tokens.
-- debate_panel: 6 agents argue real disputed physics questions for a workshop from real research papers, one session after another. 50 questions, about 1.8M tokens.
-- textbook_team: a team of 11 agents in three levels (8 of them appear in the record) writes a question bank with worked solutions from real open textbooks. 50 questions, about 1.1M tokens.
-- help_desk: 6 agents answer real usage questions about the jq command line tool, taken from its public GitHub issues, using jq's real manual. 50 questions, about 1.2M tokens.
-- executive_assistants: 5 assistants run a research director's office from his real mailbox replayed day by day (the public Enron email archive), with his own mails arriving as interruptions. 50 questions, about 1.2M tokens.
-- due_diligence: 5 agents run a due diligence line over real SEC filings (Apple, then Microsoft): two extract figures and contract terms, one checks them against the filings, one summarises and a partner writes and signs the memo. 50 questions, about 1.1M tokens.
-- on_call: 7 engineers handle incidents from real system logs (the public LogHub logs of a BlueGene/L supercomputer, HDFS, Hadoop and OpenStack): a commander, a triage engineer, four specialists and a postmortem reviewer. 50 questions, about 1.4M tokens.
+```
+questions.jsonl  {"qid": "a02", "question": "Where did the finished first incident end up, its postmortem and its done marker?", "qtype": "location", "asker": "commander"}
+blocks.jsonl     {"id": "n003462/8eb830d98519e34f", "event": "n003462", "tokens": 27, "text": "/workspace/incidents/done/02/POSTMORTEM.md\n/workspace/incidents/done/01/POSTMORTEM.md"}
+events.jsonl     {"id": "n000163", "agent": "oncall_triage", "kind": "model", "ts": 1790638165.197, "shift": 2, "conv": "c4623438...", "text": "Now I have a clear picture. Let me write my triage findings and send them to the commander.\n", "tokens": 21}
+```
 
-## What you return
+`kind` says what a step is: `prompt` (the agent's instructions at the start of a shift), `model` (what the agent said), `tool_call` (a command it ran or a file it wrote) or `tool_result` (what came back). `asker` is the agent asking, so you know who "I" or "my" means. A few very short events have no block; return those as whole events.
 
-One JSON file per run: for every qid, a list of event ids or block ids, best first.
+## What you hand back
 
-    {"b07": ["n000812/1a2b3c4d5e6f7a8b", "n000815", "..."], "b08": ["..."]}
+One JSON file per run. For each question, a list of block ids or event ids, best first:
 
-Return as many as you like. The scorer reads your list in order and keeps what fits into reading budgets of 1,000, 2,000, 4,000 and 8,000 tokens (every item costs at least 64 tokens), so the order matters and dumping everything does not help.
+```
+{"a01": ["n003462/8eb830d98519e34f", "n000163", "..."], "a02": ["..."]}
+```
 
-## Getting a score
+The list can be any length.
 
-    python score.py runs/debate_panel/answer_key.json my_submission.json --events runs/debate_panel/events.jsonl --blocks runs/debate_panel/blocks.jsonl
+## How the score works
 
-It prints a one line summary, and the full report (per question, and per type of question) as JSON. It stops with a message if your file names ids it cannot find, so pass both the events and the blocks file of the same run. The numbers:
+![How the score works](docs/scoring.svg)
 
-- score, from 0 to 1: how much of each answer your pieces carry, compared with the best any list could do under the same budget, averaged over the questions. Handing back the piece where the team first worked out the answer earns full credit; the raw material it came from, later copies and the lookup that fetched it earn less; everything else earns nothing.
-- above the no reading floor: your score minus the best score a method gets without reading the questions at all. This is the number to compare.
-- full support: the share of questions where your pieces cover every part of the answer.
+1. Every answer has 1 to 3 parts. Each part gets the best credit among your pieces that fit.
+2. This is done at 4 budgets, reading only the first 1,000, 2,000, 4,000 or 8,000 tokens of your list, and averaged.
+3. Compare methods by the middle number of the result line: how far you beat the best method that never looks at the question.
+4. The same file always gets the same score. No AI is involved.
 
-The same submission always gets the same score, and no AI model is involved in scoring.
+Tip: short pieces first. One long event can eat the whole budget.
 
-## An example
+## The runs
 
-example_bm25.py is a small keyword search method that writes a valid submission:
+| Run | The team | Questions | Size |
+|---|---|---|---|
+| `library_maintainers` | 12 agents ship a release of the dateutil library from its real issue list | 42 | 1.0M tokens |
+| `debate_panel` | 6 agents debate open physics questions using real papers | 50 | 1.8M |
+| `textbook_team` | 11 agents write worked problems from real open textbooks | 50 | 1.1M |
+| `help_desk` | 6 agents answer real jq questions from GitHub | 50 | 1.2M |
+| `executive_assistants` | 5 assistants run a director's office from a real mailbox (the Enron archive) | 50 | 1.2M |
+| `due_diligence` | 5 agents check real SEC filings of Apple and Microsoft and sign a memo | 50 | 1.1M |
+| `on_call` | 7 engineers handle incidents in real system logs and write postmortems | 50 | 1.4M |
 
-    python example_bm25.py runs/debate_panel my_submission.json
-
-It scores roughly 0.25 to 0.4 on these runs. Replace its ranking with your own method and keep the output format.
+Three more runs are coming.

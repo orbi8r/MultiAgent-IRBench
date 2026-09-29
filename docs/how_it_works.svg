@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="900" height="330" rx="16" fill="#ffffff"/>
+
+  <!-- input 1: the record -->
+  <rect x="20" y="30" width="230" height="150" rx="12" fill="#e8f0fe" stroke="#2f6fdf" stroke-width="2"/>
+  <text x="135" y="58" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a4fb0">The team's record</text>
+  <g fill="#2f6fdf" opacity="0.85">
+    <rect x="40" y="72" width="150" height="9" rx="3"/>
+    <rect x="40" y="86" width="95" height="9" rx="3" fill="#7aa4ef"/>
+    <rect x="40" y="100" width="185" height="9" rx="3"/>
+    <rect x="40" y="114" width="60" height="9" rx="3" fill="#7aa4ef"/>
+    <rect x="40" y="128" width="130" height="9" rx="3"/>
+  </g>
+  <text x="135" y="158" text-anchor="middle" font-size="13" fill="#333">every step of 5 to 12 AI agents</text>
+  <text x="135" y="174" text-anchor="middle" font-size="13" fill="#333">1M+ tokens, in time order</text>
+
+  <!-- input 2: the questions -->
+  <rect x="20" y="200" width="230" height="110" rx="12" fill="#fff3e0" stroke="#e8870e" stroke-width="2"/>
+  <text x="135" y="228" text-anchor="middle" font-size="17" font-weight="bold" fill="#a85d00">About 50 questions</text>
+  <text x="135" y="254" text-anchor="middle" font-size="13" font-style="italic" fill="#333">"Where did we file the</text>
+  <text x="135" y="271" text-anchor="middle" font-size="13" font-style="italic" fill="#333">lease numbers?"</text>
+  <text x="135" y="295" text-anchor="middle" font-size="13" fill="#333">asked by an agent on the team</text>
+
+  <!-- arrows in -->
+  <line x1="252" y1="105" x2="312" y2="160" stroke="#555" stroke-width="2.5" marker-end="url(#arr)"/>
+  <line x1="252" y1="255" x2="312" y2="195" stroke="#555" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- your method -->
+  <rect x="316" y="115" width="190" height="110" rx="14" fill="#e6f6ea" stroke="#1e8e3e" stroke-width="3"/>
+  <text x="411" y="160" text-anchor="middle" font-size="19" font-weight="bold" fill="#146c2e">YOUR</text>
+  <text x="411" y="184" text-anchor="middle" font-size="18" font-weight="bold" fill="#146c2e">SEARCH METHOD</text>
+  <text x="411" y="208" text-anchor="middle" font-size="12" fill="#333">you write this</text>
+
+  <line x1="508" y1="170" x2="540" y2="170" stroke="#555" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- ranked list -->
+  <rect x="544" y="95" width="160" height="150" rx="12" fill="#f5f5f5" stroke="#888" stroke-width="2"/>
+  <text x="624" y="120" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Per question:</text>
+  <text x="624" y="138" text-anchor="middle" font-size="13" fill="#333">pieces, best first</text>
+  <g font-size="12" font-family="Menlo, Consolas, monospace" fill="#333">
+    <text x="560" y="164">1. n000812/1a2b</text>
+    <text x="560" y="184">2. n000815</text>
+    <text x="560" y="204">3. n002301/9f3c</text>
+    <text x="560" y="224">   ...</text>
+  </g>
+
+  <line x1="706" y1="170" x2="752" y2="170" stroke="#555" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- score -->
+  <rect x="756" y="110" width="124" height="120" rx="14" fill="#f3e8fd" stroke="#8430ce" stroke-width="2.5"/>
+  <text x="818" y="143" text-anchor="middle" font-size="14" font-weight="bold" fill="#5b1f99">score.py</text>
+  <text x="818" y="182" text-anchor="middle" font-size="30" font-weight="bold" fill="#5b1f99">0.31</text>
+  <text x="818" y="210" text-anchor="middle" font-size="12" fill="#333">0 to 1, no AI</text>
+</svg>

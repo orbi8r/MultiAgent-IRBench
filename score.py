@@ -1,5 +1,6 @@
 """The benchmark scorer: a pure lookup, no model, same result every time.
 
+    python3 score.py runs/<name> SUBMISSION.json > report.json
     python3 score.py KEY.json SUBMISSION.json --events EVENTS.jsonl [--blocks BLOCKS.jsonl] > report.json
 
 KEY (hidden): {qid: {"nuggets": {nid: {id: value}}, "strata": {...}, "floor": x}}
@@ -15,6 +16,7 @@ in the cut), the result minus the run's floor (the best single query blind strat
 import json
 import sys
 from collections import defaultdict
+from pathlib import Path
 
 BUDGETS = (1000, 2000, 4000, 8000)
 MIN_COST = 64
@@ -80,12 +82,16 @@ def main(key_path, sub_path, events_path=None, blocks_path=None):
                   missing=[q for q in key if q not in sub], per_query=per_q)
     json.dump(report, sys.stdout, indent=1)
     o = report["overall"]
-    print(f"\nscore {o['score']:.3f}, above the no reading floor {o['above_floor']:.3f}, "
-          f"full support {o['full_support']:.3f} over {len(key)} questions", file=sys.stderr)
+    print(f"\nscore {o['score']:.3f} out of 1 | {o['above_floor']:+.3f} against a method that ignores the "
+          f"question | every part found for {o['full_support']:.0%} of {len(key)} questions", file=sys.stderr)
 
 
 if __name__ == "__main__":
     a = sys.argv[1:]
     ev = a[a.index("--events") + 1] if "--events" in a else None
     bl = a[a.index("--blocks") + 1] if "--blocks" in a else None
-    main(a[0], a[1], ev, bl)
+    if Path(a[0]).is_dir():  # short form: score.py runs/<name> my_submission.json
+        d = Path(a[0])
+        main(d / "answer_key.json", a[1], d / "events.jsonl", d / "blocks.jsonl")
+    else:
+        main(a[0], a[1], ev, bl)
