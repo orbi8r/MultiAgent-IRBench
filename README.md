@@ -92,5 +92,5 @@ Tip: short pieces first. One long event can eat the whole budget.
 | `on_call` | 7 engineers handle incidents in real system logs and write postmortems | 50 | 1.4M |
 | `city_data` | 7 analysts write monthly council reports from real NYC 311 service requests | 49 | 1.3M |
 | `literature_review` | 5 researchers write literature reviews from real arXiv papers | 49 | 1.2M |
+| `online_shop` | 3 staff run a simulated shop on a real UK retailer's orders: stock, prices, books and monthly reports | 50 | 1.4M |
 
-One more run is coming.

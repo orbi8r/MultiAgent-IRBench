@@ -1,0 +1,50 @@
+{"qid": "a01", "question": "Is there a ready made tool that audits the ledger against the daily report and prints tables for the month report, and where does it save its printout?", "qtype": "location", "asker": "manager"}
+{"qid": "a02", "question": "Before I touch the order file, where are the copies teammates saved of earlier order books, including the one rebuilt after the file got wiped?", "qtype": "location", "asker": "clerk"}
+{"qid": "a03", "question": "Which scripts hold the clerk's demand model and the order sizing built on it?", "qtype": "location", "asker": "manager"}
+{"qid": "a04", "question": "Where did the pricing helper leave its report back to me and its raw elasticity numbers?", "qtype": "location", "asker": "manager"}
+{"qid": "a05", "question": "Where did I write down the rules that came out of my testing accident on the live ledger, and where did my disclosure to the manager end up?", "qtype": "location", "asker": "bookkeeper"}
+{"qid": "a06", "question": "Where is the check that catches order lines whose cost doesn't match the catalog, and the note telling me which of my lines to fix?", "qtype": "location", "asker": "clerk"}
+{"qid": "a07", "question": "Where are the manager's round 6 planning scripts and the plan file they write?", "qtype": "location", "asker": "bookkeeper"}
+{"qid": "a08", "question": "Now that two months are closed, where are their reports kept?", "qtype": "location", "asker": "bookkeeper"}
+{"qid": "a09", "question": "Where is the manager's note telling me to hold off on new orders while deliveries were missing?", "qtype": "location", "asker": "clerk"}
+{"qid": "a10", "question": "The bookkeeper sent me a correction about a round 8 plan file as if it were mine. Who actually produced that file, and what budget was it sized to?", "qtype": "who", "asker": "manager"}
+{"qid": "a11", "question": "Who added the big batch of round 1 purchase orders on top of the manager's first eight, and how big did it end up?", "qtype": "who", "asker": "manager"}
+{"qid": "a12", "question": "Have any of our purchase orders ever actually landed in stock or been charged to cash?", "qtype": "state", "asker": "manager"}
+{"qid": "a13", "question": "Who placed the shop's first purchase orders, and do the totals add up?", "qtype": "who", "asker": "bookkeeper"}
+{"qid": "a14", "question": "How strongly does our demand react to our own price, going by what the team measured?", "qtype": "finding", "asker": "manager"}
+{"qid": "a15", "question": "How far off were the unit costs on the round 5 order lines, and what would that have cost us?", "qtype": "finding", "asker": "manager"}
+{"qid": "a16", "question": "What return did the round 8 plan claim on its spend? Why was it wrong and what is the corrected figure?", "qtype": "finding", "asker": "manager"}
+{"qid": "a17", "question": "After the first trading day, how close were we to running out, and what would it cost to restock the empty lines?", "qtype": "finding", "asker": "manager"}
+{"qid": "a18", "question": "Who decided the first month was finished, and on what report?", "qtype": "decision", "asker": "bookkeeper"}
+{"qid": "a19", "question": "What was decided about placing more orders while deliveries weren't showing up, and where did I stand?", "qtype": "decision", "asker": "clerk"}
+{"qid": "a20", "question": "What was agreed about the old order rows that never arrived, and what replaced them?", "qtype": "decision", "asker": "bookkeeper"}
+{"qid": "a21", "question": "How much did the bookkeeper advise spending on the next restock, and what size was advised against?", "qtype": "decision", "asker": "manager"}
+{"qid": "a22", "question": "How should the month report treat money committed to purchase orders that hasn't shown up in the ledger?", "qtype": "decision", "asker": "manager"}
+{"qid": "a23", "question": "Is writing to the order file really how orders get placed, or did someone decide otherwise at some point?", "qtype": "history", "asker": "clerk"}
+{"qid": "a24", "question": "The bookkeeper sent a note about damaging a live shop file early on. What happened and how was it fixed?", "qtype": "history", "asker": "manager"}
+{"qid": "a25", "question": "Why is there a rebuilt copy of the old order book in the work folder? What happened to the order file?", "qtype": "history", "asker": "manager"}
+{"qid": "b01", "question": "The price file changed while I was working. Did the manager keep a copy of the price list as it stood just before that change, and where is it?", "qtype": "location", "asker": "bookkeeper"}
+{"qid": "b02", "question": "The overdue round 5 purchase lines are gone from the live order file. Where were they put, and is there a copy of the whole order file from just before they were taken out?", "qtype": "location", "asker": "manager"}
+{"qid": "b03", "question": "Where is the clerk's script for the round 10 experiment comparing orders inside and outside our stocked range, and the snapshot of the order file taken once those lines were in?", "qtype": "location", "asker": "manager"}
+{"qid": "b04", "question": "Two notes say my theory about the order queue fails. Where is the manager's script that checked it against every order line ever written, and where does the bookkeeper's rebuttal note sit now?", "qtype": "location", "asker": "clerk"}
+{"qid": "b05", "question": "The manager says an outside checker was brought in to test his cash finding. Where is that checker's brief, and where is the manager's own script for the cash chain check?", "qtype": "location", "asker": "bookkeeper"}
+{"qid": "b06", "question": "Where is the clerk's demand analysis across all 150 lines we track, and where did its printed results get saved?", "qtype": "location", "asker": "manager"}
+{"qid": "b07", "question": "Where is the clerk's line by line rebuild of the round 13 sales, and its saved output?", "qtype": "location", "asker": "bookkeeper"}
+{"qid": "b08", "question": "Where are the bookkeeper's scripts that rebuilt the round 12 basket and worked out the implied price to cost multiple for each round?", "qtype": "location", "asker": "manager"}
+{"qid": "b09", "question": "There is a staged order book that was never placed. Where is that file, and which script produced it?", "qtype": "location", "asker": "manager"}
+{"qid": "b10", "question": "The 14 old round 5 lines have vanished from the order file. Who took them out, who asked for it, and did the archive keep everything?", "qtype": "who", "asker": "bookkeeper"}
+{"qid": "b11", "question": "Who put the 2,000 unit line for 37410 into the order file, and who noticed that code is not one we carry?", "qtype": "who", "asker": "bookkeeper"}
+{"qid": "b12", "question": "How much stock do we actually hold right now, across how many lines, and what is it worth at cost?", "qtype": "state", "asker": "manager"}
+{"qid": "b13", "question": "Does the ledger's cash balance ever go down by the cost of goods sold, and what is the cash figure now?", "qtype": "state", "asker": "bookkeeper"}
+{"qid": "b14", "question": "How did round 10 come out against the profit threshold the manager set for undoing his price change?", "qtype": "finding", "asker": "clerk"}
+{"qid": "b15", "question": "Why did round 11's cost of goods not match three times cost on the lines we sold?", "qtype": "finding", "asker": "manager"}
+{"qid": "b16", "question": "What margin did round 12 book once every tracked line was at three times cost, and how far off the pricing identity was its cost figure?", "qtype": "finding", "asker": "clerk"}
+{"qid": "b17", "question": "In round 14, how much demand was offered to the shop compared with what we sold, and do the day report and the demand data agree on it?", "qtype": "finding", "asker": "bookkeeper"}
+{"qid": "b18", "question": "What did the manager rule about who is allowed to write to the purchase order file?", "qtype": "decision", "asker": "clerk"}
+{"qid": "b19", "question": "After round 11, what did the manager decide about placing more orders and about the staged 60 line order book, and where did I land on it?", "qtype": "decision", "asker": "bookkeeper"}
+{"qid": "b20", "question": "When the manager widened the reprice, what rule did he set about pricing versus stock arriving, and whose argument led to it?", "qtype": "decision", "asker": "clerk"}
+{"qid": "b21", "question": "What outcomes did we write down in advance for the round 12 test of orders inside versus outside our range, and which one happened?", "qtype": "decision", "asker": "bookkeeper"}
+{"qid": "b22", "question": "How did we agree to present the month's margin in the report, given the price change partway through?", "qtype": "decision", "asker": "manager"}
+{"qid": "b23", "question": "My explanation for why no order ever arrived turned out wrong. What was it, what disproved it, and what wording replaced it?", "qtype": "history", "asker": "clerk"}
+{"qid": "b24", "question": "The manager sent me a suspiciously round figure for the excess in the cost column. Was it right, and what is the excess on the corrected basis?", "qtype": "history", "asker": "bookkeeper"}
+{"qid": "b25", "question": "At one point the manager said pricing was done and told us not to touch prices. What was wrong with that, and how was it put right?", "qtype": "history", "asker": "clerk"}
