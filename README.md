@@ -83,7 +83,7 @@ Tip: short pieces first. One long event can eat the whole budget.
 
 | Run | The team | Questions | Size |
 |---|---|---|---|
-| `library_maintainers` | 12 agents ship a release of the dateutil library from its real issue list | 42 | 1.0M tokens |
+| `library_maintainers` | 12 agents ship a release of the dateutil library from its real issue list | 50 | 1.0M tokens |
 | `debate_panel` | 6 agents debate open physics questions using real papers | 50 | 1.8M |
 | `textbook_team` | 11 agents write worked problems from real open textbooks | 50 | 1.1M |
 | `help_desk` | 6 agents answer real jq questions from GitHub | 50 | 1.2M |
