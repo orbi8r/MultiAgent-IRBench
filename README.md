@@ -90,5 +90,7 @@ Tip: short pieces first. One long event can eat the whole budget.
 | `executive_assistants` | 5 assistants run a director's office from a real mailbox (the Enron archive) | 50 | 1.2M |
 | `due_diligence` | 5 agents check real SEC filings of Apple and Microsoft and sign a memo | 50 | 1.1M |
 | `on_call` | 7 engineers handle incidents in real system logs and write postmortems | 50 | 1.4M |
+| `city_data` | 7 analysts write monthly council reports from real NYC 311 service requests | 49 | 1.3M |
+| `literature_review` | 5 researchers write literature reviews from real arXiv papers | 49 | 1.2M |
 
-Three more runs are coming.
+One more run is coming.
