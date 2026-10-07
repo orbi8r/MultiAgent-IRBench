@@ -1,49 +1,50 @@
-{"qid": "a01", "question": "reports/ is empty now, so where did the finished mixture of experts review get filed?", "qtype": "location", "asker": "director"}
-{"qid": "a02", "question": "The first finished review is gone from reports/. Where is that write up kept now?", "qtype": "location", "asker": "director"}
-{"qid": "a03", "question": "My background assignment points me at an MoE overview the director put together. Which file is it?", "qtype": "location", "asker": "res_3"}
-{"qid": "a04", "question": "My summaries of the retrieval head paper aren't in to_director any more. Where were they filed?", "qtype": "location", "asker": "res_2"}
-{"qid": "a05", "question": "For the first review, where are the notes res_3 and res_4 sent me that tie the wiki article and the two papers together?", "qtype": "location", "asker": "director"}
-{"qid": "a06", "question": "Where did res_1's write up on dropping experts and res_2's write up on the gating math end up?", "qtype": "location", "asker": "director"}
-{"qid": "a07", "question": "I can't find the softmax gating convergence paper I was told to read. What is its actual path?", "qtype": "location", "asker": "res_2"}
-{"qid": "a08", "question": "Where is the director's note that asked me to tie the MoE theory to the pruning results?", "qtype": "location", "asker": "res_4"}
-{"qid": "a09", "question": "Besides the director's own overview, is there a proper MoE reference article in the archive, and where?", "qtype": "location", "asker": "res_3"}
-{"qid": "a10", "question": "Apart from res_4's early MoE summary, who else sent me MoE write ups and in which shifts?", "qtype": "who", "asker": "director"}
-{"qid": "a11", "question": "The MoE review was written from three papers. How many MoE papers does the archive hold now?", "qtype": "state", "asker": "res_3"}
-{"qid": "a12", "question": "What was I asked to cover for the MoE review, and has my part been handed in?", "qtype": "state", "asker": "res_3"}
-{"qid": "a13", "question": "There's a director note asking me to tie MoE theory to the pruning results. Did I already send that, and when?", "qtype": "who", "asker": "res_4"}
-{"qid": "a14", "question": "What average scores did the NVIDIA paper get for a 4K window with retrieval against a plain 16K window, and what was the best setup?", "qtype": "finding", "asker": "director"}
-{"qid": "a15", "question": "In the mechanistic paper, how badly did switching off the special copying heads hurt the long context lookup test and document QA?", "qtype": "finding", "asker": "director"}
-{"qid": "a16", "question": "What did removing experts cost the open MoE model in accuracy at six and at four experts per layer, and does the choice of calibration data matter?", "qtype": "finding", "asker": "director"}
-{"qid": "a17", "question": "What convergence rates does the softmax gating theory paper give for feed forward experts versus linear ones?", "qtype": "finding", "asker": "director"}
-{"qid": "a18", "question": "How did the director divide the first review, the retrieval versus long context one, among the researchers?", "qtype": "decision", "asker": "res_3"}
-{"qid": "a19", "question": "Which MoE paper did the director give each researcher?", "qtype": "decision", "asker": "res_1"}
-{"qid": "a20", "question": "What did we conclude on whether sparse MoE models beat dense ones at equal compute, and did anyone push back?", "qtype": "decision", "asker": "director"}
-{"qid": "a21", "question": "Did the team count the robotic hand MoE paper as evidence on the compute question, or only as background?", "qtype": "decision", "asker": "res_3"}
-{"qid": "a22", "question": "What did the first review recommend about when to rely on retrieval and when on a longer window?", "qtype": "decision", "asker": "director"}
-{"qid": "a23", "question": "Didn't the director once write its own MoE overview straight into the archive? Is the reference article sitting there now that same file?", "qtype": "history", "asker": "res_3"}
-{"qid": "a24", "question": "Did the MoE review go in before the researchers had sent their summaries?", "qtype": "history", "asker": "director"}
-{"qid": "a25", "question": "My shift 2 summary for the director seems to have vanished from to_director. What happened to it?", "qtype": "history", "asker": "res_1"}
-{"qid": "b01", "question": "Where did the finished quantum error correction review end up once it was archived?", "qtype": "location", "asker": "res_1"}
-{"qid": "b02", "question": "Who spotted that the fourth folder under the finished reviews was just the quantum review again, and what was done with it?", "qtype": "who", "asker": "res_1"}
-{"qid": "b03", "question": "What was wrong with the threshold sentence my note fed into the archived quantum review, and how did it finally get fixed?", "qtype": "history", "asker": "res_3"}
-{"qid": "b04", "question": "Where did I leave the version of my evidence map quotes pinned to the single line each quote starts on?", "qtype": "location", "asker": "res_3"}
-{"qid": "b05", "question": "Two notes came in late while I was working, one on the medical segmentation paper and the recurrent memory line, one answering the director's last two capability questions. Where are they?", "qtype": "location", "asker": "director"}
-{"qid": "b06", "question": "Where are the scripts I used last time to change the review and the status board with a check that each old string matched exactly once?", "qtype": "location", "asker": "director"}
-{"qid": "b08", "question": "Which file and lines hold the vision survey's own statement that it sets aside the language work?", "qtype": "location", "asker": "director"}
-{"qid": "b09", "question": "Did the two conflicting size labels I found for the hybrid in the benchmark appendix make it into the review, and where?", "qtype": "location", "asker": "res_1"}
-{"qid": "b10", "question": "Where is the commissioning request for the state space models review kept?", "qtype": "location", "asker": "res_2"}
-{"qid": "b11", "question": "Where did I write down the lesson about how the status board must be edited after I wiped its history the first time?", "qtype": "location", "asker": "director"}
-{"qid": "b12", "question": "Has the state space models review actually been handed in yet, and what is still standing between it and submission?", "qtype": "state", "asker": "res_2"}
-{"qid": "b13", "question": "Who tracked down what the two citations behind the recurrent memory sentence in the graph retrieval paper actually point to?", "qtype": "who", "asker": "res_2"}
-{"qid": "b14", "question": "Which of the other researchers are already off the state space review, and does any of them still owe the director anything?", "qtype": "state", "asker": "res_3"}
-{"qid": "b15", "question": "When the shared context benchmark's averages were checked row by row, which rows held up and what did the recurrent model rows come to?", "qtype": "finding", "asker": "director"}
-{"qid": "b16", "question": "How long a token sequence does the forecasting model actually scan, how big is its lead over the best transformer, and what does its own ablation say about swapping the recurrent block for attention?", "qtype": "finding", "asker": "director"}
-{"qid": "b17", "question": "What are the concrete long input numbers from the audio papers, and what happens to the speech command model when it can only scan forward?", "qtype": "finding", "asker": "director"}
-{"qid": "b18", "question": "What did the needle benchmark table in the graph retrieval paper show for the attention recurrent hybrids against an older closed model, and whose runs were those numbers?", "qtype": "finding", "asker": "director"}
-{"qid": "b19", "question": "Did the director take up my suggestion to bring the late stabilizer memory survey into the quantum review?", "qtype": "decision", "asker": "res_3"}
-{"qid": "b20", "question": "Am I still expected to rebuild the shared context benchmark's results table, and which of its numbers may the report cite?", "qtype": "decision", "asker": "res_4"}
-{"qid": "b21", "question": "How was the clash settled between my point that no recurrent model passes the needle test and the benchmark case where a hybrid won a string matching task?", "qtype": "decision", "asker": "res_2"}
-{"qid": "b22", "question": "When the recurrent model folder turned out to hold no language papers, what did the director decide the review would say?", "qtype": "decision", "asker": "res_1"}
-{"qid": "b23", "question": "How much of the evidence map does the director still want from me, and is the submission waiting on it?", "qtype": "decision", "asker": "res_3"}
-{"qid": "b24", "question": "What went wrong with the quotation about fine local detail that was pinned on the first vision paper, and how did the report handle it?", "qtype": "history", "asker": "res_2"}
-{"qid": "b25", "question": "What did the review say earlier about whether the forecasting model sees future values, and what changed it?", "qtype": "history", "asker": "res_2"}
+{"qid": "g01", "question": "In the nested-code construction paper, what code parameters came out of using a five-qubit code as both block code and subcode at length 25?", "qtype": "finding", "asker": "res_1"}
+{"qid": "g02", "question": "What is the first shortcoming of earlier long-context RAG work that the sparse graph-retrieval (PageRank) paper names?", "qtype": "finding", "asker": "res_2"}
+{"qid": "g03", "question": "In the retrieve-then-reason paper's preliminary study, how did evidence-retrieval performance respond as the input context grew?", "qtype": "finding", "asker": "res_3"}
+{"qid": "g04", "question": "What surface-code threshold value under SI1000 noise does the sparse Mamba decoder paper cite?", "qtype": "finding", "asker": "director"}
+{"qid": "g05", "question": "According to the softmax-gating convergence paper, what sample size does estimating linear-form experts require?", "qtype": "finding", "asker": "res_4"}
+{"qid": "g06", "question": "What is the first of the two difficulties the PageRank retrieval paper lists for using RAG on long-context tasks?", "qtype": "finding", "asker": "res_1"}
+{"qid": "g07", "question": "Which dataset does the MixPR paper run its tests on first?", "qtype": "finding", "asker": "director"}
+{"qid": "g08", "question": "Which existing network is the Mamba-Sea segmentation model built on?", "qtype": "finding", "asker": "res_2"}
+{"qid": "g09", "question": "What is the low end of the speedup the sparse Mamba decoder claims over near-optimal decoders under SI1000 noise?", "qtype": "finding", "asker": "res_4"}
+{"qid": "g10", "question": "Which theorem in the gating convergence paper gives the minimax bound for experts of affine form?", "qtype": "finding", "asker": "director"}
+{"qid": "g11", "question": "Which publication does the Wikipedia RAG article quote on RAG not removing hallucinations?", "qtype": "finding", "asker": "res_3"}
+{"qid": "g12", "question": "What does SCBench conclude about methods with sub-linear memory when decoding over several turns?", "qtype": "finding", "asker": "res_1"}
+{"qid": "g13", "question": "What value of the augmentation proportion p did the Mamba-Sea authors find optimal?", "qtype": "finding", "asker": "res_2"}
+{"qid": "g14", "question": "In the GKP qubit paper, what squeezing level did the authors' earlier high-threshold scheme bring the fault-tolerance requirement down to?", "qtype": "finding", "asker": "res_4"}
+{"qid": "g15", "question": "How many long-context methods does the SCBench paper evaluate?", "qtype": "finding", "asker": "res_1"}
+{"qid": "g16", "question": "How much memory does the retrieval-heads paper say the cache for a 100K-token input needs on the 7B Llama 2 model?", "qtype": "finding", "asker": "res_3"}
+{"qid": "g17", "question": "In the Audio Mamba paper, at what clip length does the transformer baseline already exhaust GPU memory?", "qtype": "finding", "asker": "director"}
+{"qid": "g18", "question": "What kind of technique inspired Mamba-Sea's global augmentation module?", "qtype": "finding", "asker": "res_2"}
+{"qid": "g19", "question": "Which reference do Brun and Hsieh credit with first suggesting entanglement-assisted codes?", "qtype": "finding", "asker": "res_4"}
+{"qid": "g20", "question": "What model example does the retrieval-heads paper give of a local-window design failing the needle test?", "qtype": "finding", "asker": "director"}
+{"qid": "g21", "question": "What limitation did res_2 record about the retrieval-heads paper's claim that no SSM passes needle tests?", "qtype": "finding", "asker": "res_2"}
+{"qid": "g22", "question": "What mistake did I make with the status board file during shift 34?", "qtype": "failure_fix", "asker": "director"}
+{"qid": "g23", "question": "In my shift-6 cross-paper synthesis, how did I explain why the 7B model gained nothing from retrieval?", "qtype": "finding", "asker": "res_4"}
+{"qid": "g24", "question": "How many tokens did the final review find Bi-Mamba+ actually processes, regardless of input window length?", "qtype": "finding", "asker": "res_2"}
+{"qid": "g25", "question": "In the EAQECC brief, what was I told the authors concede about the net rate of entanglement-assisted codes compared with ordinary codes?", "qtype": "finding", "asker": "res_2"}
+{"qid": "g26", "question": "Why did the director's first attempt at the citation-fix patch silently not apply?", "qtype": "failure_fix", "asker": "res_3"}
+{"qid": "g27", "question": "In the shift-1 cross-synthesis brief, how many tokens did the director estimate the top retrieved chunks take up?", "qtype": "history", "asker": "res_4"}
+{"qid": "g28", "question": "Why did plain Mamba underperform on infrared small target detection according to the nested Mamba paper?", "qtype": "finding", "asker": "res_3"}
+{"qid": "g29", "question": "What code-distance limit did the sparse Mamba decoder paper's compute budget impose on its SI1000 experiments?", "qtype": "finding", "asker": "res_1"}
+{"qid": "g30", "question": "Where in the padded context were the passkeys placed in the ALR2 preliminary experiments?", "qtype": "finding", "asker": "res_2"}
+{"qid": "g31", "question": "Where is the brief asking for an overview of the Wikipedia retrieval-augmented generation article plus a RAG perspective across the first two papers?", "qtype": "location", "asker": "res_1"}
+{"qid": "g32", "question": "Where is the note flagging that the concatenated-code threshold figure in the QEC review had no source in the archive?", "qtype": "location", "asker": "director"}
+{"qid": "g33", "question": "Where is the brief stressing the future-leakage question for the bidirectional time-series forecasting model?", "qtype": "location", "asker": "res_2"}
+{"qid": "g34", "question": "Where is the brief asking to connect gating convergence theory with expert pruning results for Mixtral?", "qtype": "location", "asker": "res_4"}
+{"qid": "g35", "question": "Where is the status note flagging that the fourth review folder held a copy of the quantum error correction review?", "qtype": "location", "asker": "res_3"}
+{"qid": "g36", "question": "Where is the commissioning request asking whether superconducting surface codes can run below fault-tolerant thresholds?", "qtype": "location", "asker": "director"}
+{"qid": "g37", "question": "Where is the brief asking me to summarise the NVIDIA paper comparing retrieval augmentation with extended context windows?", "qtype": "location", "asker": "res_1"}
+{"qid": "g38", "question": "Where is the original commissioning request asking whether retrieval or a longer context window works better for LLM question answering?", "qtype": "location", "asker": "res_2"}
+{"qid": "g39", "question": "Where is the brief asking me to separate multi-step questions from long-CoT-hard tasks and to extract the retrieve-then-reason dissociation?", "qtype": "location", "asker": "res_3"}
+{"qid": "g40", "question": "Where is the summary with the table contrasting nested/concatenated codes against surface codes and calling the nesting lens a distraction?", "qtype": "location", "asker": "res_1"}
+{"qid": "g41", "question": "Where is the brief asking how strongly the retrieval-heads authors hedge their claim that no SSM passes needle retrieval?", "qtype": "location", "asker": "res_2"}
+{"qid": "g42", "question": "Where is the brief asking for a synthesis of how the copy-paste attention heads explain the empirical retrieval-versus-context results?", "qtype": "location", "asker": "res_1"}
+{"qid": "g43", "question": "Where is the note explaining why I was briefed carefully on SCBench's unrecoverable result tables and what the others were assigned?", "qtype": "location", "asker": "res_1"}
+{"qid": "g44", "question": "Where is the review text giving the sparse Mamba decoder's Sycamore logical error rates and the IBM three-qubit demo?", "qtype": "location", "asker": "res_1"}
+{"qid": "g45", "question": "Where are the reference articles on recurrent neural networks and state-space representation for the SSM topic?", "qtype": "location", "asker": "res_4"}
+{"qid": "g46", "question": "Where are my running notes cataloguing the archive contents for the first retrieval-versus-context topic?", "qtype": "location", "asker": "director"}
+{"qid": "g47", "question": "Where is the paper showing long-context models fail basic retrieval cases unless given enough reasoning steps?", "qtype": "location", "asker": "res_2"}
+{"qid": "g48", "question": "Where is the paper defining amplicate noiseless subsystems as a generalisation of operator QEC?", "qtype": "location", "asker": "res_1"}
+{"qid": "g49", "question": "Where is the finished review comparing pruned Mixtral scores with LLaMA-2 70B and tabulating expert convergence rates?", "qtype": "location", "asker": "director"}
+{"qid": "g50", "question": "Where are the team's background notes on expert routing, capacity factors and sparse compute-efficiency claims?", "qtype": "location", "asker": "res_3"}

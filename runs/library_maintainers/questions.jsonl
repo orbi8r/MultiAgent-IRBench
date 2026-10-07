@@ -1,50 +1,47 @@
-{"qid": "q01", "question": "The zoneinfo rebuild kept stalling on the old download location. What source did dev_tz switch the metadata to, and in which files is it recorded?", "qtype": "location"}
-{"qid": "q02", "question": "I need to regenerate the bundled timezone tarball for a newer tz database release. What exact steps did the team use last time?", "qtype": "finding"}
-{"qid": "q03", "question": "Where does the CI owner keep its test run writeups, and which file indexes them?", "qtype": "location"}
-{"qid": "q04", "question": "Before the collection fixes were merged, how did developers get the parser and tz tests to run at all under the strict warnings config?", "qtype": "failure_fix"}
-{"qid": "q05", "question": "Where is the writeup of how to make rrulebase and the icalendar vtimezone objects picklable without dropping their cache?", "qtype": "location"}
-{"qid": "q06", "question": "How can I check that the bundled tz data now reflects Mexico dropping daylight saving time?", "qtype": "finding"}
-{"qid": "q07", "question": "Where is the regression test for the change to the setup.py test command?", "qtype": "location"}
-{"qid": "q08", "question": "How did rm integrate approved branches into main, so I can repeat it for the next ones?", "qtype": "finding"}
-{"qid": "q09", "question": "Where did rm write up the relativedelta crash for the core developer, and what branch did it ask for?", "qtype": "location"}
-{"qid": "q10", "question": "Where is our answer to the downstream packager who wrote about their freeze, and what did it promise?", "qtype": "location"}
-{"qid": "q11", "question": "The packager who wrote in is waiting on the setuptools test command fix. Has it actually landed on main?", "qtype": "state"}
-{"qid": "q12", "question": "What does the full test suite on main look like right now?", "qtype": "state"}
-{"qid": "q14", "question": "What's the status of PR #1158, the fix for comparing a relativedelta against None?", "qtype": "state"}
-{"qid": "q16", "question": "Has 2.9.0 shipped, and has the steering group been told?", "qtype": "state"}
-{"qid": "q17", "question": "Was the new report about parsing Italian, French and Spanish dates ever answered on the tracker?", "qtype": "state"}
-{"qid": "q18", "question": "The CI report says zoneinfo tests fail on main because the data tarball is missing. Is that still the case?", "qtype": "state"}
-{"qid": "q19", "question": "Why were the zoneinfo tests failing on a clean checkout of main before the tz data update?", "qtype": "finding"}
-{"qid": "q20", "question": "What did we conclude about the recurring all day event that returned nothing from between() in New York last November?", "qtype": "finding"}
-{"qid": "q21", "question": "Why didn't we take the PR adding hashing and equality to rrule and rruleset?", "qtype": "finding"}
-{"qid": "q22", "question": "What exactly stopped pytest from even collecting on the Python 3.14 venv?", "qtype": "finding"}
-{"qid": "q23", "question": "Why did unpickling a datetime with tzutc give a fresh tz object instead of the shared one, and why didn't the existing tests catch it?", "qtype": "finding"}
-{"qid": "q24", "question": "What rule decides whether a year really has an ISO week 53, and how does the parser check it now?", "qtype": "finding"}
-{"qid": "q25", "question": "What actually happens when you compare a relativedelta to None, on older Pythons and on the ones we test with?", "qtype": "finding"}
-{"qid": "q26", "question": "How big was the tracker backlog triage went through, and how much did it close?", "qtype": "finding"}
-{"qid": "q27", "question": "A downstream distro packager wrote in after kickoff. What did they ask for, and by when?", "qtype": "decision"}
-{"qid": "q28", "question": "How did rm change the plan after the packager's freeze deadline mail?", "qtype": "decision"}
-{"qid": "q29", "question": "What did the steering group actually require for this release, as opposed to what we chose ourselves?", "qtype": "decision"}
-{"qid": "q30", "question": "Three tracker items carried the release-blocker label. What did we decide about them?", "qtype": "decision"}
-{"qid": "q31", "question": "A batch of new tracker threads came in mid run, including a PR to drop Python 2. What did rm decide to do with them?", "qtype": "decision"}
-{"qid": "q32", "question": "What's the team convention for how fixes get branched and who reviews which areas?", "qtype": "decision"}
-{"qid": "q33", "question": "Why does the workflow change for the new Python version trigger on both main and master?", "qtype": "decision"}
-{"qid": "q34", "question": "Who changed the isoparser test around line 123, and why?", "qtype": "history"}
-{"qid": "q35", "question": "Who touched the GitHub workflow files during the run, and what did they change?", "qtype": "history"}
-{"qid": "q36", "question": "Who changed the project's license metadata, and to what?", "qtype": "history"}
-{"qid": "q37", "question": "Who closed the old duplicate parser reports on the tracker, and how were they marked?", "qtype": "history"}
-{"qid": "q38", "question": "The first merges into main came out with the wrong author. What happened and how was it repaired?", "qtype": "failure_fix"}
-{"qid": "q39", "question": "One of the new rrule tests failed the first time dev_rrule ran it. What was wrong and how was it fixed?", "qtype": "failure_fix"}
-{"qid": "q40", "question": "Testing the setup.py change kept failing inside the repo venv. What was the obstacle and the workaround?", "qtype": "failure_fix"}
-{"qid": "q41", "question": "When reviewing the tzical branch, the diff against main showed rrule changes the branch never made. Why, and what did the reviewer do?", "qtype": "failure_fix"}
-{"qid": "q42", "question": "Which tz database release is bundled now? Older notes mention a different one.", "qtype": "superseded"}
-{"qid": "q43", "question": "Is the rrule dunder methods PR still being evaluated for this release?", "qtype": "superseded"}
-{"qid": "q44", "question": "What is still left before rm can write the release notes and tell the steering group?", "qtype": "open"}
-{"qid": "q46", "question": "Which review asks are piled up unread in the parser and rrule reviewer's board folder, and who left each one?", "qtype": "location", "asker": "rm"}
-{"qid": "q47", "question": "Before merging the EXDATE timezone fix, where can I find the reviewer's verdict on it?", "qtype": "location", "asker": "rm"}
-{"qid": "q48", "question": "Where did the CI owner hand off its two GitHub Actions branches for sign off, and did it tell the packaging developer too?", "qtype": "location", "asker": "rm"}
-{"qid": "q49", "question": "My uncommitted edits on the resultbase slots branch vanished from the working tree mid shift. Who took them and why?", "qtype": "who", "asker": "dev_parser"}
-{"qid": "q50", "question": "Users asked for a release that runs on Python 3.12 without the timestamp deprecation warning. Who replied to them, and who wrote the fix they were pointed to?", "qtype": "who", "asker": "docs"}
-{"qid": "q51", "question": "A late pull request adds explicit Python 3.12 support. Did we take it, or is it covered some other way?", "qtype": "decision", "asker": "docs"}
-{"qid": "q52", "question": "The PR only asked for empty slots on the parser's result base class. Why does the branch also change the subclass slot lists and the length method?", "qtype": "history", "asker": "reviewer_a"}
-{"qid": "q53", "question": "Before the fix for too short time fields, what datetime did isoparse actually hand back for a time whose minute or second has only one digit?", "qtype": "finding", "asker": "reviewer_a"}
+{"qid": "g01", "question": "On the PR thread about isoparse accepting odd UTC offsets, what long-term plan did the maintainer describe for controlling how strictly it validates?", "qtype": "finding", "asker": "dev_infra"}
+{"qid": "g03", "question": "In the contributors list, which licensing marker is attached to Mario Corchero's entry?", "qtype": "finding", "asker": "dev_tz"}
+{"qid": "g04", "question": "In the rrule docs example showing how the week start day changes results, what is the second occurrence when the week starts on Monday?", "qtype": "finding", "asker": "dev_rrule"}
+{"qid": "g05", "question": "When the week-53 isoparse branch was queued for sign-off, how many isoparser tests were reported as passing?", "qtype": "state", "asker": "reviewer_a"}
+{"qid": "g06", "question": "On PR 340, what did the maintainer say the project's issue and PR tracker is not meant to serve as?", "qtype": "finding", "asker": "triage"}
+{"qid": "g07", "question": "According to the contributors file header, from what date are contributions dual-licensed under Apache and BSD?", "qtype": "finding", "asker": "dev_infra"}
+{"qid": "g08", "question": "Among the open parser-labeled issues, which one is also tagged as a duplicate?", "qtype": "finding", "asker": "dev_parser"}
+{"qid": "g09", "question": "What heading format does the tracker require when the team posts a reply on a thread?", "qtype": "finding", "asker": "triage"}
+{"qid": "g10", "question": "When is the downstream distro package freeze that the packager emailed about regarding PR 1044?", "qtype": "finding", "asker": "dev_rrule"}
+{"qid": "g11", "question": "According to the tracker's instructions, how do I mark a thread as resolved?", "qtype": "finding", "asker": "rm"}
+{"qid": "g12", "question": "Which of the open parser-labeled pull requests is tagged wontfix?", "qtype": "finding", "asker": "dev_parser"}
+{"qid": "g13", "question": "What command was used to create the repo's virtual environment?", "qtype": "finding", "asker": "dev_infra"}
+{"qid": "g14", "question": "In PR 1123, how was hashing of a rule set proposed to work?", "qtype": "finding", "asker": "dev_rrule"}
+{"qid": "g15", "question": "Which top-level files does the source distribution manifest explicitly include?", "qtype": "finding", "asker": "dev_tz"}
+{"qid": "g16", "question": "What is the exact sentence in the rrule docs that introduces the example where the week start day changes the results?", "qtype": "finding", "asker": "docs"}
+{"qid": "g17", "question": "In PR 554, how did the maintainer describe his general attitude toward small step-by-step parser changes?", "qtype": "finding", "asker": "dev_parser"}
+{"qid": "g18", "question": "Who committed the change that stopped the setup script depending on the removed setuptools testing command, and in which shift?", "qtype": "who", "asker": "rm"}
+{"qid": "g19", "question": "Who committed the fix making the iCalendar timezone reader skip vendor-specific properties, and in which shift?", "qtype": "who", "asker": "rm"}
+{"qid": "g20", "question": "Who committed the check rejecting a nonexistent last ISO week in years that lack it, and in which shift?", "qtype": "who", "asker": "rm"}
+{"qid": "g21", "question": "Who committed the config change registering the coverage-exclusion test marker so collection stopped failing, and in which shift?", "qtype": "who", "asker": "rm"}
+{"qid": "g22", "question": "Who committed the switch to a standardized license identifier in the package metadata, and in which shift?", "qtype": "who", "asker": "rm"}
+{"qid": "g23", "question": "In triage's index of open PR titles, which PR number ports the standard library's timezone logic into the tz file class?", "qtype": "finding", "asker": "rm"}
+{"qid": "g24", "question": "While reviewing PR 1077, what bounds check did dev_parser conclude would stop one-digit minutes or seconds being accepted?", "qtype": "finding", "asker": "dev_rrule"}
+{"qid": "g25", "question": "At the release kickoff, how large was the untriaged tracker backlog said to be?", "qtype": "finding", "asker": "triage"}
+{"qid": "g26", "question": "When reviewer_a approved the EXDATE ignoretz branch, what rrule test results were reported?", "qtype": "finding", "asker": "rm"}
+{"qid": "g27", "question": "According to triage, which older stale PR is superseded by the PR adding the meeting exercise solution to the docs?", "qtype": "finding", "asker": "docs"}
+{"qid": "g28", "question": "How many tests did rm confirm collect cleanly across the repository once the remaining warning fixes were applied?", "qtype": "finding", "asker": "dev_infra"}
+{"qid": "g29", "question": "How did dev_rrule judge the week-start wording improvements proposed in PR 844?", "qtype": "decision", "asker": "docs"}
+{"qid": "g30", "question": "According to dev_infra, how many tests fail when the bundled timezone tarball is missing?", "qtype": "finding", "asker": "ci"}
+{"qid": "g31", "question": "What did rm first tell the reporter of the Mexico City DST issue that the release would do about it?", "qtype": "decision", "asker": "dev_tz"}
+{"qid": "g32", "question": "When triage looked, which tzdata version was the bundled timezone metadata stuck on?", "qtype": "finding", "asker": "dev_rrule"}
+{"qid": "g33", "question": "Through which branch was the ISO week 53 fix merged into main?", "qtype": "history", "asker": "dev_parser"}
+{"qid": "g34", "question": "Whom did dev_rrule credit in the contributors list for the EXDATE timezone-ignoring fix?", "qtype": "state", "asker": "reviewer_a"}
+{"qid": "g35", "question": "What did ci find when running the property-based tests repeatedly to look for flakiness?", "qtype": "finding", "asker": "rm"}
+{"qid": "g36", "question": "Where is the test module that smoke-tests private implementation details, motivated by issue 483?", "qtype": "location", "asker": "ci"}
+{"qid": "g38", "question": "Where is the request asking the project to adopt a vulnerability disclosure policy document?", "qtype": "location", "asker": "docs"}
+{"qid": "g39", "question": "Where is the first review request for the week 53 validation change that uses fromisocalendar with a fallback for older Pythons?", "qtype": "location", "asker": "triage"}
+{"qid": "g40", "question": "Where is the reminder flagging the epoch constant deprecation as a release blocker alongside the tzdata update?", "qtype": "location", "asker": "dev_tz"}
+{"qid": "g42", "question": "Where is the note endorsing PR 844 and suggesting rewording the 'is got from' phrasing in the rrule docstring?", "qtype": "location", "asker": "rm"}
+{"qid": "g43", "question": "Where is the update announcing the week 53 fix was merged and listing PRs 1077 and 1187 as next deliverables?", "qtype": "location", "asker": "dev_parser"}
+{"qid": "g44", "question": "Where is the reply assuring the distro packager that 2.9.0 would ship before their freeze?", "qtype": "location", "asker": "rm"}
+{"qid": "g45", "question": "Where is the release note fragment recording the bundled tzdata version bump?", "qtype": "location", "asker": "dev_infra"}
+{"qid": "g46", "question": "In the pull request about pulling microseconds from the default datetime (#1055), which earlier issue did the commenter who had written nearly the same fix say he ran into?", "qtype": "history", "asker": "triage"}
+{"qid": "g47", "question": "In the tracker issue about splitting the bundled time zone data into its own package (#701), in which major version was that package proposed to become a mandatory dependency?", "qtype": "history", "asker": "dev_infra"}
+{"qid": "g48", "question": "Who refreshed the time zone database tarball shipped with the library to the newest IANA release, and in which shift?", "qtype": "who", "asker": "rm"}
+{"qid": "g49", "question": "Who changed an ISO parser test so that its pytest parameter values are materialized eagerly instead of produced lazily, and in which shift?", "qtype": "who", "asker": "rm"}
+{"qid": "g50", "question": "Who fixed the test-runner config so the environment variable passthrough setting works with the newer major version of that tool, and in which shift?", "qtype": "who", "asker": "rm"}

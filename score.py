@@ -1,17 +1,17 @@
-"""The benchmark scorer: a pure lookup, no model, same result every time.
+"""The benchmark scorer (BAR, budgeted answer recall): a pure lookup, no model, same result every time.
 
-    python3 score.py runs/<name> SUBMISSION.json > report.json
-    python3 score.py KEY.json SUBMISSION.json --events EVENTS.jsonl [--blocks BLOCKS.jsonl] > report.json
+    python score.py runs/<name> SUBMISSION.json > report.json
 
-KEY (hidden): {qid: {"nuggets": {nid: {id: value}}, "strata": {...}, "floor": x}}
-SUBMISSION: {qid: [id, ...]} best first, where an id is a whole event ("n000123") or one block of it
-("n000123/9f3c..."). A whole event is worth the best of its blocks and costs all its tokens; a block is worth only
-its own label and costs only its own tokens. EVENTS and BLOCKS give the token counts.
+SUBMISSION: {qid: [id, ...]} best first; an id is a whole event ("n000123") or one block ("n000123/9f3c...").
+The agent reads your list from the top. Each piece costs its tokens, at least 64; repeats count once.
+For each question: at 1,000, 2,000, 4,000 and 8,000 tokens read, take the share of the answer's parts that a piece
+read so far states. The question scores the mean of those four shares; the run scores the mean over questions.
+A piece states a part when the key lists it as the first statement, a later copy or the raw tool output that shows
+it. For who and history questions only the first statement counts, since its author and time are what was asked.
 
-For each budget the scorer keeps the submission's events that fit, takes the best value per nugget and averages
-over nuggets, divided by the best any submission could reach under that budget (a budget where no answer piece
-fits at all is skipped). Reported per query and overall: the mean over budgets, Full Support (every nugget found
-in the cut), the result minus the run's floor (the best single query blind strategy) and the same per stratum.
+Half credit, the second number: some pieces state only part of an answer part (the key lists them under `partial`).
+The main score counts them like any other piece. The half credit score counts such a part as half found until a
+piece that states all of it is read, and `answered_at` there waits for full pieces.
 """
 import json
 import sys
@@ -20,78 +20,108 @@ from pathlib import Path
 
 BUDGETS = (1000, 2000, 4000, 8000)
 MIN_COST = 64
+PARTIAL_WEIGHT = 0.5
 
 
-def cut(ranked, tokens, budget):
-    out, used = [], 0
-    for e in dict.fromkeys(ranked):
-        t = max(tokens.get(e, MIN_COST), MIN_COST)
-        if used + t <= budget:
-            out.append(e)
-            used += t
-    return out, used
+def stating(entry):
+    need = 1.0 if entry.get("qtype") in ("who", "history") else 0.4
+    return [{x for x, v in vals.items() if v >= need} for vals in entry["nuggets"].values()]
 
 
 def score_query(entry, ranked, tokens):
-    per_b, full = [], []
-    for B in BUDGETS:
-        kept, used = cut(ranked, tokens, B)
-        best = [max((vals.get(e, 0.0) for e in kept), default=0.0) for vals in entry["nuggets"].values()]
-        reach = sum(max((v for e, v in vals.items() if max(tokens.get(e, MIN_COST), MIN_COST) <= B), default=0.0)
-                    for vals in entry["nuggets"].values())
-        if not reach:
-            continue
-        per_b.append(sum(best) / reach)
-        full.append(all(b > 0 for b in best))
-    s = sum(per_b) / len(per_b) if per_b else 0.0
-    return dict(score=s, above_floor=s - entry.get("floor", 0.0), full_support=sum(full) / len(full) if full else 0.0,
-                by_budget=per_b)
+    """Per question: the four shares, their mean, and the tokens read until every part was stated (None if not
+    within 8,000)."""
+    parts = stating(entry)
+    found_at, t = [None] * len(parts), 0
+    for x in dict.fromkeys(ranked):
+        t += max(tokens[x], MIN_COST)
+        if t > BUDGETS[-1]:
+            break
+        for i, s in enumerate(parts):
+            if found_at[i] is None and x in s:
+                found_at[i] = t
+    shares = [sum(f is not None and f <= b for f in found_at) / len(parts) for b in BUDGETS]
+    answered = max(found_at) if all(f is not None for f in found_at) else None
+    return dict(score=sum(shares) / len(shares), shares=shares, answered_at=answered)
 
 
-def load_tokens(events_path, blocks_path=None):
+def score_query_half(entry, ranked, tokens, weight=PARTIAL_WEIGHT):
+    """score_query with the half credit rule: a part reached only by its partial pieces counts `weight`."""
+    pmap = entry.get("partial") or {}
+    parts = [(s, set(pmap.get(nid, []))) for s, nid in zip(stating(entry), entry["nuggets"])]
+    full_at, half_at, t = [None] * len(parts), [None] * len(parts), 0
+    for x in dict.fromkeys(ranked):
+        t += max(tokens[x], MIN_COST)
+        if t > BUDGETS[-1]:
+            break
+        for i, (s, pset) in enumerate(parts):
+            if x in s:
+                if x in pset:
+                    if half_at[i] is None:
+                        half_at[i] = t
+                elif full_at[i] is None:
+                    full_at[i] = t
+    shares = []
+    for b in BUDGETS:
+        got = 0.0
+        for f, h in zip(full_at, half_at):
+            if f is not None and f <= b:
+                got += 1.0
+            elif h is not None and h <= b:
+                got += weight
+        shares.append(got / len(parts))
+    answered = max(full_at) if all(f is not None for f in full_at) else None
+    return dict(score=sum(shares) / len(shares), shares=shares, answered_at=answered)
+
+
+def load_tokens(*paths):
     tokens = {}
-    for p in (events_path, blocks_path):
-        if p:
-            for l in open(p, encoding="utf-8"):
-                e = json.loads(l)
-                tokens[e.get("id") or e.get("nid") or e.get("eid")] = e["tokens"]
+    for p in paths:
+        for l in open(p, encoding="utf-8"):
+            e = json.loads(l)
+            tokens[e["id"]] = e["tokens"]
     return tokens
 
 
-def main(key_path, sub_path, events_path=None, blocks_path=None):
-    key, sub = json.load(open(key_path, encoding="utf-8")), json.load(open(sub_path, encoding="utf-8"))
-    if not events_path:
-        sys.exit("give the run's events file with --events (and --blocks when you return blocks)")
-    tokens = load_tokens(events_path, blocks_path)
-    bad_type = [q for q, v in sub.items() if not isinstance(v, list)]
-    if bad_type:
-        sys.exit(f"every answer must be a list of ids; not a list for {bad_type[:5]}")
+def summary(rows):
+    n = len(rows)
+    out = dict(score=sum(r["score"] for r in rows) / n)
+    for b in BUDGETS:
+        out[f"answered_within_{b}"] = sum(r["answered_at"] is not None and r["answered_at"] <= b for r in rows) / n
+    return out
+
+
+def report_for(key, per_q):
+    by_type = defaultdict(list)
+    for q, e in key.items():
+        by_type[e.get("qtype")].append(per_q[q])
+    return dict(overall=summary(list(per_q.values())), by_qtype={k: summary(v) for k, v in sorted(by_type.items())},
+                per_query=per_q)
+
+
+def main(run_dir, sub_path):
+    d = Path(run_dir)
+    key = json.load(open(d / "answer_key.json", encoding="utf-8"))
+    sub = json.load(open(sub_path, encoding="utf-8"))
+    tokens = load_tokens(d / "events.jsonl", d / "blocks.jsonl")
+    bad = [q for q, v in sub.items() if not isinstance(v, list)]
+    if bad:
+        sys.exit(f"every answer must be a list of ids; not a list for {bad[:5]}")
     unknown = sorted({x for v in sub.values() for x in v if x not in tokens})
     if unknown:
-        sys.exit(f"{len(unknown)} ids are not in the events or blocks files given, for example {unknown[:5]}"
-                 + ("" if blocks_path else " (pass --blocks when you return blocks)"))
-    per_q = {q: score_query(entry, sub.get(q, []), tokens) for q, entry in key.items()}
-    agg = lambda qs: {m: sum(per_q[q][m] for q in qs) / len(qs) for m in
-                      ("score", "above_floor", "full_support")} if qs else {}
-    strata = defaultdict(list)
-    for q, entry in key.items():
-        for k, v in dict(entry.get("strata", {}), qtype=entry.get("qtype")).items():
-            if v:
-                strata[f"{k}={v}"].append(q)
-    report = dict(overall=agg(list(key)), strata={k: agg(v) for k, v in sorted(strata.items())},
-                  missing=[q for q in key if q not in sub], per_query=per_q)
+        sys.exit(f"{len(unknown)} ids are not in this run, for example {unknown[:5]}")
+    plain = report_for(key, {q: score_query(e, sub.get(q, []), tokens) for q, e in key.items()})
+    half = report_for(key, {q: score_query_half(e, sub.get(q, []), tokens) for q, e in key.items()})
+    report = dict(overall=plain["overall"], by_qtype=plain["by_qtype"], missing=[q for q in key if q not in sub],
+                  per_query=plain["per_query"], half_credit=half)
     json.dump(report, sys.stdout, indent=1)
-    o = report["overall"]
-    print(f"\nscore {o['score']:.3f} out of 1 | {o['above_floor']:+.3f} against a method that ignores the "
-          f"question | every part found for {o['full_support']:.0%} of {len(key)} questions", file=sys.stderr)
+    o, h = report["overall"], half["overall"]
+    print(f"\nscore {o['score']:.3f} out of 1 ({h['score']:.3f} with half credit) | every part found within 2k tokens"
+          f" for {o['answered_within_2000']:.0%}, within 8k for {o['answered_within_8000']:.0%} of {len(key)} questions",
+          file=sys.stderr)
 
 
 if __name__ == "__main__":
-    a = sys.argv[1:]
-    ev = a[a.index("--events") + 1] if "--events" in a else None
-    bl = a[a.index("--blocks") + 1] if "--blocks" in a else None
-    if Path(a[0]).is_dir():  # short form: score.py runs/<name> my_submission.json
-        d = Path(a[0])
-        main(d / "answer_key.json", a[1], d / "events.jsonl", d / "blocks.jsonl")
-    else:
-        main(a[0], a[1], ev, bl)
+    if len(sys.argv) != 3:
+        sys.exit("usage: python score.py runs/<run> <submission.json>")
+    main(sys.argv[1], sys.argv[2])
