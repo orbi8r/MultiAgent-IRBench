@@ -1,0 +1,50 @@
+{"qid": "g01", "question": "How much cash did Apple spend buying back its own shares in fiscal 2025, according to the 10-K cash flow statement?", "qtype": "state", "asker": "extractor_1"}
+{"qid": "g02", "question": "What did Microsoft's FY2026 10-K report for its commercial contracted backlog and how fast it grew?", "qtype": "state", "asker": "partner"}
+{"qid": "g03", "question": "In the Microsoft stock plan exhibit, over what period is the board-turnover change-in-control test measured?", "qtype": "state", "asker": "checker"}
+{"qid": "g04", "question": "What total net sales did Apple's 10-Q report for the third fiscal quarter of 2026?", "qtype": "state", "asker": "extractor_1"}
+{"qid": "g05", "question": "Under the stock plan exhibit, for which of the committee's powers can award changes be made without the holder's consent?", "qtype": "state", "asker": "summariser"}
+{"qid": "g06", "question": "How much buyback capacity was left under Apple's May 2025 program at the end of Q3 FY2026?", "qtype": "state", "asker": "extractor_1"}
+{"qid": "g07", "question": "Under Apple's non-employee director plan, how long after leaving the board can a director still exercise vested options?", "qtype": "state", "asker": "extractor_2"}
+{"qid": "g08", "question": "What did Apple's Q3 2026 10-Q give as the reason Products gross margin rose?", "qtype": "finding", "asker": "summariser"}
+{"qid": "g09", "question": "What did the deal team's closing reminder ask to be done before the final review meeting?", "qtype": "state", "asker": "extractor_1"}
+{"qid": "g10", "question": "What share of Apple's total revenue did the archived Apple memo attribute to Services?", "qtype": "state", "asker": "checker"}
+{"qid": "g11", "question": "What effective date does the Microsoft stock plan exhibit give?", "qtype": "state", "asker": "extractor_2"}
+{"qid": "g12", "question": "In Apple's 10-K exhibit index, what date is on the officer's certificate that covers the 1.625% notes maturing in 2026?", "qtype": "state", "asker": "summariser"}
+{"qid": "g13", "question": "What event date did Microsoft's 8-K in the filing set report?", "qtype": "state", "asker": "partner"}
+{"qid": "g14", "question": "What total fixed lease payment obligations did Apple disclose at fiscal 2025 year-end?", "qtype": "state", "asker": "partner"}
+{"qid": "g16", "question": "How much revenue did Microsoft record from its commercial dealings with OpenAI in fiscal 2026?", "qtype": "state", "asker": "checker"}
+{"qid": "g18", "question": "According to the Q3 FY2026 10-Q, when did Apple announce its newest buyback program?", "qtype": "state", "asker": "extractor_1"}
+{"qid": "g19", "question": "How much commercial paper did Apple have outstanding at fiscal 2025 year-end?", "qtype": "state", "asker": "extractor_2"}
+{"qid": "g21", "question": "Under Apple's director plan, how much of an outstanding award vests on a change of control?", "qtype": "state", "asker": "partner"}
+{"qid": "g22", "question": "At the start of the Apple review, what did the pipeline status board list as the pending deliverable?", "qtype": "state", "asker": "extractor_1"}
+{"qid": "g24", "question": "What correct total lease liability did I give the checker in place of their $27.22B lease total?", "qtype": "failure_fix", "asker": "partner"}
+{"qid": "g25", "question": "In extractor_1's note saying the Apple extractions were complete, what long-term debt figure was given for fiscal 2025 year-end?", "qtype": "finding", "asker": "checker"}
+{"qid": "g26", "question": "What supplier concentration figure did the checker's shift 15 audit flag for the Apple memo?", "qtype": "finding", "asker": "summariser"}
+{"qid": "g29", "question": "What gross margin did the strengths section of the Apple memo cite?", "qtype": "state", "asker": "extractor_1"}
+{"qid": "g30", "question": "What Q3 FY2026 operating margin did extractor_1's 8-K extraction report for Apple?", "qtype": "finding", "asker": "checker"}
+{"qid": "g31", "question": "Which cyber risk statement did the partner's Microsoft risk extraction single out as an explicit admission of detection limitation?", "qtype": "finding", "asker": "summariser"}
+{"qid": "g32", "question": "What net cash position did my notebook record for Apple, from FY2025 to Q3 FY2026?", "qtype": "finding", "asker": "partner"}
+{"qid": "g34", "question": "What file size did the checker's initial audit log record for the Apple annual report?", "qtype": "state", "asker": "partner"}
+{"qid": "g36", "question": "In which shift did I finish all the Apple primary filing extractions?", "qtype": "history", "asker": "extractor_1"}
+{"qid": "g37", "question": "After the partner's correction, what full-year FY2026 capital build did the Microsoft financial metrics extraction give?", "qtype": "failure_fix", "asker": "summariser"}
+{"qid": "g38", "question": "Where is the status-check note that says no status notes had arrived since shift 31 and tells each role to land a first deliverable or report a blocker?", "qtype": "location", "asker": "extractor_2"}
+{"qid": "g39", "question": "Where is the filing feed notice saying Apple's material contract exhibit was routed in for obligations and covenant analysis?", "qtype": "location", "asker": "partner"}
+{"qid": "g40", "question": "Where is the shift 15 note declaring the Apple audit partially verified and listing key findings for the memo?", "qtype": "location", "asker": "summariser"}
+{"qid": "g41", "question": "Where is the shift 5 note saying the audit setup was ready to check contract and exhibit extractions against the 10-K and 10-Q exhibit indexes?", "qtype": "location", "asker": "extractor_1"}
+{"qid": "g42", "question": "Where is the shift 34 status check that urged landing partial but saved deliverables rather than complete but unwritten ones?", "qtype": "location", "asker": "summariser"}
+{"qid": "g43", "question": "Where is the original assignment naming Apple as the due diligence target and laying out the extract, check, summarise and memo assembly line?", "qtype": "location", "asker": "extractor_2"}
+{"qid": "g44", "question": "Where is the notice saying Microsoft's annual and quarterly reports had been placed in the filings area?", "qtype": "location", "asker": "extractor_1"}
+{"qid": "g45", "question": "Where is the note announcing that all Apple primary filing extractions were finished and listing the ten files ready for audit?", "qtype": "location", "asker": "partner"}
+{"qid": "g47", "question": "Where is the notice that Microsoft's current report had arrived in the filings area?", "qtype": "location", "asker": "extractor_1"}
+{"qid": "g49", "question": "Where is the correction note summarising the Microsoft stock plan's four change-in-control tests and its Washington law and King County venue?", "qtype": "location", "asker": "summariser"}
+{"qid": "g52", "question": "Where was Apple's July 30, 2026 current report kept?", "qtype": "location", "asker": "extractor_2"}
+{"qid": "g53", "question": "Where are the Microsoft skeleton briefs, including the company background with pending-verification product and service revenue?", "qtype": "location", "asker": "partner"}
+{"qid": "g54", "question": "Where is the Apple Q3 FY2026 condensed statements extraction that flags a sharp Greater China turnaround and an unexplained jump in intangibles?", "qtype": "location", "asker": "checker"}
+{"qid": "g55", "question": "Where is the Apple risk brief covering memory and NAND supply constraints and single-source components?", "qtype": "location", "asker": "extractor_1"}
+{"qid": "g56", "question": "Where is the note to the deal team confirming the exhibit was replaced with a genuine Microsoft document while warning that the review had stalled?", "qtype": "location", "asker": "extractor_2"}
+{"qid": "g58", "question": "Where is the onboarding note that closed the Apple review, named Microsoft as the new target and asked for the stale exhibit to be fixed at source?", "qtype": "location", "asker": "extractor_1"}
+{"qid": "g59", "question": "Where is the revised Microsoft 10-K extraction with the capex verification, free cash flow analysis and OpenAI non-GAAP reconciliation?", "qtype": "location", "asker": "extractor_2"}
+{"qid": "g61", "question": "Where is the Apple FY2025 extraction that flags operating cash flow falling while net income rose, and capital returns exceeding free cash flow?", "qtype": "location", "asker": "extractor_2"}
+{"qid": "g63", "question": "How large, in bytes, was the annual report text file we were given in the current filings folder?", "qtype": "state", "asker": "checker"}
+{"qid": "g64", "question": "According to the quarterly filing, on what date did the appeals court rule on the injunction from the Epic Games case, and how did it rule?", "qtype": "finding", "asker": "extractor_1"}
+{"qid": "g69", "question": "In the contracts and exhibits assignment, what period end did the partner give for the quarterly report?", "qtype": "state", "asker": "checker"}

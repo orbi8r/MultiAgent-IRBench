@@ -8,7 +8,7 @@ A team of AI agents works on a real job for hours, and every step they take is s
 
 ## What is new
 
-- 3 runs and 146 questions are published for now: `online_shop`, `library_maintainers` and `literature_review`. The other 7 runs are withdrawn for the moment while they are rebuilt.
+- 8 runs and 396 questions are published: `online_shop`, `library_maintainers`, `literature_review`, `on_call`, `due_diligence`, `executive_assistants`, `help_desk` and `textbook_team`. The other 2 runs, `city_data` and `debate_panel`, are withdrawn for now.
 - The questions are new. They were written from what the agents actually looked up while they worked.
 - The answer keys are new and complete. Each key comes from a sweep of the whole record, judged by one frozen Opus procedure. The keys are complete and consistent with that procedure, which was also tested on runs it never saw.
 - The score now splits each answer into atoms, the separate facts it needs, and credits a piece for the atoms it actually states. Reading goes on to 32,000 tokens and an early find is worth more than a late one. A list that serves the agent better never scores lower, a perfect list scores 1 and the same formula holds on every run, with nothing fitted.
@@ -28,7 +28,7 @@ python score.py runs/online_shop my_submission.json > report.json
 The last line printed is your result:
 
 ```
-score 0.282 out of 1 (equal credit 0.536) | every atom found in its first statement within 2k tokens for 18%, within 32k for 33% of 49 questions
+score 0.501 out of 1 (equal credit 0.536) | every atom found within 2k tokens for 51%, within 32k for 67% of 49 questions
 ```
 
 The first number is the main score. Equal credit is the earlier rule, where any piece that states any part of the answer counts fully. A method that returns nothing scores 0 and the best possible list scores 1.
@@ -91,7 +91,7 @@ Tip: short pieces first. One long event can eat the whole budget.
 
 ## Leaderboards
 
-We ran 312 methods on every run with the same code, and no method saw the answer keys. The tables show the top 5. Learned to rank and origin lines were fitted on the old questions of these runs, so their rank there is not a held out result. With about 50 questions a run, two methods less than about 0.05 apart are usually not reliably ordered on one run, so compare methods by the mean over the three runs. An empty list scores 0, methods that ignore the question score 0.03 to 0.06 and the oracle scores 1.000 on every run. The example method `example_bm25.py` scores 0.501, 0.488 and 0.509 on online_shop, library_maintainers and literature_review (equal credit 0.536, 0.511 and 0.615).
+We ran 312 methods on online_shop, library_maintainers and literature_review with the same code, and no method saw the answer keys. No method has been run on the 5 runs added later yet, so they have no leaderboard and no example numbers. The tables show the top 5. Learned to rank and origin lines were fitted on the old questions of these runs, so their rank there is not a held out result. With about 50 questions a run, two methods less than about 0.05 apart are usually not reliably ordered on one run, so compare methods by the mean over the three runs. An empty list scores 0, methods that ignore the question score 0.03 to 0.06 and the oracle scores 1.000 on every run. The example method `example_bm25.py` scores 0.501, 0.488 and 0.509 on online_shop, library_maintainers and literature_review (equal credit 0.536, 0.511 and 0.615).
 
 ### online_shop
 
@@ -125,10 +125,15 @@ We ran 312 methods on every run with the same code, and no method saw the answer
 
 ## The runs
 
-| Run | The team | Questions | Size |
-|---|---|---|---|
-| `online_shop` | 3 staff and 2 helpers run a simulated shop on a real UK retailer's orders: stock, prices, books and monthly reports | 49 | 1.4M tokens |
-| `library_maintainers` | 10 agents ship a release of the dateutil library from its real issue list | 47 | 1.0M |
-| `literature_review` | 5 researchers write literature reviews from real arXiv papers | 50 | 1.2M |
+| Run | The team | Questions | Question types | Size |
+|---|---|---|---|---|
+| `online_shop` | 3 staff and 2 helpers run a simulated shop on a real UK retailer's orders: stock, prices, books and monthly reports | 49 | finding 25, location 17, state 3, failure_fix 2, history 2 | 1.4M tokens |
+| `library_maintainers` | 10 agents ship a release of the dateutil library from its real issue list | 47 | finding 24, who 8, location 8, history 3, state 2, decision 2 | 1.0M |
+| `literature_review` | 5 researchers write literature reviews from real arXiv papers | 50 | finding 27, location 20, failure_fix 2, history 1 | 1.2M |
+| `on_call` | 7 engineers handle incidents in real system logs and write postmortems | 50 | finding 27, location 19, history 3, state 1 | 1.4M |
+| `due_diligence` | 5 agents check real SEC filings of Apple and Microsoft and sign a memo | 50 | state 22, location 18, finding 7, failure_fix 2, history 1 | 1.1M |
+| `executive_assistants` | 5 assistants run a director's office from a real mailbox (the Enron archive) | 50 | finding 19, location 13, state 10, decision 7, failure_fix 1 | 1.2M |
+| `help_desk` | 6 agents answer real jq questions from GitHub | 50 | finding 30, location 8, history 6, state 3, decision 2, failure_fix 1 | 1.2M |
+| `textbook_team` | 11 agents write worked problems from real open textbooks | 50 | location 19, decision 13, finding 12, history 5, state 1 | 1.1M |
 
-146 questions in all. The other 7 runs are withdrawn for now.
+396 questions in all. The type mix follows what each team actually looked up, so it differs from run to run. In the 5 newer runs the questions are spread over the whole run by when each one comes up in it, 2 to 7 per tenth and 5 in most. The other 2 runs, `city_data` and `debate_panel`, are withdrawn for now.

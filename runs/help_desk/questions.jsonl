@@ -1,0 +1,50 @@
+{"qid": "g01", "question": "In the ticket about jq crashing when slurping a multi-line object, which internal function did the reporter's assertion failure come from?", "qtype": "finding", "asker": "front_desk"}
+{"qid": "g02", "question": "After the #44 correction, what gating condition did the team lead first put on record for the integer-normalising walk filter?", "qtype": "decision", "asker": "spec_filters"}
+{"qid": "g03", "question": "At which line of the plain-text man page does the section on dotted field access start?", "qtype": "finding", "asker": "spec_transforms"}
+{"qid": "g04", "question": "At which line of jq.1 is the question-mark operator described as shorthand for try?", "qtype": "finding", "asker": "spec_cli_io"}
+{"qid": "g05", "question": "At which line of the reference manual is the caveat about base64 decoding of non-UTF-8 data?", "qtype": "finding", "asker": "spec_builtins"}
+{"qid": "g06", "question": "At which manual line does the prose describing getpath begin?", "qtype": "finding", "asker": "spec_filters"}
+{"qid": "g07", "question": "At shift 37, at which line of the history log did the entry for the minified-output ticket #44 begin?", "qtype": "state", "asker": "front_desk"}
+{"qid": "g08", "question": "At which line of the plain-text man page are the colour on/off flags documented?", "qtype": "finding", "asker": "spec_cli_io"}
+{"qid": "g09", "question": "According to its status line, who answered the BOM ticket #45 and in which shift?", "qtype": "history", "asker": "spec_transforms"}
+{"qid": "g10", "question": "In the #48 history entry, which supposedly harmless operation was warned to make two distinct big integers compare equal?", "qtype": "finding", "asker": "spec_builtins"}
+{"qid": "g11", "question": "At which line of the reference manual is the misspelling in the comma-operator sentence?", "qtype": "finding", "asker": "front_desk"}
+{"qid": "g12", "question": "How many tickets was the second batch announced to contain?", "qtype": "state", "asker": "spec_cli_io"}
+{"qid": "g13", "question": "Per its status line, who answered the object-of-objects ticket #57 and in which shift?", "qtype": "history", "asker": "spec_transforms"}
+{"qid": "g14", "question": "At which line of jq.1 is the rule for which keys can use dotted access stated?", "qtype": "finding", "asker": "spec_filters"}
+{"qid": "g15", "question": "Which jq version did the reporter of ticket #62 say they were running?", "qtype": "finding", "asker": "spec_builtins"}
+{"qid": "g16", "question": "At which line of the manual is the shorthand for building objects from same-named fields introduced?", "qtype": "finding", "asker": "front_desk"}
+{"qid": "g17", "question": "At which manual line is the base64 decoding format described as the inverse of encoding?", "qtype": "finding", "asker": "spec_filters"}
+{"qid": "g19", "question": "In the CSV ticket's first follow-up sample data, which record is missing a count?", "qtype": "finding", "asker": "spec_builtins"}
+{"qid": "g20", "question": "At which line of the reference manual does the identifier-key rule mention underscores?", "qtype": "finding", "asker": "spec_transforms"}
+{"qid": "g21", "question": "How was the follow-up to the dashed field-name ticket resolved?", "qtype": "decision", "asker": "front_desk"}
+{"qid": "g22", "question": "What number does the status board give the docs defect about the reference manual never naming its regex library?", "qtype": "finding", "asker": "escalation"}
+{"qid": "g23", "question": "Per its status line, who answered the CSV/TSV output ticket #48 and in which shift?", "qtype": "history", "asker": "spec_transforms"}
+{"qid": "g24", "question": "Who verified the resolution of the filter-inputs-away ticket #5 against the docs?", "qtype": "history", "asker": "front_desk"}
+{"qid": "g25", "question": "In escalation's corrected notebook, at which shift does it say it wrote the Windows-build ticket #52?", "qtype": "history", "asker": "escalation"}
+{"qid": "g26", "question": "What error did jq give when a tilde was placed between two strings as an infix operator?", "qtype": "finding", "asker": "spec_filters"}
+{"qid": "g28", "question": "What root cause did the resolution of the underscore syntax-error ticket #7 give?", "qtype": "finding", "asker": "spec_cli_io"}
+{"qid": "g29", "question": "What manual line range did ticket #57 end up citing for the builtin that keeps only objects from a stream?", "qtype": "failure_fix", "asker": "spec_transforms"}
+{"qid": "g30", "question": "At which manual line is the floating-point absolute-value function mentioned?", "qtype": "finding", "asker": "spec_builtins"}
+{"qid": "g31", "question": "Which man page line states how jq represents numbers internally?", "qtype": "finding", "asker": "spec_filters"}
+{"qid": "g33", "question": "At shift 33, which ticket was the last entry in the history log?", "qtype": "state", "asker": "spec_cli_io"}
+{"qid": "g34", "question": "At which line of the plain-text man page is the numeric array-index section described?", "qtype": "finding", "asker": "spec_transforms"}
+{"qid": "g35", "question": "In ticket #10, what was listed as the second candidate for the reporter's unidentified typo?", "qtype": "finding", "asker": "spec_builtins"}
+{"qid": "g37", "question": "At which jq.1 line is the object-construction shorthand for same-named fields introduced?", "qtype": "finding", "asker": "spec_filters"}
+{"qid": "g40", "question": "At which line of jq.1 does the comma operator description begin?", "qtype": "finding", "asker": "front_desk"}
+{"qid": "g41", "question": "What did spec_filters first conclude was behind the underscore field-name error in ticket #3?", "qtype": "finding", "asker": "spec_transforms"}
+{"qid": "g43", "question": "What was the first docs gap reported in the CSV/TSV output answer?", "qtype": "finding", "asker": "spec_builtins"}
+{"qid": "g44", "question": "While analysing ticket #3, what did spec_transforms initially suspect about the customer's data?", "qtype": "history", "asker": "spec_cli_io"}
+{"qid": "g45", "question": "What did escalation find suvash's #11 follow-ups were really asking for?", "qtype": "finding", "asker": "escalation"}
+{"qid": "g46", "question": "At shift 19, which second-batch files were found wrongly swept into the first batch's archive?", "qtype": "finding", "asker": "spec_cli_io"}
+{"qid": "g47", "question": "In spec_filters' test of the record-separator input mode on a file with corrupt lines, how many good records survived?", "qtype": "finding", "asker": "spec_cli_io"}
+{"qid": "g48", "question": "What did front_desk report about how jq 1.8.2 handles byte order marks depending on position?", "qtype": "finding", "asker": "escalation"}
+{"qid": "g50", "question": "Where is the ticket asking how to find item keys whose class attribute is null?", "qtype": "location", "asker": "spec_cli_io"}
+{"qid": "g51", "question": "Where is the ticket proposing a new operator that filters one array by a mask array?", "qtype": "location", "asker": "spec_filters"}
+{"qid": "g52", "question": "Where is the system mail announcing the second batch of customer tickets?", "qtype": "location", "asker": "spec_transforms"}
+{"qid": "g53", "question": "Where is the routing note with pre-verified one-liners for the mask operator ticket, asking for a customer answer and an operator-name recommendation?", "qtype": "location", "asker": "spec_filters"}
+{"qid": "g54", "question": "Where is the shift-22 note offering the mask operator ticket and confirming the archive filing ruling was applied?", "qtype": "location", "asker": "escalation"}
+{"qid": "g55", "question": "Where is the recap of the three successive versions of the number-normalising filter, ending with the magnitude gate and its caveats?", "qtype": "location", "asker": "spec_cli_io"}
+{"qid": "g57", "question": "Where is the independent re-verification of the BOM boundary table, noting a trailing BOM still emits output but exits non-zero?", "qtype": "location", "asker": "escalation"}
+{"qid": "g58", "question": "For the ticket reporting minor bugs in the docs (#10), which typo did we find still left in the manual, and at what location?", "qtype": "finding", "asker": "front_desk"}
+{"qid": "g59", "question": "Where is the follow-up in which the reporter of the //= operator bug admits the version command works and the problem was their own mistake?", "qtype": "location", "asker": "front_desk"}

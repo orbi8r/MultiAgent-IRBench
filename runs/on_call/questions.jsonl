@@ -1,0 +1,50 @@
+{"qid": "g01", "question": "In the incident 002 arrivals log, which compute chip logged the data TLB fatal at 00:49:35?", "qtype": "finding", "asker": "oncall_compute"}
+{"qid": "g02", "question": "In the OpenStack nova compute log, what physical and used disk figures did the resource tracker report for the node?", "qtype": "finding", "asker": "oncall_platform"}
+{"qid": "g03", "question": "In the incident 001 arrivals log, which control-stream port did the R26-M0-NC U11 I/O node lose its connection on?", "qtype": "finding", "asker": "oncall_network"}
+{"qid": "g04", "question": "During incident 002, which correctable-error symbol and address did the R30 rack chip on card ND keep reporting?", "qtype": "finding", "asker": "commander"}
+{"qid": "g05", "question": "Apart from the APPREAD alert, what later fatal kernel event in the main BGL log hit a chip on rack R04 midplane 1?", "qtype": "finding", "asker": "oncall_storage"}
+{"qid": "g07", "question": "In the incident 001 log, which I/O node failed right after the R35-M1-N0 pair at 00:24:33?", "qtype": "finding", "asker": "oncall_network"}
+{"qid": "g08", "question": "What is the last APPREAD entry in the quiet-period history backfill log, node and time?", "qtype": "finding", "asker": "reviewer"}
+{"qid": "g09", "question": "What warning kept repeating in the OpenStack log when I grepped for warnings and errors?", "qtype": "finding", "asker": "oncall_platform"}
+{"qid": "g10", "question": "What is the first APPREAD entry in the backfilled quiet-period history log?", "qtype": "finding", "asker": "oncall_triage"}
+{"qid": "g11", "question": "Which chip logged the second data TLB fatal in incident 002, and at what time?", "qtype": "finding", "asker": "oncall_compute"}
+{"qid": "g12", "question": "In the main BGL log, which chip logged the KERNSTOR fatal at 09:09:20 on 2005-06-14?", "qtype": "finding", "asker": "oncall_storage"}
+{"qid": "g13", "question": "How long did OpenStack instance 96abccce take to spawn according to the nova log?", "qtype": "finding", "asker": "oncall_platform"}
+{"qid": "g14", "question": "Which missing directory did ciod complain about on an R11 I/O node on 2005-06-07 in the main BGL log?", "qtype": "finding", "asker": "oncall_network"}
+{"qid": "g15", "question": "Which I/O node logged the first APPREAD failure in the incident 001 arrivals log, and when?", "qtype": "finding", "asker": "oncall_triage"}
+{"qid": "g16", "question": "Which control-stream port did the R22-M1-NC U11 I/O node use when it failed in incident 001?", "qtype": "finding", "asker": "oncall_storage"}
+{"qid": "g18", "question": "Which component did the alert that opened incident 002 fire on?", "qtype": "finding", "asker": "oncall_compute"}
+{"qid": "g22", "question": "According to the archived incident 002 postmortem's root cause section, what triggered incident 001?", "qtype": "finding", "asker": "oncall_triage"}
+{"qid": "g23", "question": "When did the earliest midplane switch bit sparing appear in the incident 001 log?", "qtype": "finding", "asker": "commander"}
+{"qid": "g24", "question": "Why were no hardware logs for the control server available in the provided log sets?", "qtype": "finding", "asker": "commander"}
+{"qid": "g25", "question": "In the shift 50 chip count verification, where in time did the corrected memory events fall for incident 002?", "qtype": "finding", "asker": "oncall_compute"}
+{"qid": "g26", "question": "How many years after the incident does the OpenStack log date from, per the postmortem correction request?", "qtype": "finding", "asker": "oncall_triage"}
+{"qid": "g27", "question": "What deduplicated APPREAD total did the network review give in place of the postmortem's 650 figure?", "qtype": "finding", "asker": "reviewer"}
+{"qid": "g28", "question": "What port range for the control server connections was stated in the shift 17 hardware logs request?", "qtype": "finding", "asker": "oncall_platform"}
+{"qid": "g30", "question": "How long was the gap between the two incident 002 bursts, per the shift 41 triage handover?", "qtype": "finding", "asker": "commander"}
+{"qid": "g32", "question": "What size was the incident 002 arrivals log in the shift 54 network handover?", "qtype": "state", "asker": "oncall_compute"}
+{"qid": "g33", "question": "In shift 6, what scale did oncall_network first report for the APPREAD pattern?", "qtype": "history", "asker": "oncall_platform"}
+{"qid": "g34", "question": "By shift 15, in which shifts had the CIOD service check on the control server been asked for without an answer?", "qtype": "history", "asker": "commander"}
+{"qid": "g35", "question": "At shift 28, what did the commander believe was driving incident 002?", "qtype": "history", "asker": "oncall_triage"}
+{"qid": "g37", "question": "Where is the note showing the bit-sparing events sit on L-cards while the sweep hit only N-cards?", "qtype": "location", "asker": "oncall_triage"}
+{"qid": "g38", "question": "Where is the monitoring telemetry update for the TLB alert on R21-M0-N0 kept?", "qtype": "location", "asker": "oncall_compute"}
+{"qid": "g39", "question": "Where is the report on incident 002's burst structure and the 32-chip deterministic sweep with TLB events as skipped chips?", "qtype": "location", "asker": "oncall_network"}
+{"qid": "g40", "question": "Where is the request asking for maintenance, power/cooling, firmware and scheduler events in the 00:20-00:30 window?", "qtype": "location", "asker": "oncall_storage"}
+{"qid": "g41", "question": "Where is the report finding no maintenance or power events but an MMCS database restart and bit sparing before incident 001?", "qtype": "location", "asker": "commander"}
+{"qid": "g44", "question": "Where is the request for active jobs, checkpoint capability and capacity loss on the R04 and R27 partitions?", "qtype": "location", "asker": "commander"}
+{"qid": "g45", "question": "Where is the request to check uplink switch ports, link flaps, VLANs and firewall rules toward 172.16.96.116?", "qtype": "location", "asker": "oncall_storage"}
+{"qid": "g48", "question": "Where is the monitoring message announcing the backfill of quiet-period logs after the APPREAD alert?", "qtype": "location", "asker": "oncall_compute"}
+{"qid": "g49", "question": "Where is the assessment saying there was no storage-layer evidence and no uncorrected memory error in the incident corpus?", "qtype": "location", "asker": "oncall_storage"}
+{"qid": "g51", "question": "Where is the working log listing the platform investigation tasks from the shift 2 and shift 9 requests with a checklist of what was reviewed?", "qtype": "location", "asker": "oncall_platform"}
+{"qid": "g52", "question": "Where is the 2015 MapReduce app master log with Jetty and container launch entries?", "qtype": "location", "asker": "oncall_triage"}
+{"qid": "g54", "question": "Where is the index describing what each production log file and log folder contains?", "qtype": "location", "asker": "oncall_storage"}
+{"qid": "g55", "question": "Where is the record for the APPREAD incident on R04-M1-N4 with its seven investigation instructions now kept?", "qtype": "location", "asker": "commander"}
+{"qid": "g56", "question": "Where is the guide defining Blue Gene/L coordinates, RAS labels and the four-step diagnostic procedure?", "qtype": "location", "asker": "oncall_triage"}
+{"qid": "g57", "question": "Where is the draft analysis showing 10 ms per chip timing, cards swept concurrently, and truncated sweeps on two cards?", "qtype": "location", "asker": "commander"}
+{"qid": "g58", "question": "Which bit did the midplane switch controller keep sparing on the two degrading link-card switches in the incident 001 arrival log?", "qtype": "finding", "asker": "oncall_network"}
+{"qid": "g63", "question": "Where is the handover describing the independent re-check of every postmortem number for both incidents after they were archived?", "qtype": "location", "asker": "oncall_compute"}
+{"qid": "g65", "question": "In the second incident's log, which link card and which bit did the midplane switch controller spare?", "qtype": "finding", "asker": "oncall_network"}
+{"qid": "g67", "question": "Where is the monitoring notice about the APPREAD alert on the R04 I/O node for the 00:24 to 00:30 window kept?", "qtype": "location", "asker": "commander"}
+{"qid": "g68", "question": "Where is the analysis note that found no switch or router logs in the log sets and puzzled over the varying destination ports to the control server?", "qtype": "location", "asker": "commander"}
+{"qid": "g69", "question": "When the reviewer re-checked the log evidence after the postmortem correction, what deduplicated total of APPREAD events did they confirm?", "qtype": "finding", "asker": "oncall_network"}
+{"qid": "g70", "question": "Where is the analysis now kept that found every affected node card produced exactly 32 core dumps, which pointed to a shared resource failure?", "qtype": "location", "asker": "commander"}

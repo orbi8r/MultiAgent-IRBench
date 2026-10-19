@@ -6,11 +6,11 @@ Both changed. The questions and answer keys of the runs are new, and the score i
 
 1. Pull the repo.
 2. Run the same command as before: `python score.py runs/<name> my_submission.json > report.json`
-3. Run your method again on the 3 runs now in `runs/`. Old submission files cannot be rescored, because the question ids differ from before.
+3. Run your method again on the 8 runs now in `runs/`. Old submission files cannot be rescored, because the question ids differ from before.
 
 ## What changed in the runs
 
-- Only 3 runs are published for now: `online_shop`, `library_maintainers` and `literature_review`, 146 questions in all. The other 7 runs are withdrawn while they are rebuilt.
+- 8 runs are published: `online_shop`, `library_maintainers`, `literature_review`, `on_call`, `due_diligence`, `executive_assistants`, `help_desk` and `textbook_team`, 396 questions in all. The other 2 runs, `city_data` and `debate_panel`, are withdrawn for now.
 - The questions are new. They were written from what the agents actually looked up while they worked.
 - The answer keys are new and complete. Every part of an answer lists all the pieces of the record that state it, found by sweeping the whole record.
 - Some pieces state only part of an answer part. The key marks them, and they are the reason for the second number below.
@@ -35,7 +35,7 @@ The report has two scores. `overall.score` is the main score. `equal_credit.over
 
 Why it changed. Under the old rule a piece that stated one fact of a two fact answer counted as the whole answer, each question was close to pass or fail inside 8,000 tokens, and a blind audit found lists that served the agent better but scored lower. The new rule credits each fact separately, reads deeper, rewards an early find over a late one, and passed about 30,000 adversarial checks with no case of a better list scoring lower. Over all three runs 55% of method pairs are told apart against 47% before, and the best method of each family ranks far more alike from run to run (Spearman 0.34 against 0.17). Within one run of about 50 questions the share stays between 30% and 48%: there are not enough questions for finer calls, so compare methods by the mean over the three runs.
 
-The scale is close to the equal credit rule: the typical method built without the keys scores about 0.5 on every run. Methods fitted to the old keys of these runs gain at most 0.02 over the best fair method. An empty list scores 0, methods that ignore the question score 0.03 to 0.06 and the oracle scores 1 on every run.
+The scale is close to the equal credit rule: the typical method built without the keys scores about 0.5 on each of online_shop, library_maintainers and literature_review, the runs methods have been tested on so far. Methods fitted to the old keys of these runs gain at most 0.02 over the best fair method. An empty list scores 0, methods that ignore the question score 0.03 to 0.06 and the oracle scores 1 on every run.
 
 The old scorer is kept as `score_v1.py`. It reproduces the old numbers only with the old answer keys, which are in the git history of this repo.
 
