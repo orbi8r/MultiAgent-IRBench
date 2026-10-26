@@ -137,3 +137,17 @@ We ran 312 methods on online_shop, library_maintainers and literature_review wit
 | `textbook_team` | 11 agents write worked problems from real open textbooks | 50 | location 19, decision 13, finding 12, history 5, state 1 | 1.1M |
 
 396 questions in all. The type mix follows what each team actually looked up, so it differs from run to run. In the 5 newer runs the questions are spread over the whole run by when each one comes up in it, 2 to 7 per tenth and 5 in most. The other 2 runs, `city_data` and `debate_panel`, are withdrawn for now.
+
+## Repository Layout
+
+The custom models, experiments, results, and documentation are organized as follows:
+
+```
+MultiAgent-IRBench/
+├── docs/       # Complete technical documentation, specifications & experiment reports
+├── method/     # Custom model & retrieval pipeline implementations (also symlinked as methods/)
+├── scripts/    # All plotting, experiment, threshold analysis & evaluation scripts
+├── results/    # Benchmark JSON outputs, submission files & generated figures
+├── runs/       # Benchmark domain datasets
+└── score.py    # Official BAR benchmark evaluation script
+```

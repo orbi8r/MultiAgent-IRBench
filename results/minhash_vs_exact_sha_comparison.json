@@ -1,0 +1,74 @@
+{
+  "exact_sha": {
+    "title": "Exact SHA-1 (Baseline)",
+    "threshold": null,
+    "runs": {
+      "library_maintainers": {
+        "model_a_main": 0.4219858156028369,
+        "model_a_equal": 0.3191489361702128,
+        "model_b_main": 0.5862884160756501,
+        "model_b_equal": 0.5851063829787234,
+        "n_questions": 47,
+        "elapsed_sec": 47.493764877319336
+      },
+      "literature_review": {
+        "model_a_main": 0.31092592592592594,
+        "model_a_equal": 0.365,
+        "model_b_main": 0.44111111111111106,
+        "model_b_equal": 0.525,
+        "n_questions": 50,
+        "elapsed_sec": 38.17436456680298
+      },
+      "online_shop": {
+        "model_a_main": 0.473167044595616,
+        "model_a_equal": 0.5255102040816326,
+        "model_b_main": 0.5060468631897204,
+        "model_b_equal": 0.5816326530612245,
+        "n_questions": 49,
+        "elapsed_sec": 34.82359313964844
+      }
+    },
+    "macro_avg": {
+      "model_a_main": 0.4020262620414596,
+      "model_a_equal": 0.40321971341728186,
+      "model_b_main": 0.5111487967921605,
+      "model_b_equal": 0.563913012013316
+    }
+  },
+  "minhash_85": {
+    "title": "MinHash Near-Dedup (\u03b8=0.85)",
+    "threshold": 0.85,
+    "runs": {
+      "library_maintainers": {
+        "model_a_main": 0.4219858156028369,
+        "model_a_equal": 0.324468085106383,
+        "model_b_main": 0.5839243498817966,
+        "model_b_equal": 0.5904255319148937,
+        "n_questions": 47,
+        "elapsed_sec": 26.013853549957275
+      },
+      "literature_review": {
+        "model_a_main": 0.31092592592592594,
+        "model_a_equal": 0.365,
+        "model_b_main": 0.44111111111111106,
+        "model_b_equal": 0.525,
+        "n_questions": 50,
+        "elapsed_sec": 31.3228862285614
+      },
+      "online_shop": {
+        "model_a_main": 0.473167044595616,
+        "model_a_equal": 0.5255102040816326,
+        "model_b_main": 0.5083144368858655,
+        "model_b_equal": 0.5867346938775511,
+        "n_questions": 49,
+        "elapsed_sec": 31.442378044128418
+      }
+    },
+    "macro_avg": {
+      "model_a_main": 0.4020262620414596,
+      "model_a_equal": 0.4049927630626719,
+      "model_b_main": 0.5111166326262578,
+      "model_b_equal": 0.5673867419308148
+    }
+  }
+}

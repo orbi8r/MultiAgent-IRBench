@@ -1,0 +1,51 @@
+{
+  "overall": {
+    "score": 0.5111487967921605,
+    "equal_credit": 0.563913012013316,
+    "learned_weights": [
+      1.0,
+      1.0,
+      1.1299999952316284,
+      0.7000000476837158,
+      1.0199999809265137,
+      0.7000000476837158,
+      0.2800000011920929,
+      -0.10000001639127731,
+      0.20000001788139343,
+      0.0,
+      0.550000011920929,
+      -0.12000000476837158
+    ],
+    "feature_names": [
+      "dcg_anchor",
+      "bm25",
+      "field_bm25",
+      "dense_cos",
+      "dense*bm25",
+      "path_match",
+      "tool_call",
+      "cost_pen",
+      "cost_eff",
+      "is_error",
+      "turn_ratio",
+      "centrality"
+    ]
+  },
+  "per_run": {
+    "library_maintainers": {
+      "score": 0.5862884160756501,
+      "equal_credit": 0.5851063829787234,
+      "n_questions": 47
+    },
+    "literature_review": {
+      "score": 0.44111111111111106,
+      "equal_credit": 0.525,
+      "n_questions": 50
+    },
+    "online_shop": {
+      "score": 0.5060468631897203,
+      "equal_credit": 0.5816326530612245,
+      "n_questions": 49
+    }
+  }
+}

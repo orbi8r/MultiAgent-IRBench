@@ -1,0 +1,1427 @@
+{
+  "overall": {
+    "score": 0.5177777777777778,
+    "answered_within_125": 0.18,
+    "answered_within_250": 0.22,
+    "answered_within_500": 0.36,
+    "answered_within_1000": 0.46,
+    "answered_within_2000": 0.6,
+    "answered_within_4000": 0.62,
+    "answered_within_8000": 0.64,
+    "answered_within_16000": 0.7,
+    "answered_within_32000": 0.72
+  },
+  "by_qtype": {
+    "decision": {
+      "score": 0.634920634920635,
+      "answered_within_125": 0.14285714285714285,
+      "answered_within_250": 0.14285714285714285,
+      "answered_within_500": 0.2857142857142857,
+      "answered_within_1000": 0.7142857142857143,
+      "answered_within_2000": 0.7142857142857143,
+      "answered_within_4000": 0.7142857142857143,
+      "answered_within_8000": 0.8571428571428571,
+      "answered_within_16000": 1.0,
+      "answered_within_32000": 1.0
+    },
+    "failure_fix": {
+      "score": 0.2222222222222222,
+      "answered_within_125": 0.0,
+      "answered_within_250": 0.0,
+      "answered_within_500": 0.0,
+      "answered_within_1000": 0.0,
+      "answered_within_2000": 0.0,
+      "answered_within_4000": 0.0,
+      "answered_within_8000": 0.0,
+      "answered_within_16000": 1.0,
+      "answered_within_32000": 1.0
+    },
+    "finding": {
+      "score": 0.6140350877192983,
+      "answered_within_125": 0.2631578947368421,
+      "answered_within_250": 0.3684210526315789,
+      "answered_within_500": 0.5789473684210527,
+      "answered_within_1000": 0.5789473684210527,
+      "answered_within_2000": 0.6842105263157895,
+      "answered_within_4000": 0.6842105263157895,
+      "answered_within_8000": 0.6842105263157895,
+      "answered_within_16000": 0.6842105263157895,
+      "answered_within_32000": 0.6842105263157895
+    },
+    "location": {
+      "score": 0.3504273504273504,
+      "answered_within_125": 0.15384615384615385,
+      "answered_within_250": 0.15384615384615385,
+      "answered_within_500": 0.23076923076923078,
+      "answered_within_1000": 0.3076923076923077,
+      "answered_within_2000": 0.46153846153846156,
+      "answered_within_4000": 0.46153846153846156,
+      "answered_within_8000": 0.46153846153846156,
+      "answered_within_16000": 0.46153846153846156,
+      "answered_within_32000": 0.46153846153846156
+    },
+    "state": {
+      "score": 0.5,
+      "answered_within_125": 0.1,
+      "answered_within_250": 0.1,
+      "answered_within_500": 0.2,
+      "answered_within_1000": 0.3,
+      "answered_within_2000": 0.6,
+      "answered_within_4000": 0.7,
+      "answered_within_8000": 0.7,
+      "answered_within_16000": 0.8,
+      "answered_within_32000": 0.9
+    }
+  },
+  "missing": [],
+  "per_query": {
+    "g01": {
+      "score": 0.5555555555555556,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 75,
+      "answered_at": 1182
+    },
+    "g02": {
+      "score": 0.8888888888888888,
+      "shares": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 148,
+      "answered_at": 217
+    },
+    "g03": {
+      "score": 1.0,
+      "shares": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 59,
+      "answered_at": 108
+    },
+    "g04": {
+      "score": 0.8518518518518519,
+      "shares": [
+        0.0,
+        0.6666666666666666,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 74,
+      "answered_at": 420
+    },
+    "g07": {
+      "score": 0.7222222222222222,
+      "shares": [
+        0.0,
+        0.0,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 77,
+      "answered_at": 866
+    },
+    "g08": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 63,
+      "answered_at": null
+    },
+    "g09": {
+      "score": 0.8888888888888888,
+      "shares": [
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 68,
+      "answered_at": 422
+    },
+    "g10": {
+      "score": 1.0,
+      "shares": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 42,
+      "answered_at": 96
+    },
+    "g11": {
+      "score": 0.7777777777777778,
+      "shares": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 53,
+      "answered_at": 291
+    },
+    "g12": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 45,
+      "answered_at": null
+    },
+    "g13": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 27,
+      "answered_at": null
+    },
+    "g14": {
+      "score": 0.6666666666666666,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 57,
+      "answered_at": 933
+    },
+    "g15": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 91,
+      "answered_at": null
+    },
+    "g16": {
+      "score": 0.5925925925925926,
+      "shares": [
+        0.0,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "ideal_cost": 131,
+      "answered_at": null
+    },
+    "g17": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 91,
+      "answered_at": null
+    },
+    "g18": {
+      "score": 0.7777777777777778,
+      "shares": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 69,
+      "answered_at": 359
+    },
+    "g19": {
+      "score": 0.1111111111111111,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "ideal_cost": 104,
+      "answered_at": 18535
+    },
+    "g20": {
+      "score": 0.4444444444444444,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 151,
+      "answered_at": 2149
+    },
+    "g21": {
+      "score": 0.2222222222222222,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 49,
+      "answered_at": 10285
+    },
+    "g23": {
+      "score": 1.0,
+      "shares": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 167,
+      "answered_at": 167
+    },
+    "g25": {
+      "score": 0.6666666666666666,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 106,
+      "answered_at": 767
+    },
+    "g27": {
+      "score": 0.5555555555555556,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 72,
+      "answered_at": 1605
+    },
+    "g29": {
+      "score": 0.3333333333333333,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 150,
+      "answered_at": 6687
+    },
+    "g30": {
+      "score": 0.2222222222222222,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 28,
+      "answered_at": 14170
+    },
+    "g31": {
+      "score": 0.7777777777777778,
+      "shares": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 103,
+      "answered_at": 420
+    },
+    "g32": {
+      "score": 0.5555555555555556,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 70,
+      "answered_at": 1605
+    },
+    "g33": {
+      "score": 0.7222222222222222,
+      "shares": [
+        0.0,
+        0.0,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 91,
+      "answered_at": 563
+    },
+    "g34": {
+      "score": 1.0,
+      "shares": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 91,
+      "answered_at": 91
+    },
+    "g35": {
+      "score": 0.7777777777777778,
+      "shares": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 62,
+      "answered_at": 291
+    },
+    "g36": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 37,
+      "answered_at": null
+    },
+    "g37": {
+      "score": 0.5555555555555556,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 81,
+      "answered_at": 1010
+    },
+    "g39": {
+      "score": 1.0,
+      "shares": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 101,
+      "answered_at": 101
+    },
+    "g42": {
+      "score": 1.0,
+      "shares": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 47,
+      "answered_at": 47
+    },
+    "g43": {
+      "score": 1.0,
+      "shares": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 69,
+      "answered_at": 69
+    },
+    "g44": {
+      "score": 0.2222222222222222,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 84,
+      "answered_at": 12511
+    },
+    "g45": {
+      "score": 0.6666666666666666,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 39,
+      "answered_at": 685
+    },
+    "g46": {
+      "score": 0.7777777777777778,
+      "shares": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 40,
+      "answered_at": 362
+    },
+    "g47": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 44,
+      "answered_at": null
+    },
+    "g51": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 46,
+      "answered_at": null
+    },
+    "g54": {
+      "score": 1.0,
+      "shares": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 31,
+      "answered_at": 104
+    },
+    "g56": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 36,
+      "answered_at": null
+    },
+    "g57": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 30,
+      "answered_at": null
+    },
+    "g58": {
+      "score": 0.5555555555555556,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 36,
+      "answered_at": 1665
+    },
+    "g59": {
+      "score": 1.0,
+      "shares": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 90,
+      "answered_at": 93
+    },
+    "g60": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 31,
+      "answered_at": null
+    },
+    "g63": {
+      "score": 0.5555555555555556,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 27,
+      "answered_at": 1487
+    },
+    "g64": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 33,
+      "answered_at": null
+    },
+    "g67": {
+      "score": 0.8888888888888888,
+      "shares": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 62,
+      "answered_at": 180
+    },
+    "g68": {
+      "score": 0.5555555555555556,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ideal_cost": 62,
+      "answered_at": 1236
+    },
+    "g70": {
+      "score": 0.0,
+      "shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ideal_cost": 140,
+      "answered_at": null
+    }
+  },
+  "equal_credit": {
+    "overall": {
+      "score": 0.6,
+      "answered_within_1000": 0.48,
+      "answered_within_2000": 0.62,
+      "answered_within_4000": 0.64,
+      "answered_within_8000": 0.66
+    },
+    "by_qtype": {
+      "decision": {
+        "score": 0.75,
+        "answered_within_1000": 0.7142857142857143,
+        "answered_within_2000": 0.7142857142857143,
+        "answered_within_4000": 0.7142857142857143,
+        "answered_within_8000": 0.8571428571428571
+      },
+      "failure_fix": {
+        "score": 0.0,
+        "answered_within_1000": 0.0,
+        "answered_within_2000": 0.0,
+        "answered_within_4000": 0.0,
+        "answered_within_8000": 0.0
+      },
+      "finding": {
+        "score": 0.7105263157894737,
+        "answered_within_1000": 0.631578947368421,
+        "answered_within_2000": 0.7368421052631579,
+        "answered_within_4000": 0.7368421052631579,
+        "answered_within_8000": 0.7368421052631579
+      },
+      "location": {
+        "score": 0.4230769230769231,
+        "answered_within_1000": 0.3076923076923077,
+        "answered_within_2000": 0.46153846153846156,
+        "answered_within_4000": 0.46153846153846156,
+        "answered_within_8000": 0.46153846153846156
+      },
+      "state": {
+        "score": 0.575,
+        "answered_within_1000": 0.3,
+        "answered_within_2000": 0.6,
+        "answered_within_4000": 0.7,
+        "answered_within_8000": 0.7
+      }
+    },
+    "per_query": {
+      "g01": {
+        "score": 0.75,
+        "shares": [
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 1096
+      },
+      "g02": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 196
+      },
+      "g03": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 92
+      },
+      "g04": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 112
+      },
+      "g07": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 310
+      },
+      "g08": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g09": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 96
+      },
+      "g10": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 80
+      },
+      "g11": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 288
+      },
+      "g12": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g13": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g14": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 888
+      },
+      "g15": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g16": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 320
+      },
+      "g17": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g18": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 337
+      },
+      "g19": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g20": {
+        "score": 0.5,
+        "shares": [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 2052
+      },
+      "g21": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g23": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 151
+      },
+      "g25": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 892
+      },
+      "g27": {
+        "score": 0.75,
+        "shares": [
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 1654
+      },
+      "g29": {
+        "score": 0.25,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "answered_at": 6475
+      },
+      "g30": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g31": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 360
+      },
+      "g32": {
+        "score": 0.75,
+        "shares": [
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 1837
+      },
+      "g33": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 499
+      },
+      "g34": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 75
+      },
+      "g35": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 267
+      },
+      "g36": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g37": {
+        "score": 0.75,
+        "shares": [
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 1003
+      },
+      "g39": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 85
+      },
+      "g42": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 64
+      },
+      "g43": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 64
+      },
+      "g44": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g45": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 644
+      },
+      "g46": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 349
+      },
+      "g47": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g51": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g54": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 88
+      },
+      "g56": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g57": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g58": {
+        "score": 0.75,
+        "shares": [
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 1591
+      },
+      "g59": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 77
+      },
+      "g60": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g63": {
+        "score": 0.75,
+        "shares": [
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 1420
+      },
+      "g64": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      },
+      "g67": {
+        "score": 1.0,
+        "shares": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 192
+      },
+      "g68": {
+        "score": 0.75,
+        "shares": [
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "answered_at": 1178
+      },
+      "g70": {
+        "score": 0.0,
+        "shares": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered_at": null
+      }
+    }
+  }
+}

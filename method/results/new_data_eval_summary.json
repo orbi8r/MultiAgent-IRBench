@@ -1,0 +1,38 @@
+{
+  "library_maintainers": {
+    "baseline_main": 0.40189125295508277,
+    "baseline_equal_credit": 0.3351063829787234,
+    "rl_main": 0.4775413711583924,
+    "rl_equal_credit": 0.48404255319148937,
+    "delta_main": 0.07565011820330964,
+    "delta_equal_credit": 0.14893617021276595,
+    "answered_within_2k_base": 0.2978723404255319,
+    "answered_within_2k_rl": 0.40425531914893614,
+    "answered_within_32k_base": 0.7446808510638298,
+    "answered_within_32k_rl": 0.7446808510638298
+  },
+  "literature_review": {
+    "baseline_main": 0.32037037037037036,
+    "baseline_equal_credit": 0.37,
+    "rl_main": 0.36074074074074075,
+    "rl_equal_credit": 0.45,
+    "delta_main": 0.04037037037037039,
+    "delta_equal_credit": 0.08000000000000002,
+    "answered_within_2k_base": 0.32,
+    "answered_within_2k_rl": 0.38,
+    "answered_within_32k_base": 0.58,
+    "answered_within_32k_rl": 0.58
+  },
+  "online_shop": {
+    "baseline_main": 0.44973544973544977,
+    "baseline_equal_credit": 0.5204081632653061,
+    "rl_main": 0.46485260770975056,
+    "rl_equal_credit": 0.5408163265306123,
+    "delta_main": 0.015117157974300799,
+    "delta_equal_credit": 0.020408163265306145,
+    "answered_within_2k_base": 0.5102040816326531,
+    "answered_within_2k_rl": 0.5102040816326531,
+    "answered_within_32k_base": 0.6530612244897959,
+    "answered_within_32k_rl": 0.6530612244897959
+  }
+}

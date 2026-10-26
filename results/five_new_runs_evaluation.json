@@ -1,0 +1,412 @@
+{
+  "runs": {
+    "due_diligence": {
+      "n_questions": 50,
+      "baseline": {
+        "main_score": 0.3987037037037037,
+        "equal_credit": 0.52
+      },
+      "model": {
+        "main_score": 0.47092592592592597,
+        "equal_credit": 0.635,
+        "answered_within_125": 0.14,
+        "answered_within_2k": 0.54,
+        "answered_within_32k": 0.58,
+        "by_qtype": {
+          "failure_fix": {
+            "score": 0.7037037037037037,
+            "answered_within_125": 0.0,
+            "answered_within_250": 0.0,
+            "answered_within_500": 0.0,
+            "answered_within_1000": 1.0,
+            "answered_within_2000": 1.0,
+            "answered_within_4000": 1.0,
+            "answered_within_8000": 1.0,
+            "answered_within_16000": 1.0,
+            "answered_within_32000": 1.0
+          },
+          "finding": {
+            "score": 0.44312169312169314,
+            "answered_within_125": 0.14285714285714285,
+            "answered_within_250": 0.14285714285714285,
+            "answered_within_500": 0.2857142857142857,
+            "answered_within_1000": 0.2857142857142857,
+            "answered_within_2000": 0.42857142857142855,
+            "answered_within_4000": 0.42857142857142855,
+            "answered_within_8000": 0.5714285714285714,
+            "answered_within_16000": 0.5714285714285714,
+            "answered_within_32000": 0.5714285714285714
+          },
+          "history": {
+            "score": 0.5555555555555556,
+            "answered_within_125": 0.0,
+            "answered_within_250": 0.0,
+            "answered_within_500": 0.0,
+            "answered_within_1000": 0.0,
+            "answered_within_2000": 1.0,
+            "answered_within_4000": 1.0,
+            "answered_within_8000": 1.0,
+            "answered_within_16000": 1.0,
+            "answered_within_32000": 1.0
+          },
+          "location": {
+            "score": 0.35185185185185186,
+            "answered_within_125": 0.05555555555555555,
+            "answered_within_250": 0.2222222222222222,
+            "answered_within_500": 0.2777777777777778,
+            "answered_within_1000": 0.3888888888888889,
+            "answered_within_2000": 0.4444444444444444,
+            "answered_within_4000": 0.4444444444444444,
+            "answered_within_8000": 0.4444444444444444,
+            "answered_within_16000": 0.4444444444444444,
+            "answered_within_32000": 0.4444444444444444
+          },
+          "state": {
+            "score": 0.5521885521885522,
+            "answered_within_125": 0.22727272727272727,
+            "answered_within_250": 0.22727272727272727,
+            "answered_within_500": 0.3181818181818182,
+            "answered_within_1000": 0.4090909090909091,
+            "answered_within_2000": 0.5909090909090909,
+            "answered_within_4000": 0.5909090909090909,
+            "answered_within_8000": 0.6363636363636364,
+            "answered_within_16000": 0.6363636363636364,
+            "answered_within_32000": 0.6363636363636364
+          }
+        }
+      },
+      "lift": {
+        "main_lift": 0.07222222222222224,
+        "equal_credit_lift": 0.11499999999999999
+      }
+    },
+    "executive_assistants": {
+      "n_questions": 50,
+      "baseline": {
+        "main_score": 0.46592592592592597,
+        "equal_credit": 0.54
+      },
+      "model": {
+        "main_score": 0.5177777777777778,
+        "equal_credit": 0.6,
+        "answered_within_125": 0.18,
+        "answered_within_2k": 0.6,
+        "answered_within_32k": 0.72,
+        "by_qtype": {
+          "decision": {
+            "score": 0.634920634920635,
+            "answered_within_125": 0.14285714285714285,
+            "answered_within_250": 0.14285714285714285,
+            "answered_within_500": 0.2857142857142857,
+            "answered_within_1000": 0.7142857142857143,
+            "answered_within_2000": 0.7142857142857143,
+            "answered_within_4000": 0.7142857142857143,
+            "answered_within_8000": 0.8571428571428571,
+            "answered_within_16000": 1.0,
+            "answered_within_32000": 1.0
+          },
+          "failure_fix": {
+            "score": 0.2222222222222222,
+            "answered_within_125": 0.0,
+            "answered_within_250": 0.0,
+            "answered_within_500": 0.0,
+            "answered_within_1000": 0.0,
+            "answered_within_2000": 0.0,
+            "answered_within_4000": 0.0,
+            "answered_within_8000": 0.0,
+            "answered_within_16000": 1.0,
+            "answered_within_32000": 1.0
+          },
+          "finding": {
+            "score": 0.6140350877192983,
+            "answered_within_125": 0.2631578947368421,
+            "answered_within_250": 0.3684210526315789,
+            "answered_within_500": 0.5789473684210527,
+            "answered_within_1000": 0.5789473684210527,
+            "answered_within_2000": 0.6842105263157895,
+            "answered_within_4000": 0.6842105263157895,
+            "answered_within_8000": 0.6842105263157895,
+            "answered_within_16000": 0.6842105263157895,
+            "answered_within_32000": 0.6842105263157895
+          },
+          "location": {
+            "score": 0.3504273504273504,
+            "answered_within_125": 0.15384615384615385,
+            "answered_within_250": 0.15384615384615385,
+            "answered_within_500": 0.23076923076923078,
+            "answered_within_1000": 0.3076923076923077,
+            "answered_within_2000": 0.46153846153846156,
+            "answered_within_4000": 0.46153846153846156,
+            "answered_within_8000": 0.46153846153846156,
+            "answered_within_16000": 0.46153846153846156,
+            "answered_within_32000": 0.46153846153846156
+          },
+          "state": {
+            "score": 0.5,
+            "answered_within_125": 0.1,
+            "answered_within_250": 0.1,
+            "answered_within_500": 0.2,
+            "answered_within_1000": 0.3,
+            "answered_within_2000": 0.6,
+            "answered_within_4000": 0.7,
+            "answered_within_8000": 0.7,
+            "answered_within_16000": 0.8,
+            "answered_within_32000": 0.9
+          }
+        }
+      },
+      "lift": {
+        "main_lift": 0.051851851851851816,
+        "equal_credit_lift": 0.05999999999999994
+      }
+    },
+    "help_desk": {
+      "n_questions": 50,
+      "baseline": {
+        "main_score": 0.3896296296296296,
+        "equal_credit": 0.435
+      },
+      "model": {
+        "main_score": 0.4026666666666667,
+        "equal_credit": 0.44,
+        "answered_within_125": 0.08,
+        "answered_within_2k": 0.44,
+        "answered_within_32k": 0.56,
+        "by_qtype": {
+          "decision": {
+            "score": 0.6666666666666666,
+            "answered_within_125": 0.0,
+            "answered_within_250": 0.5,
+            "answered_within_500": 0.5,
+            "answered_within_1000": 0.5,
+            "answered_within_2000": 0.5,
+            "answered_within_4000": 1.0,
+            "answered_within_8000": 1.0,
+            "answered_within_16000": 1.0,
+            "answered_within_32000": 1.0
+          },
+          "failure_fix": {
+            "score": 0.0,
+            "answered_within_125": 0.0,
+            "answered_within_250": 0.0,
+            "answered_within_500": 0.0,
+            "answered_within_1000": 0.0,
+            "answered_within_2000": 0.0,
+            "answered_within_4000": 0.0,
+            "answered_within_8000": 0.0,
+            "answered_within_16000": 0.0,
+            "answered_within_32000": 0.0
+          },
+          "finding": {
+            "score": 0.39148148148148143,
+            "answered_within_125": 0.03333333333333333,
+            "answered_within_250": 0.1,
+            "answered_within_500": 0.26666666666666666,
+            "answered_within_1000": 0.36666666666666664,
+            "answered_within_2000": 0.43333333333333335,
+            "answered_within_4000": 0.43333333333333335,
+            "answered_within_8000": 0.5,
+            "answered_within_16000": 0.5333333333333333,
+            "answered_within_32000": 0.5666666666666667
+          },
+          "history": {
+            "score": 0.7314814814814815,
+            "answered_within_125": 0.3333333333333333,
+            "answered_within_250": 0.5,
+            "answered_within_500": 0.6666666666666666,
+            "answered_within_1000": 0.6666666666666666,
+            "answered_within_2000": 0.8333333333333334,
+            "answered_within_4000": 0.8333333333333334,
+            "answered_within_8000": 0.8333333333333334,
+            "answered_within_16000": 0.8333333333333334,
+            "answered_within_32000": 0.8333333333333334
+          },
+          "location": {
+            "score": 0.2638888888888889,
+            "answered_within_125": 0.125,
+            "answered_within_250": 0.125,
+            "answered_within_500": 0.125,
+            "answered_within_1000": 0.25,
+            "answered_within_2000": 0.25,
+            "answered_within_4000": 0.375,
+            "answered_within_8000": 0.375,
+            "answered_within_16000": 0.375,
+            "answered_within_32000": 0.375
+          },
+          "state": {
+            "score": 0.1851851851851852,
+            "answered_within_125": 0.0,
+            "answered_within_250": 0.0,
+            "answered_within_500": 0.0,
+            "answered_within_1000": 0.0,
+            "answered_within_2000": 0.3333333333333333,
+            "answered_within_4000": 0.3333333333333333,
+            "answered_within_8000": 0.3333333333333333,
+            "answered_within_16000": 0.3333333333333333,
+            "answered_within_32000": 0.3333333333333333
+          }
+        }
+      },
+      "lift": {
+        "main_lift": 0.01303703703703707,
+        "equal_credit_lift": 0.0050000000000000044
+      }
+    },
+    "on_call": {
+      "n_questions": 50,
+      "baseline": {
+        "main_score": 0.31722222222222224,
+        "equal_credit": 0.35
+      },
+      "model": {
+        "main_score": 0.35703703703703704,
+        "equal_credit": 0.445,
+        "answered_within_125": 0.04,
+        "answered_within_2k": 0.4,
+        "answered_within_32k": 0.58,
+        "by_qtype": {
+          "finding": {
+            "score": 0.41426611796982166,
+            "answered_within_125": 0.07407407407407407,
+            "answered_within_250": 0.14814814814814814,
+            "answered_within_500": 0.18518518518518517,
+            "answered_within_1000": 0.2962962962962963,
+            "answered_within_2000": 0.5185185185185185,
+            "answered_within_4000": 0.5185185185185185,
+            "answered_within_8000": 0.5555555555555556,
+            "answered_within_16000": 0.6296296296296297,
+            "answered_within_32000": 0.6296296296296297
+          },
+          "history": {
+            "score": 0.5185185185185185,
+            "answered_within_125": 0.0,
+            "answered_within_250": 0.0,
+            "answered_within_500": 0.0,
+            "answered_within_1000": 0.3333333333333333,
+            "answered_within_2000": 0.3333333333333333,
+            "answered_within_4000": 0.3333333333333333,
+            "answered_within_8000": 0.6666666666666666,
+            "answered_within_16000": 0.6666666666666666,
+            "answered_within_32000": 0.6666666666666666
+          },
+          "location": {
+            "score": 0.22222222222222224,
+            "answered_within_125": 0.0,
+            "answered_within_250": 0.05263157894736842,
+            "answered_within_500": 0.05263157894736842,
+            "answered_within_1000": 0.10526315789473684,
+            "answered_within_2000": 0.21052631578947367,
+            "answered_within_4000": 0.2631578947368421,
+            "answered_within_8000": 0.3684210526315789,
+            "answered_within_16000": 0.47368421052631576,
+            "answered_within_32000": 0.47368421052631576
+          },
+          "state": {
+            "score": 0.8888888888888888,
+            "answered_within_125": 0.0,
+            "answered_within_250": 1.0,
+            "answered_within_500": 1.0,
+            "answered_within_1000": 1.0,
+            "answered_within_2000": 1.0,
+            "answered_within_4000": 1.0,
+            "answered_within_8000": 1.0,
+            "answered_within_16000": 1.0,
+            "answered_within_32000": 1.0
+          }
+        }
+      },
+      "lift": {
+        "main_lift": 0.0398148148148148,
+        "equal_credit_lift": 0.09500000000000003
+      }
+    },
+    "textbook_team": {
+      "n_questions": 50,
+      "baseline": {
+        "main_score": 0.435,
+        "equal_credit": 0.525
+      },
+      "model": {
+        "main_score": 0.49407407407407405,
+        "equal_credit": 0.6,
+        "answered_within_125": 0.06,
+        "answered_within_2k": 0.54,
+        "answered_within_32k": 0.72,
+        "by_qtype": {
+          "decision": {
+            "score": 0.6894586894586894,
+            "answered_within_125": 0.15384615384615385,
+            "answered_within_250": 0.38461538461538464,
+            "answered_within_500": 0.46153846153846156,
+            "answered_within_1000": 0.5384615384615384,
+            "answered_within_2000": 0.6153846153846154,
+            "answered_within_4000": 0.7692307692307693,
+            "answered_within_8000": 0.9230769230769231,
+            "answered_within_16000": 0.9230769230769231,
+            "answered_within_32000": 1.0
+          },
+          "finding": {
+            "score": 0.478395061728395,
+            "answered_within_125": 0.0,
+            "answered_within_250": 0.0,
+            "answered_within_500": 0.25,
+            "answered_within_1000": 0.3333333333333333,
+            "answered_within_2000": 0.6666666666666666,
+            "answered_within_4000": 0.75,
+            "answered_within_8000": 0.75,
+            "answered_within_16000": 0.75,
+            "answered_within_32000": 0.75
+          },
+          "history": {
+            "score": 0.5555555555555556,
+            "answered_within_125": 0.0,
+            "answered_within_250": 0.4,
+            "answered_within_500": 0.4,
+            "answered_within_1000": 0.4,
+            "answered_within_2000": 0.6,
+            "answered_within_4000": 0.6,
+            "answered_within_8000": 0.6,
+            "answered_within_16000": 0.6,
+            "answered_within_32000": 0.6
+          },
+          "location": {
+            "score": 0.3333333333333333,
+            "answered_within_125": 0.05263157894736842,
+            "answered_within_250": 0.15789473684210525,
+            "answered_within_500": 0.21052631578947367,
+            "answered_within_1000": 0.2631578947368421,
+            "answered_within_2000": 0.3684210526315789,
+            "answered_within_4000": 0.3684210526315789,
+            "answered_within_8000": 0.5263157894736842,
+            "answered_within_16000": 0.5263157894736842,
+            "answered_within_32000": 0.5263157894736842
+          },
+          "state": {
+            "score": 0.8888888888888888,
+            "answered_within_125": 0.0,
+            "answered_within_250": 1.0,
+            "answered_within_500": 1.0,
+            "answered_within_1000": 1.0,
+            "answered_within_2000": 1.0,
+            "answered_within_4000": 1.0,
+            "answered_within_8000": 1.0,
+            "answered_within_16000": 1.0,
+            "answered_within_32000": 1.0
+          }
+        }
+      },
+      "lift": {
+        "main_lift": 0.05907407407407406,
+        "equal_credit_lift": 0.07499999999999996
+      }
+    }
+  },
+  "summary": {
+    "mean_baseline_main": 0.40129629629629626,
+    "mean_baseline_equal": 0.47400000000000003,
+    "mean_model_main": 0.4484962962962963,
+    "mean_model_equal": 0.5439999999999999,
+    "mean_lift_main": 0.04720000000000002,
+    "mean_lift_equal": 0.0699999999999999
+  }
+}

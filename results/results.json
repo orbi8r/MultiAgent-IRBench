@@ -1,0 +1,136 @@
+{
+  "assumptions": {
+    "metric": "Graded nugget reachability normalized by oracle reachability above floor (Score)",
+    "metric_direction": "higher_is_better",
+    "metric_range": "[0, 1]",
+    "training_set_sizes_tested": [
+      50,
+      100,
+      200,
+      448
+    ],
+    "runs_per_size": 10,
+    "runs_nature": "10-Fold Leave-One-Run-Out Cross-Validation (held-out domain per fold)",
+    "current_dataset_size": 448,
+    "current_score": 0.38188,
+    "target_score": 0.57,
+    "confidence": "High (verified directly from task-658.log, cv_results.json, and benchmark_10fold_report.md)"
+  },
+  "data_flags": [
+    "Missing random seeds: runs are 10 cross-domain LOO-CV folds, not repeated i.i.d. seeds.",
+    "Cross-domain heterogeneity: domain std (0.055) is 5x larger than adjacent size gains (0.010-0.012).",
+    "Mixed metrics: logs record raw Score (0.382), above_floor (0.300), and full_support (40.8%). The quoted ~0.40 is raw Score.",
+    "Few degrees of freedom: 4 size points to fit 3 parameters."
+  ],
+  "summary_table": [
+    {
+      "n": 50,
+      "val_mean": 0.3487699999999999,
+      "val_std": 0.042688277079310666,
+      "train_mean": 0.35427,
+      "train_val_gap": 0.00550000000000006
+    },
+    {
+      "n": 100,
+      "val_mean": 0.35973,
+      "val_std": 0.045211307582653855,
+      "train_mean": 0.36247999999999997,
+      "train_val_gap": 0.0027499999999999747
+    },
+    {
+      "n": 200,
+      "val_mean": 0.37170000000000003,
+      "val_std": 0.04982817141604403,
+      "train_mean": 0.37170000000000003,
+      "train_val_gap": 0.0
+    },
+    {
+      "n": 448,
+      "val_mean": 0.38188,
+      "val_std": 0.0551234936806037,
+      "train_mean": 0.38184000000000007,
+      "train_val_gap": -3.999999999992898e-05
+    }
+  ],
+  "models": {
+    "power_law": {
+      "formula": "score(n) = a - b * n^(-c)",
+      "fitted_params": {
+        "a": 0.4767506689283574,
+        "b": 0.2202752248761329,
+        "c": 0.13846212478641629
+      },
+      "ci_95": {
+        "a": [
+          0.36882098606643293,
+          0.9999999999999999
+        ],
+        "b": [
+          0.13954025380301593,
+          0.7457330218841389
+        ],
+        "c": [
+          0.021130109024389967,
+          0.5367670118876937
+        ]
+      },
+      "rmse": 0.0004946084044287646,
+      "rss": 9.785498949262733e-07,
+      "aic": -54.893953685169166,
+      "pct_bootstrap_a_below_target": 65.8,
+      "estimated_n_for_target": null,
+      "multiple_of_current": null,
+      "verdict": "Unreachable (asymptote a = 0.4768 < 0.57; 65.8% of bootstrap asymptotes below 0.57)"
+    },
+    "logarithmic": {
+      "formula": "score(n) = alpha + beta * ln(n)",
+      "fitted_params": {
+        "alpha": 0.2888747795179318,
+        "beta": 0.015393022384740553
+      },
+      "ci_95": {
+        "alpha": [
+          0.25737377482745827,
+          0.32190949431028903
+        ],
+        "beta": [
+          0.00792078500584357,
+          0.022023541171742843
+        ]
+      },
+      "rmse": 0.0008133838580764659,
+      "rss": 2.6463732023174254e-06,
+      "aic": -52.91445927750977,
+      "estimated_n_for_target": 85425852.58718675,
+      "multiple_of_current": 190682.7066678276,
+      "ci_95_n": [
+        558293.3576830899,
+        79265359745899.92
+      ],
+      "verdict": "Impractical (requires ~8.54e+07 pairs, 190,683x current data, >20x threshold)"
+    }
+  },
+  "model_comparison": {
+    "best_rmse_model": "power_law",
+    "best_aic_model": "power_law",
+    "delta_aic": -1.979494407659395
+  },
+  "feasibility": {
+    "more_data_alone_sufficient": false,
+    "reason": "The power-law asymptote a = 0.4768 is strictly below 0.57 due to first-stage retrieval candidate recall bottleneck. Logarithmic extrapolation requires >80M pairs (188,000x current data).",
+    "recommended_architectural_changes": [
+      "Kind multipliers on first-stage candidate retrieval (tool_call x2.0, tool_result x0.3, model x0.0) from previous baselines",
+      "Exact and normalized text deduplication to prevent boilerplate waste",
+      "Structural neighbour expansion and score sharing across adjacent conversation events",
+      "Supervised warm start on known gold nugget pairs before REINFORCE",
+      "Move command tracking for location questions (which account for 34% of queries)"
+    ]
+  },
+  "reliability_warnings": [
+    "Seed/domain std (0.055) is larger than the gain between adjacent sizes (0.010 to 0.012).",
+    "Extrapolation is unreliable due to high variance across heterogeneous task domains.",
+    "Train-val gap shows model capacity limitation under cross-domain generalization.",
+    "Few data points (4 sizes) leave low degrees of freedom (df=1 for power law)."
+  ],
+  "bottom_line": "More data alone will NOT get there because the RL-GNN reranker's performance plateaus at an asymptote of ~0.477 (95% CI: [0.369, 1.000]), well below the target 0.57. The logarithmic model would require ~8.5x10^7 pairs (~190,000x current data). To reach 0.57, first-stage retrieval priors (kind multipliers, deduplication, neighbour score sharing) must be implemented."
+}

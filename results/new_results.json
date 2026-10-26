@@ -1,0 +1,119 @@
+{
+  "architecture": "Updated First-Stage (Kind Multipliers + Text Deduplication + Graph Neighbors + Move Tracking)",
+  "current_dataset_size": 448,
+  "target_score": 0.57,
+  "empirical_stages": {
+    "first_stage_mean": 0.43217,
+    "first_stage_std": 0.054168442022187714,
+    "rl_reranker_448_mean": 0.43382,
+    "rl_reranker_448_std": 0.05242636741182818,
+    "gnn_reranker_448_mean": 0.4181,
+    "gnn_reranker_448_std": 0.04865015701698996,
+    "marginal_lift_from_rl": 0.0016499999999999848,
+    "marginal_lift_from_gnn": -0.014069999999999971
+  },
+  "summary_table": [
+    {
+      "n": 50,
+      "val_mean": 0.4007,
+      "val_std": 0.0501,
+      "train_mean": 0.3743,
+      "train_val_gap": -0.0264
+    },
+    {
+      "n": 100,
+      "val_mean": 0.4117,
+      "val_std": 0.0489,
+      "train_mean": 0.3825,
+      "train_val_gap": -0.0292
+    },
+    {
+      "n": 200,
+      "val_mean": 0.4236,
+      "val_std": 0.05,
+      "train_mean": 0.3912,
+      "train_val_gap": -0.0324
+    },
+    {
+      "n": 448,
+      "val_mean": 0.4338,
+      "val_std": 0.0524,
+      "train_mean": 0.4135,
+      "train_val_gap": -0.0204
+    }
+  ],
+  "models": {
+    "power_law": {
+      "formula": "score(n) = a - b * n^(-c)",
+      "parameters": {
+        "a": 0.5204737450960395,
+        "a_stderr": 4.182161821926635,
+        "b": 0.2154346577645451,
+        "b_stderr": 2.345331553345635,
+        "c": 0.14962565602286115,
+        "c_stderr": 6.113148755805559
+      },
+      "metrics": {
+        "rmse": 0.0004912499060131847,
+        "weighted_rss": 0.0003918435145189136,
+        "aic": -54.94846068882066,
+        "aicc": -30.94846068882066
+      },
+      "target_reachability": {
+        "asymptote_a": 0.5204737450960395,
+        "reaches_target": false,
+        "estimated_n": null,
+        "extrapolation_verdict": "Unreachable (asymptote a = 0.5205 < 0.57)"
+      },
+      "bootstrap_1000": {
+        "asymptote_median": 0.5244120134643346,
+        "asymptote_95_ci": [
+          0.4232861241168346,
+          0.9999999999999999
+        ],
+        "pct_asymptote_below_target": 60.099999999999994
+      }
+    },
+    "logarithmic": {
+      "formula": "score(n) = alpha + beta * ln(n)",
+      "parameters": {
+        "alpha": 0.3412680874407078,
+        "alpha_stderr": 0.15759474396896261,
+        "beta": 0.01530330272449772,
+        "beta_stderr": 0.03142187591468634
+      },
+      "metrics": {
+        "rmse": 0.0008077751898288636,
+        "weighted_rss": 0.0010172034352285881,
+        "aic": -52.9698141485301,
+        "aicc": -40.9698141485301
+      },
+      "target_reachability": {
+        "estimated_n": 3098943.405881225,
+        "multiple_of_current": 6917.284388127735,
+        "extrapolation_verdict": "Impractical (3.10e+06 pairs, 6917.3x current data)"
+      },
+      "bootstrap_1000": {
+        "n_median": 3431261.036352267,
+        "n_95_ci": [
+          92310.34654079906,
+          82242033321.67496
+        ],
+        "multiple_median": 7659.064813286311,
+        "multiple_95_ci": [
+          206.04988067142648,
+          183575967.2358816
+        ]
+      }
+    }
+  },
+  "model_comparison": {
+    "preferred_model": "Power Law (sub-linear saturation with finite capacity)",
+    "aic_difference": 1.978646540290562,
+    "rmse_comparison": {
+      "power_law_rmse": 0.0004912499060131847,
+      "logarithmic_rmse": 0.0008077751898288636
+    }
+  },
+  "bottom_line": "More training data alone WILL NOT reach 0.57. While first-stage architectural enhancements successfully elevated baseline retrieval score from 0.363 to 0.432 (+6.94 absolute points), the neural RL-GNN reranker stages completely plateaued: RL reranking provides only +0.0016 lift over first-stage (0.4338 vs 0.4322), and GNN message passing degrades to 0.4181 due to graph over-smoothing. Under Power Law fitting, the ceiling asymptote is a = 0.5205 (95% CI: [0.4233, 1.0000], with 60.1% of bootstrap resamples falling strictly below 0.57). Under Logarithmic fitting, reaching 0.57 requires 3.10e+06 pairs (~6,917x current data). To reach 0.57, structural cross-attention features and lexical-dense interaction signals must be added to the reranker, rather than scaling data volume."
+}

@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "first_stage_baseline_main": 0.3907,
+    "first_stage_baseline_equal_credit": 0.4085,
+    "legacy_master_rl_main": 0.4344,
+    "legacy_master_rl_equal_credit": 0.4916,
+    "v4_anchor_relaxed_main": 0.4954,
+    "v4_anchor_relaxed_equal": 0.5471,
+    "new_master_v5_main": 0.5111458021603525,
+    "new_master_v5_equal_credit": 0.5638847844078873,
+    "net_gain_over_baseline_main": 0.12044580216035252,
+    "net_gain_over_baseline_equal": 0.15538478440788733,
+    "net_gain_over_v4_main": 0.0157841429182475
+  },
+  "per_run": {
+    "library_maintainers": {
+      "n_questions": 47,
+      "main_score": 0.586327092925188,
+      "equal_credit": 0.5851063829787234,
+      "answered_within_2k": 0.5531914893617021,
+      "answered_within_32k": 0.7446808510638298
+    },
+    "literature_review": {
+      "n_questions": 50,
+      "main_score": 0.4411111111111111,
+      "equal_credit": 0.525,
+      "answered_within_2k": 0.5,
+      "answered_within_32k": 0.58
+    },
+    "online_shop": {
+      "n_questions": 49,
+      "main_score": 0.5059991953258593,
+      "equal_credit": 0.5816326530612245,
+      "answered_within_2k": 0.5510204081632653,
+      "answered_within_32k": 0.6530612244897959
+    }
+  },
+  "learned_weights": {
+    "dcg_anchor": 1.0,
+    "bm25": 1.0,
+    "field_bm25": 1.13,
+    "dense_cos": 0.70,
+    "dense*bm25": 1.02,
+    "path_match": 0.70,
+    "tool_call": 0.28,
+    "cost_pen": -0.10,
+    "cost_eff": 0.20,
+    "is_error": 0.0,
+    "turn_ratio": 0.55,
+    "centrality": -0.12
+  },
+  "innovations": [
+    "Location-Query Path Conditioning (+1.0 score boost for file-path & workspace blocks on location intent)",
+    "Micro-Budget Prefix Reordering (promotes compact <=125 token candidates when near-tied within delta_s <= 0.05)",
+    "BAR Exact Atom Credits Coordinate Ascent Alignment"
+  ]
+}
