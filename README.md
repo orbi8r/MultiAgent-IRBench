@@ -91,7 +91,7 @@ Tip: short pieces first. One long event can eat the whole budget.
 
 ## Leaderboards
 
-We ran 312 methods on online_shop, library_maintainers and literature_review with the same code, and no method saw the answer keys. No method has been run on the 5 runs added later yet, so they have no leaderboard and no example numbers. The tables show the top 5. Learned to rank and origin lines were fitted on the old questions of these runs, so their rank there is not a held out result. With about 50 questions a run, two methods less than about 0.05 apart are usually not reliably ordered on one run, so compare methods by the mean over the three runs. An empty list scores 0, methods that ignore the question score 0.03 to 0.06 and the oracle scores 1.000 on every run. The example method `example_bm25.py` scores 0.501, 0.488 and 0.509 on online_shop, library_maintainers and literature_review (equal credit 0.536, 0.511 and 0.615).
+We ran 312 methods on online_shop, library_maintainers and literature_review with the same code, and no method saw the answer keys. These leaderboards cover the 3 dev runs only. Scores on the 5 runs added later, for the methods of the IR study, are in `ir_methods/results/`. The tables show the top 5. Learned to rank and origin lines were fitted on the old questions of these runs, so their rank there is not a held out result. With about 50 questions a run, two methods less than about 0.05 apart are usually not reliably ordered on one run, so compare methods by the mean over the three runs. An empty list scores 0, methods that ignore the question score 0.03 to 0.06 and the oracle scores 1.000 on every run. The example method `example_bm25.py` scores 0.501, 0.488 and 0.509 on online_shop, library_maintainers and literature_review (equal credit 0.536, 0.511 and 0.615).
 
 ### online_shop
 
@@ -138,6 +138,10 @@ We ran 312 methods on online_shop, library_maintainers and literature_review wit
 
 396 questions in all. The type mix follows what each team actually looked up, so it differs from run to run. In the 5 newer runs the questions are spread over the whole run by when each one comes up in it, 2 to 7 per tenth and 5 in most. The other 2 runs, `city_data` and `debate_panel`, are withdrawn for now.
 
+## IR methods study
+
+The study document `docs/MultiAgentBench_IR_study.docx` compares lexical and dense baselines, first stage lists, rerankers trained on public traces, the list builder, query expansion, the RL style methods of `method/` re run under the current scorer and structure aware variants. Every number in it is scored by `score.py` on the 8 public runs, with leave one run out on the 3 dev runs and a frozen setting on the 5 test runs. The code, recipes and result tables behind it are in `ir_methods/`. Start at `ir_methods/README.md`, which maps every tag in the document to its script and recipe and shows a one minute CPU baseline run.
+
 ## Repository Layout
 
 The custom models, experiments, results, and documentation are organized as follows:
@@ -145,6 +149,7 @@ The custom models, experiments, results, and documentation are organized as foll
 ```
 MultiAgent-IRBench/
 ├── docs/       # Complete technical documentation, specifications & experiment reports
+├── ir_methods/ # Code, recipes and result tables of the IR methods study (see its README)
 ├── method/     # Custom model & retrieval pipeline implementations (also symlinked as methods/)
 ├── scripts/    # All plotting, experiment, threshold analysis & evaluation scripts
 ├── results/    # Benchmark JSON outputs, submission files & generated figures

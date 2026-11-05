@@ -1,0 +1,37 @@
+pattern,flag,reason
+nr_.*,not_run,declared not run: needs 2 or more GPUs or answer keys to fit or failed in the doc (section 5.4 of the document)
+old_example_bm25,clean,repo baseline script run unmodified (doc s8 Lexical and s4.1)
+old_zs_.*_d200,fitted_on_old_keys,ambiguous: the rerankers are zero shot but the first stage h_rrf60_bm25_bge_base uses the stemstop BM25 and bge base picked by the old sweeps scored on old keys (doc s8 Dense and Zero shot table)
+old_bm25_stemstop_(blocks|both),fitted_on_old_keys,ambiguous: stem plus stop and the unit were picked as best of 85 lexical configs scored on an earlier key set that included the test runs but the effect is under 0.03 (doc s8 Lexical)
+old_(s_dedup|p_bm25_dedup),fitted_on_old_keys,ambiguous: dedup is a fixed rule that carried over but the base config was picked on old keys and dedup was the big old lever (doc s8 Structure stack)
+old_(d_bge_base_blocks|h_rrf60_bm25_bge_base|h_rrf10_bm25_bge_base|h_rrf60_bm25_bge_base_e5_small|p_rrf_dedup),fitted_on_old_keys,"ambiguous: dense model and RRF members and k were chosen on old keys, no trained weights (doc s8 Dense and Hybrid)"
+old_.*,fitted_on_old_keys,stack constants (kind multipliers or field mix 0.3 or neighbours or follow_moves 20 and 1.1 or CE depth and weights or mm constants) tuned on old keys with LOOCV over an earlier key set that included these records (doc s8 Structure stack and Origin and Memory map)
+ftpub_.*,clean,ftpub trained on public SWE agent traces only and the K tau and expansion grids are reported whole (doc s5 Public readers and s6.6)
+rstul(6|12)_fuse0_k[0-9]+,clean,MiniLM student trained on public rows with hard labels and no benchmark data (doc s5 d7 students)
+cas_rstul(6|12)_k[0-9]+_n[0-9]+,clean,public trained student plus ftpub reader on its top N with fixed N grid (doc s5 reader cascades)
+fam_.*_ftpub,clean,key free family lists scored by the public reader (doc s6.4 and s6.6)
+d2q_.*,clean,doc2query text made from the record text by public t5 or Qwen3 1.7B and no keys (doc s6.7)
+(ftsyn_(on|lib|lit)|ft4b_(on|lib|lit)|fttrans|ftreal_lib|ftwho_lib),clean,PROBE trained on synthetic rows or keys of the 3 dev runs only and never on the 5 test runs or their old keys (doc s5 Benchmark synthetic teachers); doc_kind PROBE stays
+ens_.*,clean,ensembles of zero shot or public readers over a fixed weight grid and weights picked on dev runs only (doc s5)
+(zs06|zs06_nolb|z2_first|z3|bgem3_nolb|c4b|zs4b|lw4|t1),clean,zero shot models or key free first stage or timed run of the public reader (doc s5 Zero shot readers)
+(ftpub|ftpub4b|ftpub2x|ftpub4b2x),clean,trained on public SWE agent traces only (doc s5 Public readers)
+(ce_l6|ce_l12|ce_bgeb|ce_l12_512|ce_bgeb512|ds_bgeb),clean,students trained on public rows only and ds_bgeb teacher scores are on public rows with weight 0.5 picked on dev runs (doc s5 Speed students)
+(fast_(S100_30|X100)|time_fast_(S100_30|X100)_1gpu),clean,timed public reader pipeline with nothing fitted on the runs (doc s7)
+(example_bm25|bm25_ctx_alone),clean,BM25 baselines with no training (doc s4.1)
+algread_.*,clean,BM25 reader and a fixed weight grid and best cell picked on the 3 dev runs only (doc s6.7)
+convprf_.*,clean,fixed B and W grid with no training (doc s6.7)
+filelevel_.*,clean,BM25 file retrieval with no training (doc s6.7)
+fs_(base|nov)_any[0-9]+,clean,key free first stage recall (doc s6.1 and s6.3)
+rec200_.*,clean,key free lexical families and structure expansion (doc s6.4)
+(time_d7_cpu_total|time_fuse0),clean,CPU timing of key free first stage (doc s6.5)
+pl_fs_.*,fitted_on_old_keys,"ambiguous: the original first stage constants (RRF weights, kind multipliers, struct weights) were tuned in the old era on an earlier key set that included the test runs"
+pl_rules_.*,fitted_on_old_keys,"ambiguous: same old era first stage constants plus hand rules (location path boost, 125 token promotion)"
+pl_dp_.*,clean,Model B weights fitted on the 3 dev runs only (LORO for dev); first stage design exposed
+pl_shipped_.*,fitted_on_old_keys,"probe: the original committed direct_policy_master.json, training data not recoverable, dev score in sample"
+pl_modelA_.*,clean,"Model A trained on the 3 dev runs only, last epoch, no eval selection; first stage design exposed"
+pl_h.*,clean,"the original features unfitted design, weights fitted on 3 dev runs only, ftpub trained on public data only"
+f2_.*,clean,"full2 task output: frozen from the 3 dev runs, public training data only"
+t2_.*,clean,"full2 timing only row, no test sub"
+f3_.*,clean,"full3 task output: structure aware variants, frozen from the 3 dev runs, public training data only, no LLM"
+t3_.*,clean,"full3 timing only row, no test sub"
+.*,unknown,tag not covered by any pattern: check the doc and add a row

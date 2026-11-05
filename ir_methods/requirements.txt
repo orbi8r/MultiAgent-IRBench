@@ -1,0 +1,15 @@
+# Tested with Python 3.14. Any recent Python 3 that your torch build supports works.
+# The CPU baselines in baselines/ and the lexical first stage only need numpy, scipy, scikit-learn, nltk and snowballstemmer.
+numpy>=2.0
+scipy>=1.13
+scikit-learn>=1.5
+nltk>=3.9
+snowballstemmer>=2.2
+lightgbm>=4.3
+pyarrow>=15
+huggingface_hub>=0.24
+# Neural stages (readers, students, dense first stage). A CUDA GPU with 11 GB is enough for every recipe.
+torch>=2.4
+transformers>=4.50
+peft>=0.12
+sentence-transformers>=3.0
