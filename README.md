@@ -2,6 +2,10 @@
 
 Test your search method on the memory of an AI agent team.
 
+[![Watch the film](docs/film_teaser.gif)](media/ThreadBench_film_v3.webm)
+
+Click the clip to open the full film, about 8 minutes. The webm is the best quality. If your browser will not play it, the mp4 on the [release page](https://github.com/orbi8r/MultiAgent-IRBench/releases/tag/film-v3) is the fallback.
+
 ![How it works](docs/how_it_works.svg)
 
 A team of AI agents works on a real job for hours, and every step they take is saved. Later one of them asks "where did we put X?". Your method searches the saved record and hands back the pieces that answer it. `score.py` grades those pieces.
