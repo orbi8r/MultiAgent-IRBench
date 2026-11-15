@@ -34,7 +34,7 @@ pip3 install torch sentence-transformers numpy scikit-learn matplotlib --break-s
 # Quick test (1 fold, 5 epochs, 4 samples)
 python3 -m method.train --quick --fold on_call
 
-# Full training (all 10 folds, 80 epochs)
+# Full training (one fold per run in runs/, 80 epochs)
 python3 -m method.train --epochs 80
 
 # Generate plots and ablation table
@@ -59,20 +59,13 @@ python3 -m method.evaluate --strata
 
 ## Training Details
 
-- **Cross-validation**: Leave-one-run-out (10 folds × ~50 questions each)
+- **Cross-validation**: Leave one run out (one fold per run, about 50 questions each)
 - **RL algorithm**: REINFORCE with Plackett-Luce ranking policy
-- **Reward**: `score_query()` — the exact benchmark metric
+- **Reward**: `score_query()`, the exact benchmark metric
 - **Temperature**: Annealed from τ=1.0 → τ=0.1 over 80 epochs
 - **Trainable params**: ~215K (RL head) + ~100K (GNN)
-- **MiniLM**: Frozen (saves VRAM on RTX 3050 4GB)
-- **Estimated time**: ~1-2 hours total
+- **MiniLM**: Frozen (fits a 4 GB GPU)
 
-## Expected Results
+## Results
 
-| Configuration | Expected Score | Above Floor |
-|--------------|---------------|-------------|
-| Fusion baseline | 0.30–0.50 | +0.15–0.40 |
-| M0+M1 (Struct+Fuse) | 0.35–0.55 | +0.20–0.45 |
-| +M2 (RL) | 0.45–0.65 | +0.30–0.55 |
-| +M3 (GNN) | 0.48–0.68 | +0.33–0.58 |
-| Full System | 0.50–0.70 | +0.35–0.60 |
+This pipeline was first built for the earlier 10 run release and its old scorer. Its methods were run again under the current `score.py` on the 8 public runs as part of the IR study. Those numbers are in `docs/MultiAgentBench_IR_study.docx` and `ir_methods/results/`, and the scripts that ran them are in `ir_methods/rl_style/`.

@@ -6,6 +6,17 @@ Test your search method on the memory of an AI agent team.
 
 A team of AI agents works on a real job for hours, and every step they take is saved. Later one of them asks "where did we put X?". Your method searches the saved record and hands back the pieces that answer it. `score.py` grades those pieces.
 
+## Results
+
+We compared lexical, dense, fine tuned and structure aware retrieval on the 8 public runs: 3 dev runs scored leave one run out and 5 test runs scored with every setting frozen first, 250 test questions in all.
+
+- The best clean setup, a 4B reader with seeded graph expansion, scores 0.813 on the test runs (95% interval 0.778 to 0.844, dev 0.878). Its interval overlaps the 0.6B reader, so that gain is not significant.
+- The list builder (dedup, earliest origin first, file tracing) adds about 0.16. On location questions it lifts a zero shot 0.6B reader from 0.228 to 0.714.
+- Fine tuning the 0.6B reader on public SWE agent traces, with no benchmark data, lifts it from 0.724 to 0.783 on the test runs. A 4B reader alone scores 0.781.
+- A distilled cascade keeps that accuracy and cuts the time per run from 175 to 57 seconds.
+
+The full study is `docs/MultiAgentBench_IR_study.docx`. The result tables behind it are in `ir_methods/results/`.
+
 ## What is new
 
 - 8 runs and 396 questions are published: `online_shop`, `library_maintainers`, `literature_review`, `on_call`, `due_diligence`, `executive_assistants`, `help_desk` and `textbook_team`. The other 2 runs, `city_data` and `debate_panel`, are withdrawn for now.
@@ -142,17 +153,14 @@ We ran 312 methods on online_shop, library_maintainers and literature_review wit
 
 The study document `docs/MultiAgentBench_IR_study.docx` compares lexical and dense baselines, first stage lists, rerankers trained on public traces, the list builder, query expansion, the RL style methods of `method/` re run under the current scorer and structure aware variants. Every number in it is scored by `score.py` on the 8 public runs, with leave one run out on the 3 dev runs and a frozen setting on the 5 test runs. The code, recipes and result tables behind it are in `ir_methods/`. Start at `ir_methods/README.md`, which maps every tag in the document to its script and recipe and shows a one minute CPU baseline run.
 
-## Repository Layout
+## What is where
 
-The custom models, experiments, results, and documentation are organized as follows:
-
-```
-MultiAgent-IRBench/
-├── docs/       # Complete technical documentation, specifications & experiment reports
-├── ir_methods/ # Code, recipes and result tables of the IR methods study (see its README)
-├── method/     # Custom model & retrieval pipeline implementations (also symlinked as methods/)
-├── scripts/    # All plotting, experiment, threshold analysis & evaluation scripts
-├── results/    # Benchmark JSON outputs, submission files & generated figures
-├── runs/       # Benchmark domain datasets
-└── score.py    # Official BAR benchmark evaluation script
-```
+| Path | What it is |
+|---|---|
+| `runs/` | the 8 published runs: questions, record, answer key |
+| `score.py` | the scorer |
+| `example_bm25.py`, `my_method.py` | a baseline and a template for your own method |
+| `docs/MultiAgentBench_IR_study.docx` | the IR methods study |
+| `ir_methods/` | code, recipes and result tables of the study, start at its README |
+| `method/` | the RL reranker pipeline the study reran under the current scorer |
+| `score_v1.py`, `MIGRATING.md` | the old scorer and what changed since it |

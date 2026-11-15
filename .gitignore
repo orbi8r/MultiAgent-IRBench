@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+
+# outputs the method/ pipeline regenerates
+method/cache/
+method/checkpoints/
+results/

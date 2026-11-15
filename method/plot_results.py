@@ -133,13 +133,5 @@ def generate_all_plots():
     plt.close()
     print(f"Saved: {p3}")
 
-    # Copy files to artifacts directory
-    artifact_dir = Path("/home/shrawani/.gemini/antigravity-cli/brain/6cfe6fd1-82c2-403e-8ef8-b45a5a9d97af")
-    import shutil
-    for p in [p1, p2, p3, RESULTS_DIR / "strata_analysis.png"]:
-        if p.exists():
-            shutil.copy(p, artifact_dir / p.name)
-            print(f"Copied {p.name} to artifact directory.")
-
 if __name__ == "__main__":
     generate_all_plots()
